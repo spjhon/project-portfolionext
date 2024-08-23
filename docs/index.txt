@@ -1,6 +1,0 @@
-3:I[9275,[],""]
-4:I[1343,[],""]
-0:["GVgEjV7mh5WoNLpPp8M_p",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},[["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","div",null,{"children":"Custom 404 Page"}],"notFoundStyles":[],"styles":null}],null],null],[null,[null,"$L5"]]]]]
-2:E{"digest":"NEXT_REDIRECT;replace;/en;307;"}
-5:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","link","2",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}]]
-1:null
