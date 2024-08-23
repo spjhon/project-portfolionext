@@ -8,6 +8,18 @@ import Header from '@/components/Header/Header'
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
 
+
+//PARA STATIC RENDERING
+// Can be imported from a shared config
+import {unstable_setRequestLocale} from 'next-intl/server';
+const locales = ['en', 'es'];
+ 
+export function generateStaticParams() {
+  return locales.map((locale) => ({locale}));
+}
+
+
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -25,6 +37,7 @@ export default async function LocaleLayout({
 
   // Providing all messages to the client
   // side is the easiest way to get started
+  unstable_setRequestLocale(locale);
   const messages = await getMessages();
   return (
     <html lang={locale} suppressHydrationWarning>
