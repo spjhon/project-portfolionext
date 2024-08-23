@@ -1,8 +1,10 @@
+import createNextIntlPlugin from 'next-intl/plugin';
+ 
+const withNextIntl = createNextIntlPlugin();
+ 
 /** @type {import('next').NextConfig} */
-const nextConfig = {//There two lines are added in order to build the static site
-    output: 'export',
-    images: { unoptimized: true },};
-
-export default nextConfig;
+const nextConfig = {};
+ 
+export default withNextIntl(nextConfig);
 
 //Este es el comando para el server: npx serve@latest out

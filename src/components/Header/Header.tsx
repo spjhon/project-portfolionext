@@ -8,7 +8,7 @@ export default function Header() {
         <header className="bg-gray-200 shadow">
             <nav className="container flex px-2 py-2 gap-5 ">
                 <Link href="/">Home</Link>
-                <Link href="/about">About</Link>
+                <Link href="/es/about">About</Link>
             </nav>
         </header>
     )
