@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
+
+import { Container } from "@/components/Container";
+import Header from "@/components/Header/Header";
 import ThemeChanger from "@/components/DarkSwitch/DarkSwitch";
-import Header from '@/components/Header/Header'
 
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
@@ -44,9 +46,14 @@ export default async function LocaleLayout({
       <body className={inter.className}>
       <NextIntlClientProvider messages={messages}>
         <ThemeProvider attribute="class" defaultTheme="dark">
-        <Header />
-          <div>{children}</div>
+          <Container className="border-2 border-sky-500 h-screen max-w-[1592px] max-h-[750px]" >
+        
+          <div className="border-2 border-sky-500 h-full">
+          <Header />
           <ThemeChanger></ThemeChanger>
+            {children}</div>
+          
+          </Container>
         </ThemeProvider>
         </NextIntlClientProvider>
       </body>
