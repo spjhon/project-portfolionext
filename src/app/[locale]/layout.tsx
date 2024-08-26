@@ -2,23 +2,23 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
+
+import { Container } from "@/components/Container";
+import Header from "@/components/Header/Header";
 import ThemeChanger from "@/components/DarkSwitch/DarkSwitch";
-import Header from '@/components/Header/Header'
 
-import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
-
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { locales } from "@/config";
 
 //PARA STATIC RENDERING
 // Can be imported from a shared config
-import {unstable_setRequestLocale} from 'next-intl/server';
-const locales = ['en', 'es'];
- 
+import { unstable_setRequestLocale } from "next-intl/server";
+
+
 export function generateStaticParams() {
-  return locales.map((locale) => ({locale}));
+  return locales.map((locale) => ({ locale }));
 }
-
-
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,12 +29,11 @@ export const metadata: Metadata = {
 
 export default async function LocaleLayout({
   children,
-  params: {locale}
+  params: { locale },
 }: {
   children: React.ReactNode;
-  params: {locale: string};
+  params: { locale: string };
 }) {
-
   // Providing all messages to the client
   // side is the easiest way to get started
   unstable_setRequestLocale(locale);
@@ -42,12 +41,18 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={inter.className}>
-      <NextIntlClientProvider messages={messages}>
-        <ThemeProvider attribute="class" defaultTheme="dark">
-        <Header />
-          <div>{children}</div>
-          <ThemeChanger></ThemeChanger>
-        </ThemeProvider>
+        <NextIntlClientProvider messages={messages}>
+          <ThemeProvider attribute="class" defaultTheme="dark">
+            <Container className="border-2 border-sky-500 h-screen max-w-[1592px] max-h-[750px]">
+              <div className="border-2 border-sky-500 h-full">
+                <Header />
+                <ThemeChanger></ThemeChanger>
+                <div>
+                {children}
+                </div>
+              </div>
+            </Container>
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>

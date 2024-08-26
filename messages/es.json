@@ -4,5 +4,8 @@
     },
     "AboutPage": {
       "title": "Acerca De"
-    }
-  }
+    },
+    "NotFoundPage": {
+    "description": "No se ah encontrado nada, lo siento",
+    "title": "Pagina No encontrada"
+  }}
