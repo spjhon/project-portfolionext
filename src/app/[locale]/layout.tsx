@@ -5,7 +5,6 @@ import "./globals.css";
 
 import { Container } from "@/components/Container";
 import Header from "@/components/Header/Header";
-import ThemeChanger from "@/components/DarkSwitch/DarkSwitch";
 
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
@@ -14,7 +13,6 @@ import { locales } from "@/config";
 //PARA STATIC RENDERING
 // Can be imported from a shared config
 import { unstable_setRequestLocale } from "next-intl/server";
-
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -41,19 +39,22 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={inter.className}>
-        <NextIntlClientProvider messages={messages}>
-          <ThemeProvider attribute="class">
-            <Container className="border-2 dark:bg-red-500 border-sky-500 h-screen max-w-[1592px] max-h-[750px]">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+        >
+          <NextIntlClientProvider messages={messages}>
+            <Container className="border-2 bg-blue-500 dark:bg-blue-900 border-sky-500 h-screen max-w-[1592px] max-h-[750px]">
               <div className="border-2 border-sky-500 h-full">
-                <Header />
-                <ThemeChanger></ThemeChanger>
                 <div>
-                {children}
+                  <Header />
+
+                  {children}
                 </div>
               </div>
             </Container>
-          </ThemeProvider>
-        </NextIntlClientProvider>
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

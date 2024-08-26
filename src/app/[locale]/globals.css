@@ -3,3 +3,10 @@
 @tailwind utilities;
 
 
+* {
+  transition: 0.3s ease, 0.3s ease;
+}
+
+body{
+  background-color: black;
+}
