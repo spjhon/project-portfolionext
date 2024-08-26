@@ -42,8 +42,8 @@ export default async function LocaleLayout({
     <html lang={locale} suppressHydrationWarning>
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
-          <ThemeProvider attribute="class" defaultTheme="dark">
-            <Container className="border-2 border-sky-500 h-screen max-w-[1592px] max-h-[750px]">
+          <ThemeProvider attribute="class">
+            <Container className="border-2 dark:bg-red-500 border-sky-500 h-screen max-w-[1592px] max-h-[750px]">
               <div className="border-2 border-sky-500 h-full">
                 <Header />
                 <ThemeChanger></ThemeChanger>

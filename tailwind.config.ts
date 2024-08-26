@@ -4,7 +4,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 
 const config: Config = {
-  mode: "jit",
+  //mode: "jit",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -19,7 +19,7 @@ const config: Config = {
         accent: '#023047',
         highlight: '#ffb703',
         warning: '#fb8500',
-        trueGray: colors.neutral,
+        
       },
     },
   },
