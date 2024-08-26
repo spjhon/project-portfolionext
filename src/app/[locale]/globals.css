@@ -2,25 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+
+@layer base {
+  html,
+  body {
+    @apply dark:bg-trueGray-900;
   }
-}
-
-:root {
-  /* Your default theme */
-  --background: white;
-  --foreground: black;
-}
-
-[data-theme='dark'] {
-  --background: black;
-  --foreground: white;
-}
-
-svg {
-  display: block;
-  width: 100%;
-  height: auto;
+  
 }
