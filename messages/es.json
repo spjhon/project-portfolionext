@@ -8,4 +8,9 @@
     "NotFoundPage": {
     "description": "No se ah encontrado nada, lo siento",
     "title": "Pagina No encontrada"
-  }}
+  },
+  "LocaleSwitcher": {
+    "label": "Cambiar idioma",
+    "locale": "{locale, select, es {es Español} en {us English} other {Unknown}}"
+  }
+}
