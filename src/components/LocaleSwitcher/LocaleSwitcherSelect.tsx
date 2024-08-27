@@ -3,7 +3,7 @@
 import clsx from 'clsx';
 import {ChangeEvent, ReactNode, useTransition} from 'react';
 import {useRouter, usePathname} from '@/navigation';
-import {Locale} from '../../../types';
+import {Locale} from '../../types';
 
 type Props = {
   children: ReactNode;

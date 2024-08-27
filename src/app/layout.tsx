@@ -1,7 +1,7 @@
 // app/layout.tsx
-
-import {ReactNode} from 'react';
-
+import "./globals.css";
+import { ReactNode } from "react";
+import { ThemeProvider } from "next-themes";
 
 type Props = {
   children: ReactNode;
@@ -9,6 +9,15 @@ type Props = {
 
 // Since we have a `not-found.tsx` page on the root, a layout file
 // is required, even if it's just passing children through.
-export default function RootLayout({children}: Props) {
-    return children;
-  }
+//OJO, toco poner el themeProvider y en html debido a un problema con la compatibilidad entre next-themes y next-int
+export default function RootLayout({ children }: Props) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body>
+        <ThemeProvider attribute="class" defaultTheme="light">
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}

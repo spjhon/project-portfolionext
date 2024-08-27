@@ -1,8 +1,5 @@
 import type { Config } from "tailwindcss";
 
-const defaultTheme = require("tailwindcss/defaultTheme");
-const colors = require("tailwindcss/colors");
-
 const config: Config = {
   //mode: "jit",
   content: [
@@ -19,7 +16,6 @@ const config: Config = {
         accent: '#023047',
         highlight: '#ffb703',
         warning: '#fb8500',
-        
       },
     },
   },

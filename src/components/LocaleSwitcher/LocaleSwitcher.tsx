@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname, useRouter } from "../../navigation";
-import { Locale } from "../../../types";
+import { Locale } from "../../types";
 
 export default function LanguageSwitcher() {
   const pathname = usePathname();
