@@ -6,7 +6,7 @@ import { Inter } from "next/font/google";
 //Importaciones de componentes
 import { Container } from "@/components/Container";
 import Header from "@/components/Header/Header";
-
+import ClientComponent from "@/components/ClientComponent";
 
 //Importaciones de next internazionalization
 import { NextIntlClientProvider } from "next-intl";
@@ -46,15 +46,18 @@ export default async function LocaleLayout({
   return (
     
           <NextIntlClientProvider messages={messages}>
+            
             <Container className="border-2 bg-blue-500 dark:bg-blue-900 border-sky-500 h-screen max-w-[1592px] max-h-[750px]">
               <div className="border-2 border-sky-500 h-full">
                 <div>
                   <Header />
-
+                  <ClientComponent locale={locale}></ClientComponent>
                   {children}
+                  
                 </div>
               </div>
             </Container>
+            
           </NextIntlClientProvider>
         
   );
