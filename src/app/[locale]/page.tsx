@@ -12,8 +12,19 @@ export default function HomePage({ params: { locale } }: HomePageProps) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("HomePage");
   return (
-    <div className="w-[50px] h-[50px] bg-warning text-black dark:text-white dark:bg-accent">
-      {t("title")}
+    <div className="w-full h-full grid grid-rows-[1fr_5rem_1fr] md:grid-cols-[1fr_5rem_1fr] md:grid-rows-none">
+      <div className="z-10 bg-warning text-black dark:text-white dark:bg-secondary">
+        {t("title")}
+      </div>
+      <div className=" bg-warning text-black dark:text-white dark:bg-secondary">
+        {t("title")}
+      </div>
+      <div className=" bg-warning text-black dark:text-white dark:bg-secondary">
+        <div className="relative mt-32 z-10">
+        {t("title")}
+        </div>
+        
+      </div>
     </div>
   );
 }
