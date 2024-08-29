@@ -43,11 +43,11 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider messages={messages}>
       <ClientComponent locale={locale}></ClientComponent>
-      <Container className="rounded-xl bg-[#E3DAC9] dark:bg-black h-screen max-w-[1592px] max-h-[750px]">
+      <Container className="rounded-xl bg-[#E3DAC9] dark:bg-black h-screen max-w-[31592px] max-h-[1750px]">
         <div className="relative bg-white dark:bg-accent border-2 border-sky-500  h-full">
          
 
-          <div className="absolute w-full h-full grid grid-rows-[1fr_5rem_1fr] md:grid-cols-[1fr_5rem_1fr] md:grid-rows-none">
+          <div className="absolute w-full h-full grid grid-rows-[1fr_1rem_2fr] landscape:grid-cols-[1fr_4rem_1fr] landscape:grid-rows-none">
               
             <div></div>
             <div className="bg-primary"></div>

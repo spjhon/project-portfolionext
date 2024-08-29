@@ -12,7 +12,7 @@ export default function HomePage({ params: { locale } }: HomePageProps) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("HomePage");
   return (
-    <div className="w-full h-full grid grid-rows-[1fr_5rem_1fr] md:grid-cols-[1fr_5rem_1fr] md:grid-rows-none">
+    <div className="w-full h-full grid grid-rows-[1fr_1rem_2fr] landscape:grid-cols-[1fr_4rem_1fr] landscape:grid-rows-none">
       <div className="z-10 bg-warning text-black dark:text-white dark:bg-secondary">
         {t("title")}
       </div>
