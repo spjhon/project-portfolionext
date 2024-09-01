@@ -12,7 +12,7 @@ type Props = {
 //OJO, toco poner el themeProvider y en html debido a un problema con la compatibilidad entre next-themes y next-int
 export default function RootLayout({ children }: Props) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html suppressHydrationWarning>
       <body>
         <ThemeProvider attribute="class" defaultTheme="light">
           {children}

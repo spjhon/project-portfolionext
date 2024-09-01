@@ -17,6 +17,10 @@ const config: Config = {
         highlight: '#ffb703',
         warning: '#fb8500',
       },
+      screens: {
+        'portrait': {'raw': '(orientation: portrait)'},
+        'landscape': {'raw': '(orientation: landscape)'},
+      },
     },
   },
   plugins: [],
