@@ -8,8 +8,7 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ children }) => {
   return (
     <div
-      className="relative w-full h-full bg-cover bg-center flex items-center justify-center"
-      style={{ backgroundImage: `url(${image.src})` }}
+      className="relative w-full h-full bg-cover bg-center flex items-center justify-center bg-hero01 dark:bg-hero01Dark"
     >
       <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
       <span className="relative z-20 text-white text-4xl font-bold">{children}</span>

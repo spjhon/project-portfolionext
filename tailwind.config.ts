@@ -11,6 +11,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        barra: '#f2f2f2',
         primary: '#8ecae6',
         secondary: '#219ebc',
         accent: '#023047',
@@ -21,6 +22,12 @@ const config: Config = {
         'portrait': {'raw': '(orientation: portrait)'},
         'landscape': {'raw': '(orientation: landscape)'},
       },
+      backgroundImage: { //Imagenes para el hero, las rutas no pueden ser relativas
+        'hero01': "url('/heroBackgrounds/hero01.jpg')",
+        'hero01Dark': "url('/heroBackgrounds/hero01Night.jpg')",
+        'MUESTRA': "url('/heroBackgrounds/MUESTRA.jpg')",
+        
+      }
     },
   },
   plugins: [],
