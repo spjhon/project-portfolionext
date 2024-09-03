@@ -14,10 +14,20 @@ export default function NavigationLink({
  
   return (
     <Link
-      aria-current={isActive ? 'page' : undefined}
-      href={href}
-      style={{color: isActive ? 'red' : 'black'}}
-      {...rest}
-    />
+  aria-current={isActive ? 'page' : undefined}
+  href={href}
+  style={{
+    color: isActive ? 'white' : 'black',
+    backgroundColor: isActive ? '#023047' : 'transparent',
+    transition: 'color 0.3s',
+  }}
+  onMouseEnter={(e) => {
+    e.currentTarget.style.color = isActive ? 'lightgray' : 'darkgray';
+  }}
+  onMouseLeave={(e) => {
+    e.currentTarget.style.color = isActive ? 'white' : 'black';
+  }}
+  {...rest}
+/>
   );
 }

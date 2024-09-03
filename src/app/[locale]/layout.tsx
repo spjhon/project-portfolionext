@@ -51,7 +51,7 @@ export default async function LocaleLayout({
               
             <div></div>
             <div className="bg-barra dark:bg-accent"></div>
-            <div>
+            <div className="flex justify-center items-start">
             <Navbar />
             </div>
           </div>

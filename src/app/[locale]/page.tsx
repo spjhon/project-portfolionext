@@ -26,7 +26,7 @@ export default function HomePage({ params: { locale } }: HomePageProps) {
       <div></div>
       
       <div className="rounded-xl  text-black dark:text-white bg-MUESTRA bg-cover bg-center">
-        <div className="z-10 mt-32 w-3">
+        <div className="relative mt-32 w-3">
         {t("title")}
         </div>
         
