@@ -17,7 +17,7 @@ import {
   toolsSVG,
 } from "../../components/TheStack/data";
 import TheStack from "@/components/TheStack/TheStack";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 interface HomePageProps {
   locale: string;
 }
@@ -56,7 +56,8 @@ let componentToRender;
 
       <div className="rounded-xl  text-black dark:text-white overflow-scroll">
         <div className="relative mt-32 w-full">
-          <MainSectionAnimated />
+
+          <MainSectionAnimated setComponentToShow={setComponentToShow} />
 
           <SectionTitle
             preTitle="MY STACK"
@@ -67,11 +68,11 @@ let componentToRender;
             experiencia de desarrollo y mantgenibilidad
           </SectionTitle>
 
-          <TheStack images={frameworksSVG} title="FrameWorks"></TheStack>
-          <TheStack images={libraries} title="Libraries"></TheStack>
-          <TheStack images={languagesSVG} title="Languages"></TheStack>
-          <TheStack images={toolsSVG} title="Tools"></TheStack>
-          <TheStack images={philosofiesSVG} title="Philosofies"></TheStack>
+          <TheStack01Animated ></TheStack01Animated>
+          <TheStack02Animated></TheStack02Animated>
+          <TheStack03Animated></TheStack03Animated>
+          <TheStack04Animated></TheStack04Animated>
+          <TheStack05Animated setComponentToShow={setComponentToShow}></TheStack05Animated>
 
           <SectionTitle
             preTitle="MY EDUCATION"
@@ -98,7 +99,33 @@ let componentToRender;
 
 
 //para las animaciones a mano con intersection observer
-const MainSectionAnimated = () => {
+const MainSectionAnimated = ({setComponentToShow}) => {
+  const { ref, inView } = useInView({
+    threshold: 0.1, // Ajusta el umbral según tus necesidades
+    triggerOnce: false, // Dispara la animación solo una vez
+  });
+
+  
+  useEffect(() => {
+    if (inView) {
+      setComponentToShow("Main");
+    }
+  }, [inView, setComponentToShow]);
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-700 transform ${
+        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
+      {<MainSection />}
+    </div>
+  );
+};
+
+//para las animaciones a mano con intersection observer
+const TheStack01Animated = () => {
   const { ref, inView } = useInView({
     threshold: 0.1, // Ajusta el umbral según tus necesidades
     triggerOnce: true, // Dispara la animación solo una vez
@@ -111,7 +138,89 @@ const MainSectionAnimated = () => {
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      {<MainSection />}
+      {<TheStack images={frameworksSVG} title="FrameWorks"></TheStack>}
+    </div>
+  );
+};
+
+//para las animaciones a mano con intersection observer
+const TheStack02Animated = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.1, // Ajusta el umbral según tus necesidades
+    triggerOnce: true, // Dispara la animación solo una vez
+  });
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-700 transform ${
+        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
+      {<TheStack images={libraries} title="Libraries"></TheStack>}
+    </div>
+  );
+};
+
+//para las animaciones a mano con intersection observer
+const TheStack03Animated = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.1, // Ajusta el umbral según tus necesidades
+    triggerOnce: true, // Dispara la animación solo una vez
+  });
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-700 transform ${
+        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
+      {<TheStack images={languagesSVG} title="Languages"></TheStack>}
+    </div>
+  );
+};
+
+//para las animaciones a mano con intersection observer
+const TheStack04Animated = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.1, // Ajusta el umbral según tus necesidades
+    triggerOnce: true, // Dispara la animación solo una vez
+  });
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-700 transform ${
+        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
+      {<TheStack images={toolsSVG} title="Tools"></TheStack>}
+    </div>
+  );
+};
+
+//para las animaciones a mano con intersection observer
+const TheStack05Animated = ({setComponentToShow}) => {
+  const { ref, inView } = useInView({
+    threshold: 0.1, // Ajusta el umbral según tus necesidades
+    triggerOnce: false, // Dispara la animación solo una vez
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setComponentToShow("Stack");
+    }
+  }, [inView, setComponentToShow]);
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-700 transform ${
+        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
+      {<TheStack images={philosofiesSVG} title="Philosofies"></TheStack>}
     </div>
   );
 };
