@@ -1,8 +1,7 @@
-"use client"
+"use client";
 
 import { useTranslations } from "next-intl";
 import { useInView } from "react-intersection-observer";
-
 import Hero from "@/components/Hero/Hero";
 import HeroMain from "@/components/Hero/HeroMain";
 import HeroStack from "@/components/Hero/HeroStack";
@@ -18,26 +17,24 @@ import {
 } from "../../components/TheStack/data";
 import TheStack from "@/components/TheStack/TheStack";
 import { useEffect, useState } from "react";
+import EducationTimeline from "@/components/EducationTimeline/EducationTimeline";
+import Footer from "@/components/Footer/Footer";
+
+// Define props types for animated components
+interface AnimatedComponentProps {
+  setComponentToShow?: (component: string) => void;
+}
+
 interface HomePageProps {
   locale: string;
 }
 
-//PARA STATIC RENDERING
-
-import EducationTimeline from "@/components/EducationTimeline/EducationTimeline";
-import Footer from "@/components/Footer/Footer";
-
-
 export default function HomePage({ locale }: HomePageProps) {
-  
   const t = useTranslations("HomePage");
 
+  const [componentToShow, setComponentToShow] = useState<string>("Main");
 
-const [componentToShow, setComponentToShow] = useState("Main")
-
-
-
-let componentToRender;
+  let componentToRender;
   if (componentToShow === "Main") {
     componentToRender = <HeroMain />;
   } else if (componentToShow === "Stack") {
@@ -47,16 +44,13 @@ let componentToRender;
   return (
     <div className="w-full h-full grid grid-rows-[1fr_1rem_2fr] landscape:grid-cols-[1fr_4rem_1fr] landscape:grid-rows-none">
       <div className="overflow-hidden">
-        <Hero>
-        {componentToRender}
-        </Hero>
+        <Hero>{componentToRender}</Hero>
       </div>
 
       <div></div>
 
-      <div className="rounded-xl  text-black dark:text-white overflow-scroll">
+      <div className="rounded-xl text-black dark:text-white overflow-scroll">
         <div className="relative mt-32 w-full">
-
           <MainSectionAnimated setComponentToShow={setComponentToShow} />
 
           <SectionTitle
@@ -64,50 +58,44 @@ let componentToRender;
             title="Herramientas Modernas Para Problemas Modernos"
             icon={SectionTitle01.src}
           >
-            Un stack altamene adaptable a las necesidades de velocidad, buena
-            experiencia de desarrollo y mantgenibilidad
+            Un stack altamente adaptable a las necesidades de velocidad, buena
+            experiencia de desarrollo y mantenibilidad
           </SectionTitle>
 
-          <TheStack01Animated ></TheStack01Animated>
-          <TheStack02Animated></TheStack02Animated>
-          <TheStack03Animated></TheStack03Animated>
-          <TheStack04Animated></TheStack04Animated>
-          <TheStack05Animated setComponentToShow={setComponentToShow}></TheStack05Animated>
+          <TheStack01Animated />
+          <TheStack02Animated />
+          <TheStack03Animated />
+          <TheStack04Animated />
+          <TheStack05Animated setComponentToShow={setComponentToShow} />
 
           <SectionTitle
             preTitle="MY EDUCATION"
             title="High quality skills"
             icon={SectionTitle01.src}
           >
-            My titulo de ingeniria industrial un complemento perfecto para la
-            materializacion de app complejas desde el punto de vista de la
-            gestion de proyectos
+            Mi título de ingeniería industrial, un complemento perfecto para la
+            materialización de apps complejas desde el punto de vista de la
+            gestión de proyectos
           </SectionTitle>
 
-          <EducationTimeline side="right" title="Educacion"></EducationTimeline>
-          <EducationTimeline
-            side="left"
-            title="Experiencia"
-          ></EducationTimeline>
+          <EducationTimeline side="right" title="Educación" />
+          <EducationTimeline side="left" title="Experiencia" />
 
-          <Footer></Footer>
+          <Footer />
         </div>
       </div>
     </div>
   );
 }
 
-
-//para las animaciones a mano con intersection observer
-const MainSectionAnimated = ({setComponentToShow}) => {
+const MainSectionAnimated: React.FC<AnimatedComponentProps> = ({ setComponentToShow }) => {
   const { ref, inView } = useInView({
-    threshold: 0.1, // Ajusta el umbral según tus necesidades
-    triggerOnce: false, // Dispara la animación solo una vez
+    threshold: 0.1,
+    triggerOnce: false,
   });
 
-  
   useEffect(() => {
-    if (inView) {
+    if (inView && setComponentToShow) {
       setComponentToShow("Main");
     }
   }, [inView, setComponentToShow]);
@@ -119,16 +107,15 @@ const MainSectionAnimated = ({setComponentToShow}) => {
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      {<MainSection />}
+      <MainSection />
     </div>
   );
 };
 
-//para las animaciones a mano con intersection observer
-const TheStack01Animated = () => {
+const TheStack01Animated: React.FC = () => {
   const { ref, inView } = useInView({
-    threshold: 0.1, // Ajusta el umbral según tus necesidades
-    triggerOnce: true, // Dispara la animación solo una vez
+    threshold: 0.1,
+    triggerOnce: true,
   });
 
   return (
@@ -138,16 +125,15 @@ const TheStack01Animated = () => {
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      {<TheStack images={frameworksSVG} title="FrameWorks"></TheStack>}
+      <TheStack images={frameworksSVG} title="FrameWorks" />
     </div>
   );
 };
 
-//para las animaciones a mano con intersection observer
-const TheStack02Animated = () => {
+const TheStack02Animated: React.FC = () => {
   const { ref, inView } = useInView({
-    threshold: 0.1, // Ajusta el umbral según tus necesidades
-    triggerOnce: true, // Dispara la animación solo una vez
+    threshold: 0.1,
+    triggerOnce: true,
   });
 
   return (
@@ -157,16 +143,15 @@ const TheStack02Animated = () => {
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      {<TheStack images={libraries} title="Libraries"></TheStack>}
+      <TheStack images={libraries} title="Libraries" />
     </div>
   );
 };
 
-//para las animaciones a mano con intersection observer
-const TheStack03Animated = () => {
+const TheStack03Animated: React.FC = () => {
   const { ref, inView } = useInView({
-    threshold: 0.1, // Ajusta el umbral según tus necesidades
-    triggerOnce: true, // Dispara la animación solo una vez
+    threshold: 0.1,
+    triggerOnce: true,
   });
 
   return (
@@ -176,16 +161,15 @@ const TheStack03Animated = () => {
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      {<TheStack images={languagesSVG} title="Languages"></TheStack>}
+      <TheStack images={languagesSVG} title="Languages" />
     </div>
   );
 };
 
-//para las animaciones a mano con intersection observer
-const TheStack04Animated = () => {
+const TheStack04Animated: React.FC = () => {
   const { ref, inView } = useInView({
-    threshold: 0.1, // Ajusta el umbral según tus necesidades
-    triggerOnce: true, // Dispara la animación solo una vez
+    threshold: 0.1,
+    triggerOnce: true,
   });
 
   return (
@@ -195,20 +179,19 @@ const TheStack04Animated = () => {
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      {<TheStack images={toolsSVG} title="Tools"></TheStack>}
+      <TheStack images={toolsSVG} title="Tools" />
     </div>
   );
 };
 
-//para las animaciones a mano con intersection observer
-const TheStack05Animated = ({setComponentToShow}) => {
+const TheStack05Animated: React.FC<AnimatedComponentProps> = ({ setComponentToShow }) => {
   const { ref, inView } = useInView({
-    threshold: 0.1, // Ajusta el umbral según tus necesidades
-    triggerOnce: false, // Dispara la animación solo una vez
+    threshold: 0.1,
+    triggerOnce: false,
   });
 
   useEffect(() => {
-    if (inView) {
+    if (inView && setComponentToShow) {
       setComponentToShow("Stack");
     }
   }, [inView, setComponentToShow]);
@@ -220,7 +203,7 @@ const TheStack05Animated = ({setComponentToShow}) => {
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      {<TheStack images={philosofiesSVG} title="Philosofies"></TheStack>}
+      <TheStack images={philosofiesSVG} title="Philosophies" />
     </div>
   );
 };
