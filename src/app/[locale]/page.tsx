@@ -4,7 +4,7 @@ import Hero from "@/components/Hero/Hero";
 import MainSection from "@/components/MainSection";
 import { SectionTitle } from "@/components/SectionTitle";
 import SectionTitle01 from "../../../public/SectionsImages/SectionImage01Sized.png"
-import {images} from "../../components/TheStack/data"
+import {frameworksSVG, languagesSVG, libraries, philosofiesSVG, toolsSVG} from "../../components/TheStack/data"
 import TheStack from "@/components/TheStack/TheStack";
 
 interface HomePageProps {
@@ -13,6 +13,8 @@ interface HomePageProps {
 
 //PARA STATIC RENDERING
 import { unstable_setRequestLocale } from "next-intl/server";
+import EducationTimeline from "@/components/EducationTimeline/EducationTimeline";
+import Footer from "@/components/Footer/Footer";
 
 export default function HomePage({ params: { locale } }: HomePageProps) {
   unstable_setRequestLocale(locale);
@@ -39,7 +41,23 @@ export default function HomePage({ params: { locale } }: HomePageProps) {
       >
         Un stack altamene adaptable a las necesidades de velocidad, buena experiencia de desarrollo y mantgenibilidad
       </SectionTitle>
-      <TheStack images={images} title="FrameWorks" ></TheStack>
+      <TheStack images={frameworksSVG} title="FrameWorks" ></TheStack>
+      <TheStack images={libraries} title="Libraries" ></TheStack>
+      <TheStack images={languagesSVG} title="Languages" ></TheStack>
+      <TheStack images={toolsSVG} title="Tools" ></TheStack>
+      <TheStack images={philosofiesSVG} title="Philosofies" ></TheStack>
+      
+      <SectionTitle
+        preTitle="MY EDUCATION"
+        title="High quality skills"
+        icon={SectionTitle01.src}
+      >
+        My titulo de ingeniria industrial un complemento perfecto para la materializacion de app complejas desde el punto de vista de la gestion de proyectos
+      </SectionTitle>
+
+      <EducationTimeline side="right" title="Educacion"></EducationTimeline>
+      <EducationTimeline side="left" title="Experiencia"></EducationTimeline>
+      <Footer></Footer>
         </div>
         
       </div>
