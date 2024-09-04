@@ -1,66 +1,76 @@
-import { useTranslations } from "next-intl";
-import { PageParams } from "../../types";
-import Hero from "@/components/Hero/Hero";
-import MainSection from "@/components/MainSection";
-import { SectionTitle } from "@/components/SectionTitle";
-import SectionTitle01 from "../../../public/SectionsImages/SectionImage01Sized.png"
-import {frameworksSVG, languagesSVG, libraries, philosofiesSVG, toolsSVG} from "../../components/TheStack/data"
-import TheStack from "@/components/TheStack/TheStack";
-
-interface HomePageProps {
-  params: PageParams;
-}
-
-//PARA STATIC RENDERING
+// src/app/[locale]/LocaleWrapper.tsx
 import { unstable_setRequestLocale } from "next-intl/server";
-import EducationTimeline from "@/components/EducationTimeline/EducationTimeline";
-import Footer from "@/components/Footer/Footer";
+import HomePage from "./HomePage";
 
-export default function HomePage({ params: { locale } }: HomePageProps) {
+export default function LocaleWrapper({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
-  const t = useTranslations("HomePage");
-  return (
-
-    <div className="w-full h-full grid grid-rows-[1fr_1rem_2fr] landscape:grid-cols-[1fr_4rem_1fr] landscape:grid-rows-none">
-      
-      <div>
-        <Hero>
-        {t("title")}
-        </Hero>
-      </div>
-      
-      <div></div>
-      
-      <div className="rounded-xl  text-black dark:text-white overflow-scroll">
-        <div className="relative mt-32 w-full">
-        <MainSection />
-        <SectionTitle
-        preTitle="MY STACK"
-        title="Herramientas Modernas Para Problemas Modernos"
-        icon={SectionTitle01.src}
-      >
-        Un stack altamene adaptable a las necesidades de velocidad, buena experiencia de desarrollo y mantgenibilidad
-      </SectionTitle>
-      <TheStack images={frameworksSVG} title="FrameWorks" ></TheStack>
-      <TheStack images={libraries} title="Libraries" ></TheStack>
-      <TheStack images={languagesSVG} title="Languages" ></TheStack>
-      <TheStack images={toolsSVG} title="Tools" ></TheStack>
-      <TheStack images={philosofiesSVG} title="Philosofies" ></TheStack>
-      
-      <SectionTitle
-        preTitle="MY EDUCATION"
-        title="High quality skills"
-        icon={SectionTitle01.src}
-      >
-        My titulo de ingeniria industrial un complemento perfecto para la materializacion de app complejas desde el punto de vista de la gestion de proyectos
-      </SectionTitle>
-
-      <EducationTimeline side="right" title="Educacion"></EducationTimeline>
-      <EducationTimeline side="left" title="Experiencia"></EducationTimeline>
-      <Footer></Footer>
-        </div>
-        
-      </div>
-    </div>
-  );
+  return <HomePage locale={locale} />;
 }
+
+
+
+
+/*
+
+Correcto, el `LocaleWrapper` no se importa directamente en ningún otro lugar. En su lugar, debe estar en el lugar adecuado en la estructura de tu proyecto para que Next.js lo utilice automáticamente para manejar la localización.
+
+Aquí te explico cómo se integra `LocaleWrapper` en la estructura de tu aplicación Next.js:
+
+### Estructura del Proyecto
+
+En Next.js, la estructura de archivos y carpetas determina cómo se renderizan las páginas. Aquí tienes cómo deberías organizar los archivos para que `LocaleWrapper` funcione correctamente:
+
+1. **Directorio de Páginas Dinámicas:**
+
+   Si estás utilizando rutas dinámicas para manejar diferentes locales, tu directorio de rutas debería parecerse a esto:
+
+   ```
+   src/
+   └── app/
+       └── [locale]/
+           ├── page.tsx       // Tu Client Component (HomePage)
+           └── LocaleWrapper.tsx // Tu Server Component
+   ```
+
+2. **Uso de `LocaleWrapper`:**
+
+   `LocaleWrapper` debe ser el componente que maneje la lógica del servidor y envuelva el componente que necesita el `locale`. Debes exportar `LocaleWrapper` como la página principal en lugar de `HomePage`. Así que, `page.tsx` se convierte en el punto de entrada para Next.js, y en él debes utilizar `LocaleWrapper`.
+
+   ```typescript
+   // src/app/[locale]/page.tsx
+   import LocaleWrapper from "./LocaleWrapper";
+
+   export default function Page({ params }: { params: { locale: string } }) {
+     return <LocaleWrapper params={params} />;
+   }
+   ```
+
+   En este archivo, `Page` recibe `params` que contienen el `locale` y lo pasa a `LocaleWrapper`, que maneja la configuración del `locale` y luego renderiza `HomePage`.
+
+3. **`LocaleWrapper` Maneja el `locale`:**
+
+   `LocaleWrapper` es un componente Server que se encarga de configurar el `locale` antes de renderizar el componente principal.
+
+   ```typescript
+   // src/app/[locale]/LocaleWrapper.tsx
+   import { unstable_setRequestLocale } from "next-intl/server";
+   import HomePage from "./page";
+
+   export default function LocaleWrapper({ params: { locale } }: { params: { locale: string } }) {
+     unstable_setRequestLocale(locale);
+     return <HomePage locale={locale} />;
+   }
+   ```
+
+   Aquí, `LocaleWrapper` configura el `locale` y renderiza el `HomePage` con el `locale` como una prop.
+
+### Resumen:
+
+- **`page.tsx`**: Punto de entrada para Next.js, se encarga de pasar los parámetros necesarios a `LocaleWrapper`.
+- **`LocaleWrapper.tsx`**: Configura el `locale` y renderiza `HomePage`.
+- **`HomePage.tsx`**: El Client Component que maneja la lógica y el estado del cliente.
+
+De esta forma, Next.js usa `LocaleWrapper` para manejar la configuración del `locale` de manera adecuada antes de renderizar el componente del cliente.
+
+
+*/

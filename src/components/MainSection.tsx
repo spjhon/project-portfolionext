@@ -1,13 +1,17 @@
+import { useTranslations } from "next-intl";
 import React from "react";
 //"I don't aim to reinvent the wheel, nor do I rely on copy-pasting. My passion lies in mastering the code, standards, and best practices that drive quality and innovation."
 
 
 const MainSection: React.FC = () => {
+
+  const t = useTranslations("HomePage");
+
   return (
     <div className="p-6">
       {/* Frase motivante */}
       <div className="text-3xl font-bold">
-        Crafting Digital Experiences with Code and Creativity
+      {t("catchphrase")}
         <div className="w-16 border-b-2 border-gray-300 mt-2"></div>
       </div>
 
