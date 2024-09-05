@@ -22,14 +22,7 @@ const config: Config = {
         'portrait': {'raw': '(orientation: portrait)'},
         'landscape': {'raw': '(orientation: landscape)'},
       },
-      backgroundImage: { //Imagenes para el hero, las rutas no pueden ser relativas
-        'hero01': "url('/heroBackgrounds/hero01.jpg')",
-        'hero01Dark': "url('/heroBackgrounds/hero01Night.jpg')",
-        'hero02': "url('/heroBackgrounds/hero02.jpg')",
-        'hero02Dark': "url('/heroBackgrounds/hero02Night.jpg')",
-        'MUESTRA': "url('/heroBackgrounds/MUESTRA.jpg')",
-        
-      }
+      
     },
   },
   plugins: [],

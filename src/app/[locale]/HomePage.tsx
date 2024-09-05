@@ -50,7 +50,7 @@ switch (componentToShow) {
     break;
   case "Education":
     componentToRender = <HeroEducationAnimated />;
-    imageToRender = {backgroundImage: "hero03", backgroundImageDark: "hero03Dark"}
+    imageToRender = {backgroundImage: "/heroBackgrounds/hero03.jpg", backgroundImageDark: "/heroBackgrounds/hero03Night.jpg"}
 
     break;
   default:
