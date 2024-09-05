@@ -6,6 +6,7 @@ import Hero from "@/components/Hero/Hero";
 import HeroMain from "@/components/Hero/HeroMain";
 import HeroStack from "@/components/Hero/HeroStack";
 import MainSection from "@/components/MainSection";
+import HeroEducation from "@/components/Hero/HeroEducation";
 import { SectionTitle } from "@/components/SectionTitle";
 import SectionTitle01 from "../../../public/SectionsImages/SectionImage01Sized.png";
 import {
@@ -35,11 +36,22 @@ export default function HomePage({ locale }: HomePageProps) {
   const [componentToShow, setComponentToShow] = useState<string>("Main");
 
   let componentToRender;
-  if (componentToShow === "Main") {
+
+switch (componentToShow) {
+  case "Main":
     componentToRender = <HeroMain />;
-  } else if (componentToShow === "Stack") {
+    break;
+  case "Stack":
     componentToRender = <HeroStack />;
-  }
+    break;
+  case "Education":
+    componentToRender = <HeroEducation />;
+    break;
+  default:
+    // Opcional: maneja el caso por defecto
+    componentToRender = null; // o cualquier componente por defecto
+    break;
+}
 
   return (
     <div className="w-full h-full grid grid-rows-[1fr_1rem_2fr] landscape:grid-cols-[1fr_4rem_1fr] landscape:grid-rows-none">
@@ -63,10 +75,10 @@ export default function HomePage({ locale }: HomePageProps) {
           </SectionTitle>
 
           <TheStack01Animated />
-          <TheStack02Animated />
+          <TheStack02Animated setComponentToShow={setComponentToShow}/>
           <TheStack03Animated />
           <TheStack04Animated />
-          <TheStack05Animated setComponentToShow={setComponentToShow} />
+          <TheStack05Animated  />
 
           <SectionTitle
             preTitle="MY EDUCATION"
@@ -78,8 +90,7 @@ export default function HomePage({ locale }: HomePageProps) {
             gestión de proyectos
           </SectionTitle>
 
-          <EducationTimeline side="right" title="Educación" />
-          <EducationTimeline side="left" title="Experiencia" />
+          <EducationAnimated setComponentToShow={setComponentToShow}/>
 
           <Footer />
         </div>
@@ -115,7 +126,7 @@ const MainSectionAnimated: React.FC<AnimatedComponentProps> = ({ setComponentToS
 const TheStack01Animated: React.FC = () => {
   const { ref, inView } = useInView({
     threshold: 0.1,
-    triggerOnce: true,
+    triggerOnce: false,
   });
 
   return (
@@ -130,11 +141,18 @@ const TheStack01Animated: React.FC = () => {
   );
 };
 
-const TheStack02Animated: React.FC = () => {
+const TheStack02Animated: React.FC<AnimatedComponentProps> = ({ setComponentToShow }) => {
   const { ref, inView } = useInView({
     threshold: 0.1,
-    triggerOnce: true,
+    triggerOnce: false,
   });
+
+  useEffect(() => {
+    if (inView && setComponentToShow) {
+      setComponentToShow("Stack");
+    }
+  }, [inView, setComponentToShow]);
+
 
   return (
     <div
@@ -151,7 +169,7 @@ const TheStack02Animated: React.FC = () => {
 const TheStack03Animated: React.FC = () => {
   const { ref, inView } = useInView({
     threshold: 0.1,
-    triggerOnce: true,
+    triggerOnce: false,
   });
 
   return (
@@ -169,7 +187,7 @@ const TheStack03Animated: React.FC = () => {
 const TheStack04Animated: React.FC = () => {
   const { ref, inView } = useInView({
     threshold: 0.1,
-    triggerOnce: true,
+    triggerOnce: false,
   });
 
   return (
@@ -184,7 +202,27 @@ const TheStack04Animated: React.FC = () => {
   );
 };
 
-const TheStack05Animated: React.FC<AnimatedComponentProps> = ({ setComponentToShow }) => {
+const TheStack05Animated: React.FC = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+    triggerOnce: false,
+  });
+
+  
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-700 transform ${
+        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
+      <TheStack images={philosofiesSVG} title="Philosophies" />
+    </div>
+  );
+};
+
+const EducationAnimated: React.FC<AnimatedComponentProps> = ({ setComponentToShow }) => {
   const { ref, inView } = useInView({
     threshold: 0.1,
     triggerOnce: false,
@@ -192,7 +230,7 @@ const TheStack05Animated: React.FC<AnimatedComponentProps> = ({ setComponentToSh
 
   useEffect(() => {
     if (inView && setComponentToShow) {
-      setComponentToShow("Stack");
+      setComponentToShow("Education");
     }
   }, [inView, setComponentToShow]);
 
@@ -203,7 +241,8 @@ const TheStack05Animated: React.FC<AnimatedComponentProps> = ({ setComponentToSh
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      <TheStack images={philosofiesSVG} title="Philosophies" />
+      <EducationTimeline side="right" title="Educación" />
+      <EducationTimeline side="left" title="Experiencia" />
     </div>
   );
 };
