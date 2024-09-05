@@ -24,6 +24,7 @@ import Footer from "@/components/Footer/Footer";
 // Define props types for animated components
 interface AnimatedComponentProps {
   setComponentToShow?: (component: string) => void;
+  children?: React.ReactNode;
 }
 
 interface HomePageProps {
@@ -36,27 +37,37 @@ export default function HomePage({ locale }: HomePageProps) {
   const [componentToShow, setComponentToShow] = useState<string>("Main");
 
   let componentToRender;
+  let imageToRender
 
 switch (componentToShow) {
   case "Main":
-    componentToRender = <HeroMain />;
+    componentToRender = <HeroAnimated />;
+    imageToRender = {backgroundImage: "/heroBackgrounds/hero01.jpg", backgroundImageDark: "/heroBackgrounds/hero01Night.jpg"}
     break;
   case "Stack":
-    componentToRender = <HeroStack />;
+    componentToRender = <HeroStackAnimated />;
+    imageToRender = {backgroundImage: "/heroBackgrounds/hero02.jpg", backgroundImageDark: "/heroBackgrounds/hero02Night.jpg"}
     break;
   case "Education":
-    componentToRender = <HeroEducation />;
+    componentToRender = <HeroEducationAnimated />;
+    imageToRender = {backgroundImage: "hero03", backgroundImageDark: "hero03Dark"}
+
     break;
   default:
     // Opcional: maneja el caso por defecto
     componentToRender = null; // o cualquier componente por defecto
+
     break;
 }
 
   return (
     <div className="w-full h-full grid grid-rows-[1fr_1rem_2fr] landscape:grid-cols-[1fr_4rem_1fr] landscape:grid-rows-none">
       <div className="overflow-hidden">
-        <Hero>{componentToRender}</Hero>
+      <Hero imageToRender={imageToRender}>
+      
+      {componentToRender}
+        
+        </Hero>
       </div>
 
       <div></div>
@@ -243,6 +254,60 @@ const EducationAnimated: React.FC<AnimatedComponentProps> = ({ setComponentToSho
     >
       <EducationTimeline side="right" title="Educación" />
       <EducationTimeline side="left" title="Experiencia" />
+    </div>
+  );
+};
+
+const HeroAnimated: React.FC<AnimatedComponentProps> = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+    triggerOnce: false,
+  });
+
+  return (
+    <div
+      ref={ref}
+      className={`w-full transition-opacity duration-1000 ${
+        inView ? "opacity-100" : "opacity-0"
+      }`}
+    >
+      <HeroMain />
+    </div>
+  );
+};
+
+const HeroStackAnimated: React.FC<AnimatedComponentProps> = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+    triggerOnce: false,
+  });
+
+  return (
+    <div
+      ref={ref}
+      className={`w-full transition-opacity duration-1000 ${
+        inView ? "opacity-100" : "opacity-0"
+      }`}
+    >
+      <HeroStack />
+    </div>
+  );
+};
+
+const HeroEducationAnimated: React.FC<AnimatedComponentProps> = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+    triggerOnce: false,
+  });
+
+  return (
+    <div
+      ref={ref}
+      className={`w-full transition-opacity duration-1000 ${
+        inView ? "opacity-100" : "opacity-0"
+      }`}
+    >
+      <HeroEducation />
     </div>
   );
 };
