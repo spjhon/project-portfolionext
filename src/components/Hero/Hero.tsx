@@ -1,4 +1,5 @@
 import { useTheme } from 'next-themes';
+import { useState, useEffect } from 'react';
 
 interface ImageProps {
   backgroundImage: string;
@@ -11,12 +12,26 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ children, imageToRender }) => {
-  const { theme } = useTheme();
+  const { theme, systemTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    // No renderizar nada hasta que el tema esté montado
+    return null;
+  }
+
   const backgroundImage = imageToRender?.backgroundImage || '';
   const backgroundImageDark = imageToRender?.backgroundImageDark || '';
 
+  // Usar el tema del sistema si el tema no está establecido
+  const currentTheme = theme === 'system' ? systemTheme : theme;
+
   const divStyle = {
-    backgroundImage: theme === 'light' ? `url(${backgroundImage})` : `url(${backgroundImageDark})`,
+    backgroundImage: currentTheme === 'light' ? `url(${backgroundImage})` : `url(${backgroundImageDark})`,
   };
 
   return (
