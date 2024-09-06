@@ -35,7 +35,6 @@ const inter = Inter({ subsets: ["latin"] });
 //NEXT JS METADATA
 // Genera metadata dinámica basada en el locale
 
-/*
 export async function generateMetadata({ params: { locale } }: {
   params: { locale: string };
 }) {
@@ -92,58 +91,6 @@ export async function generateMetadata({ params: { locale } }: {
     
   };
 }
-*/
-
-
-
-export const metadata: Metadata = {
-  metadataBase: new URL('https://project-portfolionext.pages.dev/'),
-    title: "Juan Portfolio",
-    description: "Next Js Portfolio",
-    // Otros metadatos
-    generator: 'Next.js',
-    applicationName: 'Web Developer Portfolio',
-    referrer: 'origin-when-cross-origin',
-    keywords: [],
-    authors: [{ name: 'Camilo' }, { name: 'Aristizabal', url: 'https://nextjs.org' }],
-    creator: 'Camilo Aristizabal',
-    publisher: 'Camilo Dev',
-    formatDetection: {
-      email: true,
-      address: true,
-      telephone: true,
-    },
-    robots: {
-      index: true,
-      follow: true,
-      noarchive: false,
-      nosnippet: false,
-      notranslate: false,
-      noimageindex: false,
-      'max-snippet': -1,
-      'max-image-preview': 'large',
-      'max-video-preview': -1,
-    },
-    openGraph: {
-      title: 'Juan Portfolio - Web Developer',
-      description: "Next Js Portfolio",
-      url: 'https://project-portfolionext.pages.dev/',
-      type: 'website',
-      siteName: 'Juan Portfolio',
-      images: ['https://project-portfolionext.pages.dev/opengraph-image.jpg'],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: 'Juan Portfolio - Web Developer',
-      description: "Next Js Portfolio",
-      site: 'https://project-portfolionext.pages.dev/',
-      creator: '@CamiloAristizabal',
-      images: ['https://project-portfolionext.pages.dev/opengraph-image.jpg'],
-      
-    },
-    category: 'Desarrollo Web',
-};
-
 
 
 
