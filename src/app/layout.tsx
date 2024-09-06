@@ -8,67 +8,7 @@ type Props = {
   children: ReactNode;
 };
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://project-portfolionext.pages.dev/'),
-    title: "Juan Portfolio",
-    // Otros metadatos
-    generator: 'Next.js',
-    applicationName: 'Web Developer Portfolio',
-    referrer: 'origin-when-cross-origin',
-    keywords: [  'Front-End Developer', 'Web Development', 'Next.js', 'React', 'JavaScript', 
-      'TypeScript', 'HTML', 'CSS', 'SCSS', 'Tailwind CSS', 'Responsive Design', 
-      'Web Design', 'User Interface', 'UI/UX', 'SEO', 'JavaScript Frameworks', 
-      'Single Page Applications', 'Progressive Web Apps', 'API Integration', 
-      'Git', 'Version Control', 'Web Performance', 'Accessibility', 'Cross-Browser Compatibility', 
-      'Web Animations', 'CSS Grid', 'Flexbox', 'Mobile-First Design', 'Node.js', 'SSR', 
-      'Static Site Generation', 'JAMstack', 'Webpack', 'Babel', 'ES6', 'Code Optimization', 
-      'JavaScript Libraries', 'NPM', 'REST APIs', 'JSON', 'GraphQL', 'WebSockets', 
-      'Figma', 'Adobe XD', 'Vercel', 'GitHub', 'Web Developer Tools', 'Testing', 'Cypress', 
-      'Jest', 'Portfolio', 
-      '@headlessui/react', 'clsx', 'eslint', 'eslint-plugin-import', 'eslint-plugin-react', 
-      'eslint-plugin-tailwindcss', 'next-intl', 'next-themes', 'react-dom', 
-      'react-intersection-observer', 'sharp', '@types/node', '@types/react', 
-      '@types/react-dom', 'eslint-config-molindo', 'eslint-config-next', 'postcss', 
-      'tailwindcss', 'typescript', 'Next.js 14', 'React 18', 'Intersection Observer', 
-      'Headless UI', 'ESLint', 'PostCSS', 'Sharp Image Processing'],
-    authors: [{ name: 'Camilo' }, { name: 'Aristizabal', url: 'https://nextjs.org' }],
-    creator: 'Camilo Aristizabal',
-    publisher: 'Camilo Dev',
-    formatDetection: {
-      email: true,
-      address: true,
-      telephone: true,
-    },
-    robots: {
-      index: true,
-      follow: true,
-      noarchive: false,
-      nosnippet: false,
-      notranslate: false,
-      noimageindex: false,
-      'max-snippet': -1,
-      'max-image-preview': 'large',
-      'max-video-preview': -1,
-    },
-    openGraph: {
-      title: 'Juan Portfolio - Web Developer',
-      description: "Next Js Portfolio",
-      url: 'https://project-portfolionext.pages.dev/',
-      type: 'website',
-      siteName: 'Juan Portfolio',
-      images: ['https://project-portfolionext.pages.dev/opengraph-image.jpg'],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: 'Juan Portfolio - Web Developer',
-      description: "Next Js Portfolio",
-      site: 'https://project-portfolionext.pages.dev/',
-      creator: '@CamiloAristizabal',
-      images: ['https://project-portfolionext.pages.dev/opengraph-image.jpg'],
-      
-    },
-    category: 'Desarrollo Web',
-};
+
 
 // Since we have a `not-found.tsx` page on the root, a layout file
 // is required, even if it's just passing children through.
