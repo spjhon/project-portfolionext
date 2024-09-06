@@ -7,17 +7,7 @@
 
 import { unstable_setRequestLocale } from "next-intl/server";
 import HomePage from "./HomePage";
-// En el archivo de tu página dinámica (por ejemplo, `[locale]/opengraph-image.jpg/page.tsx`)
-import { GetStaticPaths } from 'next';
 
-export const generateStaticParams = async () => {
-  // Aquí defines los parámetros estáticos para la generación de la página
-  return [
-    { locale: 'en' },
-    { locale: 'es' },
-    // Añade más locales si es necesario
-  ];
-};
 
 export default function LocaleWrapper({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);

@@ -39,6 +39,7 @@ export async function generateMetadata({ params: { locale } }: {
 }) {
   const t = await getTranslations({ locale, namespace: 'MainLayout' });
   return {
+    metadataBase: new URL('https://project-portfolionext.pages.dev/'),
     title: "Juan Portfolio",
     description: t('description'),
 
@@ -55,7 +56,9 @@ export async function generateMetadata({ params: { locale } }: {
       address: true,
       telephone: true,
     },
-    
+    openGraph: {
+      images: '/opengraph-image.jpg',
+    },
     robots: {
       index: true,
       follow: true,
