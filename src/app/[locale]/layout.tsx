@@ -56,8 +56,14 @@ export async function generateMetadata({ params: { locale } }: {
       address: true,
       telephone: true,
     },
+    canonical: 'https://project-portfolionext.pages.dev/',
     openGraph: {
-      images: '/opengraph-image.jpg',
+      title: 'Juan Portfolio - Web Developer',
+      description: t('description'),
+      url: 'https://project-portfolionext.pages.dev/',
+      type: 'website',
+      site_name: 'Juan Portfolio',
+      images: ['https://project-portfolionext.pages.dev/opengraph-image.jpg'],
     },
     robots: {
       index: true,
@@ -72,11 +78,14 @@ export async function generateMetadata({ params: { locale } }: {
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'MalePet Care',
+      title: 'Juan Portfolio - Web Developer',
       description: t('description'),
-      site: '@MalePetCare',
+      site: 'https://project-portfolionext.pages.dev/',
       creator: '@CamiloAristizabal',
-      images: ['/openGraph.webp'],
+      images: ['https://project-portfolionext.pages.dev/opengraph-image.jpg'],
+      image: {
+        alt: 'Web Developer',
+      },
     },
     category: 'Desarrollo Web',
     
