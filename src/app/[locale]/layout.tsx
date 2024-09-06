@@ -86,7 +86,7 @@ export async function generateMetadata({ params: { locale } }: {
       creator: '@CamiloAristizabal',
       images: ['/openGraph.webp'],
     },
-    category: 'cuidado mascotas',
+    category: 'Desarrollo Web',
     
   };
 }
