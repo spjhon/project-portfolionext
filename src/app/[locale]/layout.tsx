@@ -42,6 +42,17 @@ export async function generateMetadata({ params: { locale } }: {
   return {
     
     description: t('description'),
+    robots: {
+      index: true,
+      follow: true,
+      noarchive: false,
+      nosnippet: false,
+      notranslate: false,
+      noimageindex: false,
+      'max-snippet': -1,
+      'max-image-preview': 'large',
+      'max-video-preview': -1,
+    },
     keywords: [  'Front-End Developer', 'Web Development', 'Next.js', 'React', 'JavaScript', 
       'TypeScript', 'HTML', 'CSS', 'SCSS', 'Tailwind CSS', 'Responsive Design', 
       'Web Design', 'User Interface', 'UI/UX', 'SEO', 'JavaScript Frameworks', 
@@ -58,7 +69,7 @@ export async function generateMetadata({ params: { locale } }: {
       '@types/react-dom', 'eslint-config-molindo', 'eslint-config-next', 'postcss', 
       'tailwindcss', 'typescript', 'Next.js 14', 'React 18', 'Intersection Observer', 
       'Headless UI', 'ESLint', 'PostCSS', 'Sharp Image Processing'],
-    canonical: 'https://project-portfolionext.pages.dev/',
+    
     openGraph: {
       title: 'Juan Portfolio - Web Developer',
       description: t('description'),
@@ -67,17 +78,7 @@ export async function generateMetadata({ params: { locale } }: {
       siteName: 'Juan Portfolio',
       images: ['https://project-portfolionext.pages.dev/opengraph-image.jpg'],
     },
-    robots: {
-      index: true,
-      follow: true,
-      noarchive: false,
-      nosnippet: false,
-      notranslate: false,
-      noimageindex: false,
-      'max-snippet': -1,
-      'max-image-preview': 'large',
-      'max-video-preview': -1,
-    },
+    
     twitter: {
       card: 'summary_large_image',
       title: 'Juan Portfolio - Web Developer',

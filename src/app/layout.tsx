@@ -13,6 +13,17 @@ export const metadata: Metadata = {
     title: "Juan Portfolio",
     description: "Next Js Portfolio",
     // Otros metadatos
+    robots: {
+      index: true,
+      follow: true,
+      noarchive: false,
+      nosnippet: false,
+      notranslate: false,
+      noimageindex: false,
+      'max-snippet': -1,
+      'max-image-preview': 'large',
+      'max-video-preview': -1,
+    },
     generator: 'Next.js',
     applicationName: 'Web Developer Portfolio',
     referrer: 'origin-when-cross-origin',
@@ -40,17 +51,7 @@ export const metadata: Metadata = {
       address: true,
       telephone: true,
     },
-    robots: {
-      index: true,
-      follow: true,
-      noarchive: false,
-      nosnippet: false,
-      notranslate: false,
-      noimageindex: false,
-      'max-snippet': -1,
-      'max-image-preview': 'large',
-      'max-video-preview': -1,
-    },
+    
     openGraph: {
       title: 'Juan Portfolio - Web Developer',
       description: "Next Js Portfolio",
