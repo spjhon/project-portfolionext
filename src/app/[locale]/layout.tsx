@@ -34,6 +34,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 //NEXT JS METADATA
 // Genera metadata dinámica basada en el locale
+
+/*
 export async function generateMetadata({ params: { locale } }: {
   params: { locale: string };
 }) {
@@ -90,7 +92,7 @@ export async function generateMetadata({ params: { locale } }: {
     
   };
 }
-
+*/
 //El async es parte de next int
 export default async function LocaleLayout({
   children,
