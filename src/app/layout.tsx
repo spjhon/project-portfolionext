@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://project-portfolionext.pages.dev/'),
     title: "Juan Portfolio",
     description: "Next Js Portfolio",
+    
     // Otros metadatos
     robots: {
       index: true,
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-video-preview': -1,
     },
+    
     generator: 'Next.js',
     applicationName: 'Web Developer Portfolio',
     referrer: 'origin-when-cross-origin',
@@ -51,7 +53,7 @@ export const metadata: Metadata = {
       address: true,
       telephone: true,
     },
-    
+    /*
     openGraph: {
       title: 'Juan Portfolio - Web Developer',
       description: "Next Js Portfolio",
@@ -68,7 +70,7 @@ export const metadata: Metadata = {
       creator: '@CamiloAristizabal',
       images: ['https://project-portfolionext.pages.dev/opengraph-image.jpg'],
       
-    },
+    },*/
     category: 'Desarrollo Web',
 };
 

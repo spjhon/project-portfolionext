@@ -1,6 +1,5 @@
 //Importaciones normales de next js
 // Standard Next.js imports for the layout
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 //Importaciones de componentes
@@ -69,7 +68,9 @@ export async function generateMetadata({ params: { locale } }: {
       '@types/react-dom', 'eslint-config-molindo', 'eslint-config-next', 'postcss', 
       'tailwindcss', 'typescript', 'Next.js 14', 'React 18', 'Intersection Observer', 
       'Headless UI', 'ESLint', 'PostCSS', 'Sharp Image Processing'],
-    
+    canonical: 'https://project-portfolionext.pages.dev/',
+   
+   /*
     openGraph: {
       title: 'Juan Portfolio - Web Developer',
       description: t('description'),
@@ -87,7 +88,7 @@ export async function generateMetadata({ params: { locale } }: {
       creator: '@CamiloAristizabal',
       images: ['https://project-portfolionext.pages.dev/opengraph-image.jpg'],
       
-    },
+    },*/
     category: 'Desarrollo Web',
     
   };
