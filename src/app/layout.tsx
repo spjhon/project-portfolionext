@@ -53,7 +53,7 @@ export const metadata: Metadata = {
       address: true,
       telephone: true,
     },
-    /*
+    
     openGraph: {
       title: 'Juan Portfolio - Web Developer',
       description: "Next Js Portfolio",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
       creator: '@CamiloAristizabal',
       images: ['https://project-portfolionext.pages.dev/opengraph-image.jpg'],
       
-    },*/
+    },
     category: 'Desarrollo Web',
 };
 

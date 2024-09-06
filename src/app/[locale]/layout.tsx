@@ -70,7 +70,7 @@ export async function generateMetadata({ params: { locale } }: {
       'Headless UI', 'ESLint', 'PostCSS', 'Sharp Image Processing'],
     canonical: 'https://project-portfolionext.pages.dev/',
    
-   /*
+   
     openGraph: {
       title: 'Juan Portfolio - Web Developer',
       description: t('description'),
@@ -88,7 +88,7 @@ export async function generateMetadata({ params: { locale } }: {
       creator: '@CamiloAristizabal',
       images: ['https://project-portfolionext.pages.dev/opengraph-image.jpg'],
       
-    },*/
+    },
     category: 'Desarrollo Web',
     
   };
