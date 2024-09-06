@@ -50,9 +50,7 @@ export const metadata: Metadata = {
       site: 'https://project-portfolionext.pages.dev/',
       creator: '@CamiloAristizabal',
       images: ['https://project-portfolionext.pages.dev/opengraph-image.jpg'],
-      image: {
-        alt: 'Web Developer',
-      },
+      
     },
     category: 'Desarrollo Web',
 };
