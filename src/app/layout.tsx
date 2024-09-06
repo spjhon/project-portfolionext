@@ -82,7 +82,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Props) {
   return (
     
-    <html suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
         {/* suppressHydrationWarning viene de next themes */}
         {/* suppressHydrationWarning comes from next themes */}
 
