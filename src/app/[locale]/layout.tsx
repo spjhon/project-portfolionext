@@ -39,43 +39,19 @@ export async function generateMetadata({ params: { locale } }: {
 }) {
   const t = await getTranslations({ locale, namespace: 'MainLayout' });
   return {
-    metadataBase: new URL('https://project-portfolionext.pages.dev/'),
-    title: "Juan Portfolio",
+    
     description: t('description'),
 
-    // Otros metadatos
-    generator: 'Next.js',
-    applicationName: 'Web Developer Portfolio',
-    referrer: 'origin-when-cross-origin',
-    keywords: [],
-    authors: [{ name: 'Camilo' }, { name: 'Aristizabal', url: 'https://nextjs.org' }],
-    creator: 'Camilo Aristizabal',
-    publisher: 'Camilo Dev',
-    formatDetection: {
-      email: true,
-      address: true,
-      telephone: true,
-    },
     canonical: 'https://project-portfolionext.pages.dev/',
     openGraph: {
       title: 'Juan Portfolio - Web Developer',
       description: t('description'),
       url: 'https://project-portfolionext.pages.dev/',
       type: 'website',
-      site_name: 'Juan Portfolio',
+      siteName: 'Juan Portfolio',
       images: ['https://project-portfolionext.pages.dev/opengraph-image.jpg'],
     },
-    robots: {
-      index: true,
-      follow: true,
-      noarchive: false,
-      nosnippet: false,
-      notranslate: false,
-      noimageindex: false,
-      'max-snippet': -1,
-      'max-image-preview': 'large',
-      'max-video-preview': -1,
-    },
+    
     twitter: {
       card: 'summary_large_image',
       title: 'Juan Portfolio - Web Developer',
