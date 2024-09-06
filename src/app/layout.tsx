@@ -43,6 +43,18 @@ export const metadata: Metadata = {
       siteName: 'Juan Portfolio',
       images: ['https://project-portfolionext.pages.dev/opengraph-image.jpg'],
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Juan Portfolio - Web Developer',
+      description: "Next Js Portfolio",
+      site: 'https://project-portfolionext.pages.dev/',
+      creator: '@CamiloAristizabal',
+      images: ['https://project-portfolionext.pages.dev/opengraph-image.jpg'],
+      image: {
+        alt: 'Web Developer',
+      },
+    },
+    category: 'Desarrollo Web',
 };
 
 // Since we have a `not-found.tsx` page on the root, a layout file
