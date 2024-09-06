@@ -10,13 +10,13 @@ import styles from "./notFound.module.css";
 
 export default function NotFound() {
   return (
-    <html lang="en">
-      <body>
+    
+      <div>
         <div className={styles.container}>
           <Image className={styles.picture} src={cavernicola} alt="Cavernicola" />
         </div>
         <h1 className={styles.notFound}>Page Not Found / Página No Encontrada</h1>
-      </body>
-    </html>
+      </div>
+    
   );
 }
