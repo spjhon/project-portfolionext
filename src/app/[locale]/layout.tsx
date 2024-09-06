@@ -55,18 +55,7 @@ export async function generateMetadata({ params: { locale } }: {
       address: true,
       telephone: true,
     },
-    openGraph: {
-      title: 'Juan Portfolio',
-      description: t('description'),
-      locale: locale,
-      type: 'website',
-      images: [
-        {
-          url: '/images/opengraph-image.jpg',
-          alt: 'Juan Portfolio',
-        }
-      ],
-    },
+    
     robots: {
       index: true,
       follow: true,
