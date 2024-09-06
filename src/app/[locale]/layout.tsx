@@ -62,7 +62,7 @@ export async function generateMetadata({ params: { locale } }: {
       type: 'website',
       images: [
         {
-          url: '/openGraph.webp',
+          url: '../../../public/openGraph.webp',
           alt: 'Juan Portfolio',
         }
       ],
