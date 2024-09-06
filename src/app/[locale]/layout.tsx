@@ -62,7 +62,7 @@ export async function generateMetadata({ params: { locale } }: {
       type: 'website',
       images: [
         {
-          url: '/heroBackgrounds/opengraph-image.jpg',
+          url: '/images/opengraph-image.jpg',
           alt: 'Juan Portfolio',
         }
       ],
