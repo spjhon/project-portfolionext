@@ -41,7 +41,22 @@ export async function generateMetadata({ params: { locale } }: {
   return {
     
     description: t('description'),
-
+    keywords: [  'Front-End Developer', 'Web Development', 'Next.js', 'React', 'JavaScript', 
+      'TypeScript', 'HTML', 'CSS', 'SCSS', 'Tailwind CSS', 'Responsive Design', 
+      'Web Design', 'User Interface', 'UI/UX', 'SEO', 'JavaScript Frameworks', 
+      'Single Page Applications', 'Progressive Web Apps', 'API Integration', 
+      'Git', 'Version Control', 'Web Performance', 'Accessibility', 'Cross-Browser Compatibility', 
+      'Web Animations', 'CSS Grid', 'Flexbox', 'Mobile-First Design', 'Node.js', 'SSR', 
+      'Static Site Generation', 'JAMstack', 'Webpack', 'Babel', 'ES6', 'Code Optimization', 
+      'JavaScript Libraries', 'NPM', 'REST APIs', 'JSON', 'GraphQL', 'WebSockets', 
+      'Figma', 'Adobe XD', 'Vercel', 'GitHub', 'Web Developer Tools', 'Testing', 'Cypress', 
+      'Jest', 'Portfolio', 
+      '@headlessui/react', 'clsx', 'eslint', 'eslint-plugin-import', 'eslint-plugin-react', 
+      'eslint-plugin-tailwindcss', 'next-intl', 'next-themes', 'react-dom', 
+      'react-intersection-observer', 'sharp', '@types/node', '@types/react', 
+      '@types/react-dom', 'eslint-config-molindo', 'eslint-config-next', 'postcss', 
+      'tailwindcss', 'typescript', 'Next.js 14', 'React 18', 'Intersection Observer', 
+      'Headless UI', 'ESLint', 'PostCSS', 'Sharp Image Processing'],
     canonical: 'https://project-portfolionext.pages.dev/',
     openGraph: {
       title: 'Juan Portfolio - Web Developer',
