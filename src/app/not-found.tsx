@@ -11,13 +11,21 @@ import styles from "./notFound.module.css";
 export default function NotFound() {
   return (
     <html lang="en">
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Page not found / Página no encontrada en este sitio." />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="robots" content="noindex, nofollow" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
+        <title>Not Found / No Encontrado</title>
+      </head>
       <body>
         <div className={styles.container}>
-          <Image src={cavernicola} alt="cavernicola"></Image>
+          <Image className={styles.picture} src={cavernicola} alt="Cavernicola" />
         </div>
-        <h1 className={styles.notFound}>
-          Page Not Found / Pagina No Encontrada
-        </h1>
+        <h1 className={styles.notFound}>Page Not Found / Página No Encontrada</h1>
       </body>
     </html>
   );

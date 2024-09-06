@@ -42,21 +42,24 @@ export default function HomePage({ locale }: HomePageProps) {
 switch (componentToShow) {
   case "Main":
     componentToRender = <HeroAnimated />;
-    imageToRender = {backgroundImage: "/heroBackgrounds/hero01.webp", backgroundImageDark: "/heroBackgrounds/hero01Night.webp"}
+    imageToRender = {backgroundImage: "/heroBackgrounds/hero01.jpg", backgroundImageDark: "/heroBackgrounds/hero01Night.jpg"}
     break;
   case "Stack":
     componentToRender = <HeroStackAnimated />;
-    imageToRender = {backgroundImage: "/heroBackgrounds/hero02.webp", backgroundImageDark: "/heroBackgrounds/hero02Night.webp"}
+    imageToRender = {backgroundImage: "/heroBackgrounds/hero02.jpg", backgroundImageDark: "/heroBackgrounds/hero02Night.jpg"}
     break;
   case "Education":
     componentToRender = <HeroEducationAnimated />;
-    imageToRender = {backgroundImage: "/heroBackgrounds/hero03.webp", backgroundImageDark: "/heroBackgrounds/hero03Night.webp"}
+    imageToRender = {backgroundImage: "/heroBackgrounds/hero03.jpg", backgroundImageDark: "/heroBackgrounds/hero03Night.jpg"}
 
     break;
   default:
     // Opcional: maneja el caso por defecto
     componentToRender = null; // o cualquier componente por defecto
-
+    imageToRender = {
+      backgroundImage: "black",
+      backgroundImageDark: "black" // Agrega backgroundImageDark para consistencia
+    };
     break;
 }
 

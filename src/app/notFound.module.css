@@ -5,8 +5,13 @@
 }
 
 .notFound {
-    margin-top: -10rem;
+    margin-top: 1rem;
     text-align: center;
     font-size: 2rem;
-    color: #333;
+    color: #f8e8e8;
   }
+
+.picture {
+ margin-top: 2rem;
+  border-radius: 30px;
+}

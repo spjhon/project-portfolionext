@@ -12,7 +12,7 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ children, imageToRender }) => {
-  const { theme, systemTheme } = useTheme();
+  const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -27,11 +27,8 @@ const Hero: React.FC<HeroProps> = ({ children, imageToRender }) => {
   const backgroundImage = imageToRender?.backgroundImage || '';
   const backgroundImageDark = imageToRender?.backgroundImageDark || '';
 
-  // Usar el tema del sistema si el tema no está establecido
-  const currentTheme = theme === 'system' ? systemTheme : theme;
-
   const divStyle = {
-    backgroundImage: currentTheme === 'light' ? `url(${backgroundImage})` : `url(${backgroundImageDark})`,
+    backgroundImage: resolvedTheme === 'light' ? `url(${backgroundImage})` : `url(${backgroundImageDark})`,
   };
 
   return (

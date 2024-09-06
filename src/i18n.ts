@@ -1,8 +1,7 @@
 import {notFound} from 'next/navigation';
 import {getRequestConfig} from 'next-intl/server';
- 
-// Can be imported from a shared config
-const locales = ['en', 'es'];
+import { locales } from './config';
+
  
 export default getRequestConfig(async ({locale}) => {
   // Validate that the incoming `locale` parameter is valid
@@ -12,3 +11,6 @@ export default getRequestConfig(async ({locale}) => {
     messages: (await import(`../messages/${locale}.json`)).default
   };
 });
+
+//Codigo estandar de Next Int para paginas estaticas
+// Standard Next Intl code for static pages
