@@ -14,8 +14,14 @@ type Props = {
 // NOTE, I had to place the themeProvider in the html due to a compatibility issue between next-themes and next-intl
 export default function RootLayout({ children }: Props) {
   return (
+    
     <html suppressHydrationWarning>
+        {/* suppressHydrationWarning viene de next themes */}
+        {/* suppressHydrationWarning comes from next themes */}
+
       <head>
+        {/* Imagenes pre-cargadas para evitar el flasheo durante el cambio de estas imagenes en sus respectivos componentes */}
+        {/*  Preloaded images to prevent flashing during the image change in their respective components */}
         <link rel="preload" href="/heroBackgrounds/hero01.jpg" as="image" />
         <link rel="preload" href="/heroBackgrounds/hero02.jpg" as="image" />
         <link rel="preload" href="/heroBackgrounds/hero03.jpg" as="image" />
@@ -23,7 +29,7 @@ export default function RootLayout({ children }: Props) {
         <link rel="preload" href="/heroBackgrounds/hero02Night.jpg" as="image" />
         <link rel="preload" href="/heroBackgrounds/hero03Night.jpg" as="image" />
         
-        {/* Puedes agregar más enlaces de preload si es necesario */}
+        
       </head>
       <body>
         <ThemeProvider attribute="class" defaultTheme="light">
