@@ -8,6 +8,7 @@
 import { unstable_setRequestLocale } from "next-intl/server";
 import HomePage from "./HomePage";
 
+
 export default function LocaleWrapper({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
   return <HomePage locale={locale} />;
