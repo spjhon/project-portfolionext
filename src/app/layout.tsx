@@ -8,6 +8,8 @@ type Props = {
   children: ReactNode;
 };
 
+
+//Metadata that its not dinnamic and dont need [locale]
 export const metadata: Metadata = {
   metadataBase: new URL('https://project-portfolionext.pages.dev/'),
     title: "Juan Portfolio",

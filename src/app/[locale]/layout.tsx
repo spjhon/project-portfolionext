@@ -44,6 +44,7 @@ export async function generateMetadata({ params: { locale } }: {
     // Otros metadatos
   
     canonical: 'https://project-portfolionext.pages.dev/',
+
     openGraph: {
       title: 'Juan Portfolio - Web Developer',
       description: t('description'),
@@ -78,10 +79,36 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  // Providing all messages to the client
-  // side is the easiest way to get started
+
+  //FOR STATIC RENDERING
   unstable_setRequestLocale(locale);
+
+  // Providing all messages to the client side is the easiest way to get started,
+  // this comes form next int
   const messages = await getMessages();
+
+//COMENTARIO SOBRE EL LAYOUT
+/*
+Este layout utiliza una estructura adaptable a cualquier tamaño de pantalla (viewport) gracias a la combinación de CSS Grid y posicionamiento absoluto.
+
+El diseño principal consiste en tres divisores (`divs`): uno en la izquierda, otro en la derecha y uno central. La disposición de estos se adapta dinámicamente, de modo que los divs laterales ocupan el espacio disponible a los lados del div central, que tiene un ancho fijo de 1rem. 
+
+En pantallas con orientación horizontal (landscape), los divs se distribuyen en tres columnas (izquierda, centro y derecha), mientras que en pantallas más verticales (portrait), los divs se organizan en tres filas. El div central sirve como una barra delimitadora o separador, con el div superior (o izquierdo, dependiendo de la orientación) reservado para el contenido auxiliar y el inferior (o derecho) para la navegación.
+
+Finalmente, los elementos `children` se colocan con posicionamiento absoluto sobre esta cuadrícula, permitiendo la superposición necesaria para crear efectos visuales complejos. Esto asegura que el contenido flote o se ajuste sobre el layout base sin afectar la estructura subyacente.
+*/
+
+//COMMENT ABOUT THE LAYOUT
+/*
+This layout uses a structure that adapts to any screen size (viewport) by combining CSS Grid and absolute positioning.
+
+The main design consists of three divs: one on the left, one on the right, and a central one. These divs dynamically adjust so that the side divs occupy the remaining space, while the central div maintains a fixed width of 1rem.
+
+In horizontally-oriented (landscape) screens, the divs are arranged in three columns (left, center, and right), while in more vertical (portrait) screens, they are organized into three rows. The central div acts as a separator bar, with the upper (or left, depending on orientation) div reserved for auxiliary content and the lower (or right) div for navigation.
+
+Finally, the `children` elements are placed with absolute positioning over this grid, allowing the necessary overlay to create complex visual effects. This ensures that the content floats or adjusts over the base layout without affecting the underlying structure.
+*/
+
   return (
     <NextIntlClientProvider messages={messages}>
       <ClientComponent locale={locale}></ClientComponent>
