@@ -7,6 +7,7 @@ import { Inter } from "next/font/google";
 import { Container } from "@/components/Container";
 import { Navbar } from "@/components/NavBar/Navbar";
 import ClientComponent from "@/components/ClientComponent";
+import LinkBar from "@/components/LinkBar/LinkBar";
 
 //Importaciones de next internazionalization
 // Next internationalization imports
@@ -112,14 +113,18 @@ Finally, the `children` elements are placed with absolute positioning over this 
   return (
     <NextIntlClientProvider messages={messages}>
       <ClientComponent locale={locale}></ClientComponent>
-      <Container className="bg-barra dark:bg-gradient-to-r from-black to-slate-800 h-screen max-w-[31592px] max-h-[1750px]">
-        <div className="relative h-full">
+      <Container className="bg-barra dark:bg-gradient-to-r from-black  to-slate-800 h-screen max-w-[2592px] max-h-[1750px]">
+        <div className="relative h-full text-gray-800 dark:text-white ">
          
 
-          <div className="absolute w-full h-full grid grid-rows-[1fr_1rem_2fr] landscape:grid-cols-[1fr_4rem_1fr] landscape:grid-rows-none">
+          <div className="absolute w-full h-full grid grid-rows-[1fr_3rem_2fr] landscape:grid-cols-[1fr_4rem_1fr] landscape:grid-rows-none">
               
             <div></div>
-            <div className="bg-barra dark:bg-accent"></div>
+
+            <div className="bg-barra shadow-xl dark:bg-transparent">
+            <LinkBar></LinkBar>
+            </div>
+
             <div className="flex justify-center items-start">
             <Navbar />
             </div>

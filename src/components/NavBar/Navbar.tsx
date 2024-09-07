@@ -29,8 +29,21 @@ pequeñas, cuando esta en pantallas grandes solo se muestra el logo, osea que el
 
 - El open es un state que viene con el componente disclosure para tener el state y de acuerto a ese state hacer cambios en el codigo
   */
+
+/*
+
+Explanation of the component design:
+
+- The navbar is designed to display in three parts on large screens (the logo, the menu, and the call-to-action button with a small addition of a theme switcher).
+
+- Then, there's something quite creative with the logo. It contains a hidden disclosure that only appears on small screens. On large screens, only the logo is visible, meaning the logo is always shown regardless of screen size.
+
+- The `open` is a state that comes with the disclosure component to manage the state and, based on that state, make changes in the code.
+
+*/
+
   return (
-    <nav className="relative z-10 mt-8 bg-gray-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-0 border border-gray-100 ">
+    <nav className=" shadow-xl relative z-10 mt-3 landscape:mt-8 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-0 border border-gray-900 dark:border-gray-100 ">
       {/* Logo  */}
       <Disclosure>
         {({ open }) => (
@@ -41,7 +54,7 @@ pequeñas, cuando esta en pantallas grandes solo se muestra el logo, osea que el
 
               <DisclosureButton
                 aria-label="Toggle Menu"
-                className="px-4 py-2 text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700"
+                className="px-4 py-2 rounded-md lg:hidden hover:text-secondary dark:hover:text-primary focus:text-accent dark:focus:bg-secondary focus:bg-secondary focus:outline-none "
               >
                 <svg
                   className="w-6 h-6 fill-current"
@@ -82,7 +95,7 @@ pequeñas, cuando esta en pantallas grandes solo se muestra el logo, osea que el
                       key={index}
                       as={NavigationLink}
                       href={item.href}
-                      className="w-full px-4 py-2  rounded-md focus:outline-none text-center flex justify-center"
+                      className="w-full px-4 py-2  rounded-md focus:outline-none text-center flex justify-center dark:text-white"
                     >
                       {item.LinkName}
                     </CloseButton>
