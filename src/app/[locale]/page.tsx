@@ -10,7 +10,10 @@ import HomePage from "./HomePage";
 
 
 export default function LocaleWrapper({ params: { locale } }: { params: { locale: string } }) {
+  
+  //FOR STATIC GENERATION FORM NEXT INT
   unstable_setRequestLocale(locale);
+  
   return <HomePage locale={locale} />;
 }
 
