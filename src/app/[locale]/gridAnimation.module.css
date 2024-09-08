@@ -1,0 +1,4 @@
+/* styles.module.css */
+.grid {
+    transition: grid-template-rows 0.5s ease, grid-template-columns 0.5s ease;
+  }
