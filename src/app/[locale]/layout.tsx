@@ -2,9 +2,6 @@
 // Standard Next.js imports for the layout
 import { Inter } from "next/font/google";
 
-//Css imports
-//Css importaciones
-import styles from "./gridAnimation.module.css"
 
 //Importaciones de componentes
 // Component imports
@@ -121,7 +118,7 @@ Finally, the `children` elements are placed with absolute positioning over this 
         <div className="relative h-full text-gray-800 dark:text-white ">
          
 
-        <div className={`absolute w-full h-full grid grid-rows-[1fr_2rem_2fr] landscape:grid-cols-[1fr_4rem_1fr] landscape:grid-rows-none ${styles.grid}`}>
+        <div className="absolute w-full h-full grid grid-rows-[1fr_2rem_2fr] md:grid-rows-[1fr_2rem_2fr] landscape:grid-cols-[1fr_4rem_1fr] landscape:grid-rows-none">
               
             <div></div>
 
