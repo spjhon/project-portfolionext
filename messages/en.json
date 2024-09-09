@@ -3,6 +3,11 @@
   "MainLayout": {
       "description": "Dynamic web portfolio developed with Next.js and React, designed to showcase projects, skills, and professional experience of a web developer. Implements a modern and optimized architecture for smooth and responsive navigation, with support for dark and light themes, internationalization, and instant static deployment."
     },
+    "NavigationLinks": {
+      "home": "Home",
+      "projects": "Projects"
+    
+    },
     "HomePage": {
       "title": "Hello world!",
       "catchphrase": "Crafting Digital Experiences with Code and Creativity"

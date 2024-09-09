@@ -2,7 +2,7 @@
 import ThemeChanger from "../DarkSwitch/DarkSwitch";
 import NavigationLink from "../NavigationLink";
 import LanguageSwitcher from "../LocaleSwitcher/LocaleSwitchers";
-
+import { useTranslations } from "next-intl";
 
 import {
   Disclosure,
@@ -11,10 +11,13 @@ import {
   CloseButton,
 } from "@headlessui/react";
 
+
+
 export const Navbar = () => {
+  const t = useTranslations("NavigationLinks");
   const navigation = [
-    { LinkName: "Home", href: "/" },
-    { LinkName: "About Me", href: "/about" },
+    { LinkName: t("home"), href: "/" },
+    { LinkName: t("projects"), href: "/projects" },
   ];
 
   /*

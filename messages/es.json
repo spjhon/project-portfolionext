@@ -2,6 +2,11 @@
   "MainLayout": {
       "description": "Portafolio web dinámico desarrollado con Next.js y React, diseñado para mostrar proyectos, habilidades y experiencia profesional de un desarrollador web. Implementa una arquitectura moderna y optimizada para la navegación fluida y responsiva, con soporte para temas oscuros y claros, insternazionalizacion y despliegue estatico instantaneo"
     },
+    "NavigationLinks": {
+      "home": "Inicio",
+      "projects": "Projectos"
+    
+    },
     "HomePage": {
       "title": "Tonces",
       "catchphrase": "Creando experiencias digitales con codigo y creatividad"
