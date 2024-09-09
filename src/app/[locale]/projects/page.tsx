@@ -8,7 +8,7 @@ interface HomePageProps {
 //PARA STATIC RENDERING
 import { unstable_setRequestLocale } from "next-intl/server";
 
-export default function About({ params: { locale } }: HomePageProps) {
+export default function Projects({ params: { locale } }: HomePageProps) {
   unstable_setRequestLocale(locale);
   const t = useTranslations("AboutPage");
   return (

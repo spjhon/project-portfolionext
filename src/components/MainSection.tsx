@@ -12,7 +12,7 @@ const MainSection: React.FC = () => {
       {/* Frase motivante */}
       <div className="text-3xl font-bold">
       {t("catchphrase")}
-        <div className="w-16 border-b-2 border-gray-300 mt-2"></div>
+        <div className="w-16 border-b-2 border-highlight mt-2"></div>
       </div>
 
       

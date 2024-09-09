@@ -1,7 +1,7 @@
 'use client';
 
 import { useSelectedLayoutSegment } from 'next/navigation';
-import { ComponentProps } from 'react';
+import { ComponentProps, useEffect, useState } from 'react';
 import { Link } from '../navigation';
 import { useTheme } from 'next-themes';
 
@@ -14,6 +14,27 @@ export default function NavigationLink({
   const isActive = pathname === href;
 
   const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  // Asegurarse de que el componente se ha montado para evitar el mismatch
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    // Devuelve un estilo por defecto hasta que el componente esté montado
+    return (
+      <Link
+        aria-current={isActive ? 'page' : undefined}
+        href={href}
+        style={{
+          color: 'transparent', // Estilo temporal para evitar el mismatch
+          backgroundColor: 'transparent',
+        }}
+        {...rest}
+      />
+    );
+  }
 
   // Determine colors based on active state and theme
   const textColor = isActive
@@ -22,9 +43,7 @@ export default function NavigationLink({
     ? 'white'
     : 'black';
 
-  const bgColor = isActive
-    ? '#023047'
-    : 'transparent';
+  const bgColor = isActive ? '#023047' : 'transparent';
 
   return (
     <Link
