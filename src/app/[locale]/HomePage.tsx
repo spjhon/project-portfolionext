@@ -39,7 +39,7 @@ interface AnimatedComponentProps {
 }
 
 
-export default function HomePage() {
+export default function HomePage({locale}) {
   const t = useTranslations("HomePage");
 
   //this state controlls when a component its in view and update the div of the left of the homepage
