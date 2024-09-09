@@ -77,7 +77,7 @@ switch (componentToShow) {
 }
 
   return (
-    <div className="w-full h-full grid grid-rows-[1fr_1rem_2fr] landscape:grid-cols-[1fr_4rem_1fr] landscape:grid-rows-none">
+    <div className="w-full h-full grid grid-rows-[1fr_2rem_2fr] landscape:grid-cols-[1fr_4rem_1fr] landscape:grid-rows-none">
       <div className="overflow-hidden ">
       <Hero imageToRender={imageToRender}>
       
