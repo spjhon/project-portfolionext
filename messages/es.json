@@ -8,9 +8,21 @@
     
     },
     "HomePage": {
-      "title": "Tonces",
-      "catchphrase": "Creando experiencias digitales con codigo y creatividad"
+      "catchphrase": "Creando experiencias digitales con codigo y creatividad",
+
+      "sectionTitlePreTitle": "Mis Herramientas",
+      "sectionTitleCatchPhrase": "Herramientas modernas para un mundo en constante cambio.",
+      "sectionTitleSubtext": "Un stack altamente adaptable a las necesidades de velocidad, buena experiencia de desarrollo y mantenibilidad",
+
+      "sectionTitlePreTitleEducation": "Mi Educacion",
+      "sectionTitleCatchPhraseEducation": "Habilidades de Alta Calidad",
+      "sectionTitleSubtextEducation": "Siguiendo libros y cursos para crear un desarrollo web eficiente, potenciado por mis conocimientos en ingeniería industrial y gestión de proyectos, lo que me permite llevar cada proyecto de principio a fin con éxito."
     },
+    "heroEducationPage": {
+    "subtitle": "Educación",
+    "title": "APRENDI DE LOS MEJORES",
+    "subtext": "Desde Stephen Grider hasta Maximilian Schwarzmüller"
+  },
     "AboutPage": {
       "title": "Acerca De"
     },

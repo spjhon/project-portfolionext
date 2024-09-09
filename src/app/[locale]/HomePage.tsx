@@ -1,14 +1,28 @@
+//Este useClient es necesario debido al useState
 "use client";
+import { useEffect, useState } from "react";
 
+//Translation imports
 import { useTranslations } from "next-intl";
+
+//intersection observer in order to have animations
 import { useInView } from "react-intersection-observer";
+
+//component imports
 import Hero from "@/components/Hero/Hero";
 import HeroMain from "@/components/Hero/HeroMain";
 import HeroStack from "@/components/Hero/HeroStack";
 import MainSection from "@/components/MainSection";
 import HeroEducation from "@/components/Hero/HeroEducation";
 import { SectionTitle } from "@/components/SectionTitle";
+import TheStack from "@/components/TheStack/TheStack";
+import EducationTimeline from "@/components/EducationTimeline/EducationTimeline";
+import Footer from "@/components/Footer/Footer";
+
+//image that goes to the section title
 import SectionTitle01 from "../../../public/SectionsImages/SectionImage01Sized.png";
+
+//Svg imports that goes to the stack component
 import {
   frameworksSVG,
   languagesSVG,
@@ -16,10 +30,7 @@ import {
   philosofiesSVG,
   toolsSVG,
 } from "../../components/TheStack/data";
-import TheStack from "@/components/TheStack/TheStack";
-import { useEffect, useState } from "react";
-import EducationTimeline from "@/components/EducationTimeline/EducationTimeline";
-import Footer from "@/components/Footer/Footer";
+
 
 // Define props types for animated components
 interface AnimatedComponentProps {
@@ -27,17 +38,15 @@ interface AnimatedComponentProps {
   children?: React.ReactNode;
 }
 
-interface HomePageProps {
-  locale: string;
-}
 
-export default function HomePage({ locale }: HomePageProps) {
+export default function HomePage() {
   const t = useTranslations("HomePage");
 
+  //this state controlls when a component its in view and update the div of the left of the homepage
   const [componentToShow, setComponentToShow] = useState<string>("Main");
 
   let componentToRender;
-  let imageToRender
+  let imageToRender;
 
 switch (componentToShow) {
   case "Main":
@@ -80,12 +89,11 @@ switch (componentToShow) {
           <MainSectionAnimated setComponentToShow={setComponentToShow} />
 
           <SectionTitle
-            preTitle="MY STACK"
-            title="Herramientas Modernas Para Problemas Modernos"
+            preTitle={t("sectionTitlePreTitle")}
+            title={t("sectionTitleCatchPhrase")}
             icon={SectionTitle01.src}
           >
-            Un stack altamente adaptable a las necesidades de velocidad, buena
-            experiencia de desarrollo y mantenibilidad
+            {t("sectionTitleSubtext")}
           </SectionTitle>
 
           <TheStack01Animated />
@@ -95,13 +103,11 @@ switch (componentToShow) {
           <TheStack05Animated  />
 
           <SectionTitle
-            preTitle="MY EDUCATION"
-            title="High quality skills"
+            preTitle={t("sectionTitlePreTitleEducation")}
+            title={t("sectionTitleCatchPhraseEducation")}
             icon={SectionTitle01.src}
           >
-            Mi título de ingeniería industrial, un complemento perfecto para la
-            materialización de apps complejas desde el punto de vista de la
-            gestión de proyectos
+            {t("sectionTitleSubtextEducation")}
           </SectionTitle>
 
           <EducationAnimated setComponentToShow={setComponentToShow}/>
@@ -112,6 +118,9 @@ switch (componentToShow) {
     </div>
   );
 }
+
+
+//this code from now on to the end its only for animations using react-intersection-observer
 
 const MainSectionAnimated: React.FC<AnimatedComponentProps> = ({ setComponentToShow }) => {
   const { ref, inView } = useInView({

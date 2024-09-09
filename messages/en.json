@@ -1,5 +1,4 @@
 {
-
   "MainLayout": {
       "description": "Dynamic web portfolio developed with Next.js and React, designed to showcase projects, skills, and professional experience of a web developer. Implements a modern and optimized architecture for smooth and responsive navigation, with support for dark and light themes, internationalization, and instant static deployment."
     },
@@ -9,9 +8,22 @@
     
     },
     "HomePage": {
-      "title": "Hello world!",
-      "catchphrase": "Crafting Digital Experiences with Code and Creativity"
+      "catchphrase": "Crafting Digital Experiences with Code and Creativity",
+
+      "sectionTitlePreTitle": "My Stack",
+      "sectionTitleCatchPhrase": "Modern tools for a world in constant change.",
+      "sectionTitleSubtext": "A stack highly adaptable to the needs of speed, great development experience, and maintainability.",
+
+      "sectionTitlePreTitleEducation": "My Education",
+      "sectionTitleCatchPhraseEducation": "High quality skills",
+      "sectionTitleSubtextEducation": "Following books and courses to create efficient web development, powered by my knowledge in industrial engineering and project management, allowing me to take each project from start to finish successfully."
+
     },
+    "heroEducationPage": {
+    "subtitle": "Education",
+    "title": "LEARNED FROM THE BEST",
+    "subtext": "From Stephen Grider to Maximilian Schwarzmüller"
+  },
     "AboutPage": {
       "title": "About Page"
     },
