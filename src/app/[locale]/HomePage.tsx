@@ -38,8 +38,12 @@ interface AnimatedComponentProps {
   children?: React.ReactNode;
 }
 
+interface HomePageProps {
+  locale: string; // Define el tipo para `locale`
+}
 
-export default function HomePage({locale}) {
+
+export default function HomePage({ locale }: HomePageProps) {
   const t = useTranslations("HomePage");
 
   //this state controlls when a component its in view and update the div of the left of the homepage
