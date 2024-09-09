@@ -7,7 +7,7 @@ const LinkBar = () => {
   return (
     <div className="flex items-center justify-center w-full h-full">
       <div className="flex flex-row space-x-4 landscape:flex-col landscape:space-x-0 landscape:space-y-4">
-        <div className="z-30 relative group transition-transform duration-300 transform hover:scale-105 flex items-center justify-center w-16 h-16">
+        <div className="z-3s0 relative group transition-transform duration-300 transform hover:scale-105 flex items-center justify-center w-16 h-16">
           <a
             href="https://github.com/spjhon"
             target="_blank"

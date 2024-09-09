@@ -122,7 +122,7 @@ Finally, the `children` elements are placed with absolute positioning over this 
               
             <div></div>
 
-            <div className="bg-barra shadow-xl z-10 relative dark:bg-transparent">
+            <div className="bg-barra shadow-xl z-20 relative dark:bg-transparent">
             <LinkBar></LinkBar>
             </div>
 
