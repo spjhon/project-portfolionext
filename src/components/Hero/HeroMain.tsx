@@ -1,11 +1,15 @@
+
 import React from "react";
 import NeonTitle from "../neonTitle/NeonTitle";
 
+
 const HeroMain: React.FC = () => {
+
+
   return (
-    <div className="h-full p-5 sm:p-20 md:p-30 flex flex-col justify-center space-y-2">
+    <div className="h-full p-5 lg:p-24 flex flex-col justify-center space-y-2">
       <p className="text-sm text-barra">Mi nombre es</p>
-      <div className="relative">
+      <div className="relative ">
         <NeonTitle></NeonTitle>
         <h1 className="text-4xl font-bold text-barra">JUAN CAMILO</h1>
       </div>
