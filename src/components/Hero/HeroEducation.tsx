@@ -4,7 +4,7 @@ const HeroEducation: React.FC = () => {
   const isLandscape = window.innerWidth > window.innerHeight; // Detecta si está en modo landscape
 
   return (
-    <div className="h-full p-5 md:p-30 flex flex-col justify-center space-y-2">
+    <div className="h-full p-5 lg:p-24 flex flex-col justify-center space-y-2">
       <p className="text-sm text-barra">Education</p>
 
       <h1 className="text-4xl font-bold text-barra">LEARNED FROM THE BEST</h1>
