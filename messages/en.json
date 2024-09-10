@@ -17,7 +17,14 @@
       "sectionTitlePreTitleEducation": "My Education",
       "sectionTitleCatchPhraseEducation": "High quality skills",
       "sectionTitleSubtextEducation": "Following books and courses to create efficient web development, powered by my knowledge in industrial engineering and project management, allowing me to take each project from start to finish successfully."
-
+    },
+    "HeroMain": {
+      "upperText": "👋 Hi, My Name Is:",
+      "subText": "Front-End Developer",
+      "button": "Contact Me"
+    },
+    "neonTitle": {
+      "title": "🌚 Open All Nite"
     },
     "heroEducationPage": {
     "subtitle": "Education",

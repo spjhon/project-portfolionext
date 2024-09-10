@@ -18,6 +18,14 @@
       "sectionTitleCatchPhraseEducation": "Habilidades de Alta Calidad",
       "sectionTitleSubtextEducation": "Siguiendo libros y cursos para crear un desarrollo web eficiente, potenciado por mis conocimientos en ingeniería industrial y gestión de proyectos, lo que me permite llevar cada proyecto de principio a fin con éxito."
     },
+    "HeroMain": {
+      "upperText": "👋 Hola, Mi Nombre es:",
+      "subText": "Desarrollador Front-End",
+      "button": "Contáctame"
+    },
+    "neonTitle": {
+      "title": "🦉 Siempre abierto"
+    },
     "heroEducationPage": {
     "subtitle": "Educación",
     "title": "APRENDI DE LOS MEJORES",
