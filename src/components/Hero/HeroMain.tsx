@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import NeonTitle from "../neonTitle/NeonTitle";
 import { useTranslations } from "next-intl";
-import CopyClipboard from "../CopyClipboard.tsx/CopyClipboard";
+import CopyClipboard from "../CopyClipboard/CopyClipboard";
+import {infoToCopy} from "./data" 
 
 //Imports for the modal from npm i react-responsive-modal
 import "react-responsive-modal/styles.css";
@@ -36,13 +37,25 @@ const HeroMain: React.FC = () => {
           {t("button")}
         </button>
         <Modal open={open} onClose={onCloseModal} center>
-          <h2>Simple centered modal</h2>
-          <CopyClipboard></CopyClipboard>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            pulvinar risus non risus hendrerit venenatis. Pellentesque sit amet
-            hendrerit risus, sed porttitor quam.
-          </p>
+          <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 text-center">
+              
+            {t("HeroMainModalTitle")}
+            </h2>
+
+            <p className="text-sm text-gray-500 dark:text-gray-400 text-center mb-6">
+            {t("HeroMainModalSubText")}
+            </p>
+
+            <div className="space-y-4">
+              
+              <CopyClipboard infoToCopy={infoToCopy[0]}/>
+              
+
+              <CopyClipboard infoToCopy={infoToCopy[1]}/>
+              
+            </div>
+          </div>
         </Modal>
       </div>
     </div>

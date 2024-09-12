@@ -21,7 +21,13 @@
     "HeroMain": {
       "upperText": "👋 Hi, My Name Is:",
       "subText": "Front-End Developer",
-      "button": "Contact Me"
+      "button": "Contact Me",
+      "HeroMainModalSubText": "Available between 7am and 10pm Colombian time (12 pm to 3 am UTC)",
+      "HeroMainModalTitle": "Send a message, Call, or Text!"
+    },
+    "copyClipBoard": {
+      "titleEmail": "E-Mail",
+      "titlePhone": "Phone Number"
     },
     "neonTitle": {
       "title": "🌚 Open All Nite"

@@ -21,7 +21,13 @@
     "HeroMain": {
       "upperText": "👋 Hola, Mi Nombre es:",
       "subText": "Desarrollador Front-End",
-      "button": "Contáctame"
+      "button": "Contáctame",
+      "HeroMainModalSubText": "Disponible entre las 7am y las 10pm hora Colombiana (12 pm a 3 am UTC)",
+      "HeroMainModalTitle": "Envía un Mensaje, Llama o Escribe!"
+    },
+    "copyClipBoard": {
+      "titleEmail": "Correo Electrónico",
+      "titlePhone": "Núnero Telefonico"
     },
     "neonTitle": {
       "title": "🦉 Siempre abierto"
