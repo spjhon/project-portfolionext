@@ -24,7 +24,7 @@ const HeroEducation: React.FC = () => {
     <div className="h-full p-5 lg:p-24 flex flex-col justify-center space-y-2">
       <p className="text-sm text-barra">{t("upperText")}</p>
 
-      <h1 className="text-4xl font-bold text-barra">{t("mainText")}</h1>
+      <h1 className="text-2xl lg:text-4xl font-bold text-barra">{t("mainText")}</h1>
 
       <p className="text-sm text-barra">{t("subText")}</p>
       <div className="w-16 h-0.5 bg-highlight my-2"></div>
@@ -32,8 +32,6 @@ const HeroEducation: React.FC = () => {
       {/* Contenedor de imágenes */}
       {isLandscape && (
         <div className="flex space-x-4 mt-4">
-
-
           <a
             href="https://udemy.com"
             target="_blank"
@@ -45,7 +43,6 @@ const HeroEducation: React.FC = () => {
               <UdemyLogo></UdemyLogo>
             </div>
           </a>
-
 
           <div className="w-16 h-6 flex justify items-center hover:shadow transition-transform duration-300 transform hover:scale-105">
             <a
@@ -65,9 +62,6 @@ const HeroEducation: React.FC = () => {
             </a>
           </div>
 
-
-
-
           <div className="w-16 h-6 flex justify items-center hover:shadow transition-transform duration-300 transform hover:scale-105">
             <a
               href="https://www.mintic.gov.co/portal/inicio/"
@@ -79,9 +73,6 @@ const HeroEducation: React.FC = () => {
               <Image src={MinTicLogo} width={100} height={100} alt="MinTic" />
             </a>
           </div>
-
-
-          
         </div>
       )}
 
@@ -93,7 +84,15 @@ const HeroEducation: React.FC = () => {
         >
           {t("button")}
         </button>
-        <Modal open={open} onClose={onCloseModal} center>
+
+        <Modal
+          open={open}
+          onClose={onCloseModal}
+          center
+          classNames={{
+            modal: "rounded-xl",
+          }}
+        >
           <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
             <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 text-center">
               {t("HeroMainModalTitle")}

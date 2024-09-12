@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { useTranslations } from "next-intl";
 import CopyClipboard from "../CopyClipboard/CopyClipboard";
-import {infoToCopy} from "./data" 
+import { infoToCopy } from "./data";
 
 //Imports for the modal from npm i react-responsive-modal
 import "react-responsive-modal/styles.css";
@@ -21,9 +21,8 @@ const HeroStack: React.FC = () => {
     <div className="h-full p-5 lg:p-24 flex flex-col justify-center space-y-2">
       <p className="text-sm text-barra">{t("upperText")}</p>
       <div className="relative ">
-        
         <h1 className="text-2xl lg:text-4xl font-bold text-barra">
-        {t("mainText")}
+          {t("mainText")}
         </h1>
       </div>
       <p className="text-sm text-barra">{t("subText")}</p>
@@ -36,24 +35,27 @@ const HeroStack: React.FC = () => {
         >
           {t("button")}
         </button>
-        <Modal open={open} onClose={onCloseModal} center>
+        <Modal
+          open={open}
+          onClose={onCloseModal}
+          center
+          classNames={{
+            modal: "rounded-xl",
+          }}
+        >
           <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
             <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 text-center">
-              
-            {t("HeroMainModalTitle")}
+              {t("HeroMainModalTitle")}
             </h2>
 
             <p className="text-sm text-gray-500 dark:text-gray-400 text-center mb-6">
-            {t("HeroMainModalSubText")}
+              {t("HeroMainModalSubText")}
             </p>
 
             <div className="space-y-4">
-              
-              <CopyClipboard infoToCopy={infoToCopy[0]}/>
-              
+              <CopyClipboard infoToCopy={infoToCopy[0]} />
 
-              <CopyClipboard infoToCopy={infoToCopy[1]}/>
-              
+              <CopyClipboard infoToCopy={infoToCopy[1]} />
             </div>
           </div>
         </Modal>

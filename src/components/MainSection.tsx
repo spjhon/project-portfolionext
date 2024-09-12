@@ -10,7 +10,7 @@ const MainSection: React.FC = () => {
   return (
     <div className="p-6">
       {/* Frase motivante */}
-      <div className="text-3xl font-bold">
+      <div className="text-4xl font-bold">
       {t("catchphrase")}
         <div className="w-16 border-b-2 border-highlight mt-2"></div>
       </div>

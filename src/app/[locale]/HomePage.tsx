@@ -89,7 +89,9 @@ switch (componentToShow) {
       <div></div>
 
       <div className="rounded-xl overflow-scroll">
-        <div className="relative mt-20 w-full">
+
+      
+        <div className="relative mt-20 w-full lg:pt-16 pr-2 pl-2 lg:pr-24 lg:pl-24">
           <MainSectionAnimated setComponentToShow={setComponentToShow} />
 
           <SectionTitle
@@ -118,6 +120,7 @@ switch (componentToShow) {
 
           <Footer />
         </div>
+        
       </div>
     </div>
   );
