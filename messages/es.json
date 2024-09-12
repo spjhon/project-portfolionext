@@ -25,6 +25,23 @@
       "HeroMainModalSubText": "Disponible entre las 7am y las 10pm hora Colombiana (12 pm a 3 am UTC)",
       "HeroMainModalTitle": "Envía un Mensaje, Llama o Escribe!"
     },
+    "HeroStack": {
+      "upperText": "Mis Herramientas",
+      "mainText": "CALIDAD SOBRE CANTIDAD",
+      "subText": "Un stack moderno rapido y eficiente",
+      "button": "Contáctame",
+      "HeroMainModalSubText": "Disponible entre las 7am y las 10pm hora Colombiana (12 pm a 3 am UTC)",
+      "HeroMainModalTitle": "Envía un Mensaje, Llama o Escribe!"
+    },
+    "HeroEducation": {
+      "upperText": "Educación",
+      "mainText": "APRENDÍ DE LOS MEJORES",
+      "subText": "Desde Stephen Grider Hasta Maximilian Schwarzmüller",
+      "anchorAltUnal": "Ir a la Universidad Nacional de Colombia",
+      "button": "Contáctame",
+      "HeroMainModalSubText": "Disponible entre las 7am y las 10pm hora Colombiana (12 pm a 3 am UTC)",
+      "HeroMainModalTitle": "Envía un Mensaje, Llama o Escribe!"
+    },
     "copyClipBoard": {
       "titleEmail": "Correo Electrónico",
       "titlePhone": "Núnero Telefonico"

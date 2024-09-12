@@ -28,7 +28,7 @@ const HeroMain: React.FC = () => {
       </div>
       <p className="text-sm text-barra">{t("subText")}</p>
       <div className="w-16 h-0.5 bg-highlight my-2"></div>
-      <div className="mx-auto max-w-sm rounded-lg overflow-hidden shadow-lg bg-gray-800 hover:shadow-2xl transition-shadow duration-300 animate-fade-in">
+      <div className="mx-auto max-w-sm rounded-lg overflow shadow-lg bg-gray-800 hover:shadow-2xl transition-shadow duration-300 animate-fade-in">
         <button
           onClick={onOpenModal}
           type="button"
