@@ -18,6 +18,37 @@
       "sectionTitleCatchPhraseEducation": "Habilidades de Alta Calidad",
       "sectionTitleSubtextEducation": "Siguiendo libros y cursos para crear un desarrollo web eficiente, potenciado por mis conocimientos en ingeniería industrial y gestión de proyectos, lo que me permite llevar cada proyecto de principio a fin con éxito."
     },
+    "HeroMain": {
+      "upperText": "👋 Hola, Mi Nombre es:",
+      "subText": "Desarrollador Front-End",
+      "button": "Contáctame",
+      "HeroMainModalSubText": "Disponible entre las 7am y las 10pm hora Colombiana (12 pm a 3 am UTC)",
+      "HeroMainModalTitle": "Envía un Mensaje, Llama o Escribe!"
+    },
+    "HeroStack": {
+      "upperText": "Mis Herramientas",
+      "mainText": "CALIDAD SOBRE CANTIDAD",
+      "subText": "Un stack moderno rapido y eficiente",
+      "button": "Contáctame",
+      "HeroMainModalSubText": "Disponible entre las 7am y las 10pm hora Colombiana (12 pm a 3 am UTC)",
+      "HeroMainModalTitle": "Envía un Mensaje, Llama o Escribe!"
+    },
+    "HeroEducation": {
+      "upperText": "Educación",
+      "mainText": "APRENDÍ DE LOS MEJORES",
+      "subText": "Desde Stephen Grider Hasta Maximilian Schwarzmüller",
+      "anchorAltUnal": "Ir a la Universidad Nacional de Colombia",
+      "button": "Contáctame",
+      "HeroMainModalSubText": "Disponible entre las 7am y las 10pm hora Colombiana (12 pm a 3 am UTC)",
+      "HeroMainModalTitle": "Envía un Mensaje, Llama o Escribe!"
+    },
+    "copyClipBoard": {
+      "titleEmail": "Correo Electrónico",
+      "titlePhone": "Núnero Telefonico"
+    },
+    "neonTitle": {
+      "title": "🦉 Siempre abierto"
+    },
     "heroEducationPage": {
     "subtitle": "Educación",
     "title": "APRENDI DE LOS MEJORES",

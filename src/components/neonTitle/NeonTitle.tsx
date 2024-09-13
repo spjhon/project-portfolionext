@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import styles from "./neonTitle.module.css";
 import { useTheme } from "next-themes";
+import { useTranslations } from "next-intl";
+
 
 const NeonTitle: React.FC = () => {
 
-
+  const t = useTranslations("neonTitle");
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -21,7 +23,7 @@ const NeonTitle: React.FC = () => {
   
 
 
-  return <h2 className={`${showNeon} absolute -top-11 right-0 ${styles.neonText}`}>Open all nite</h2>;
+  return <h2 className={`${showNeon} text-base lg:text-4xl absolute -top-8 lg:-top-44 right-0 ${styles.neonText}`}>{t("title")}</h2>;
 };
 
 export default NeonTitle;
