@@ -91,12 +91,12 @@ export default function RootLayout({ children }: Props) {
       <head>
         {/* Imagenes pre-cargadas para evitar el flasheo durante el cambio de estas imagenes en sus respectivos componentes */}
         {/*  Preloaded images to prevent flashing during the image change in their respective components */}
-        <link rel="preload" href="/heroBackgrounds/hero01.jpg" as="image" />
-        <link rel="preload" href="/heroBackgrounds/hero02.jpg" as="image" />
-        <link rel="preload" href="/heroBackgrounds/hero03.jpg" as="image" />
-        <link rel="preload" href="/heroBackgrounds/hero01Night.jpg" as="image" />
-        <link rel="preload" href="/heroBackgrounds/hero02Night.jpg" as="image" />
-        <link rel="preload" href="/heroBackgrounds/hero03Night.jpg" as="image" />
+        <link rel="preload" href="/heroBackgrounds/hero01.webp" as="image" />
+        <link rel="preload" href="/heroBackgrounds/hero02.webp" as="image" />
+        <link rel="preload" href="/heroBackgrounds/hero03.webp" as="image" />
+        <link rel="preload" href="/heroBackgrounds/hero01Night.webp" as="image" />
+        <link rel="preload" href="/heroBackgrounds/hero02Night.webp" as="image" />
+        <link rel="preload" href="/heroBackgrounds/hero03Night.webp" as="image" />
         
         
       </head>
