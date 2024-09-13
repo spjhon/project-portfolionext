@@ -55,15 +55,15 @@ export default function HomePage({ locale }: HomePageProps) {
 switch (componentToShow) {
   case "Main":
     componentToRender = <HeroAnimated />;
-    imageToRender = {backgroundImage: "/heroBackgrounds/hero01.jpg", backgroundImageDark: "/heroBackgrounds/hero01Night.jpg"}
+    imageToRender = {backgroundImage: "/heroBackgrounds/hero01.webp", backgroundImageDark: "/heroBackgrounds/hero01Night.webp"}
     break;
   case "Stack":
     componentToRender = <HeroStackAnimated />;
-    imageToRender = {backgroundImage: "/heroBackgrounds/hero02.jpg", backgroundImageDark: "/heroBackgrounds/hero02Night.jpg"}
+    imageToRender = {backgroundImage: "/heroBackgrounds/hero02.webp", backgroundImageDark: "/heroBackgrounds/hero02Night.webp"}
     break;
   case "Education":
     componentToRender = <HeroEducationAnimated />;
-    imageToRender = {backgroundImage: "/heroBackgrounds/hero03.jpg", backgroundImageDark: "/heroBackgrounds/hero03Night.jpg"}
+    imageToRender = {backgroundImage: "/heroBackgrounds/hero03.webp", backgroundImageDark: "/heroBackgrounds/hero03Night.webp"}
 
     break;
   default:
@@ -91,7 +91,7 @@ switch (componentToShow) {
       <div className="rounded-xl overflow-scroll">
 
       
-        <div className="relative mt-20 w-full lg:pt-16 pr-2 pl-2 lg:pr-24 lg:pl-24">
+        <div className="relative mt-10 w-full lg:pt-16 pr-2 pl-2 lg:pr-24 lg:pl-24">
           <MainSectionAnimated setComponentToShow={setComponentToShow} />
 
           <SectionTitle
