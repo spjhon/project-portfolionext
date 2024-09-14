@@ -7,16 +7,23 @@
       "projects": "Projectos"
     
     },
-    "HomePage": {
+    "MainSection": {
       "catchphrase": "Creando experiencias digitales con codigo y creatividad",
-
+      "introduction01": "Soy un desarrollador front-end con una sólida formación y experiencia en ingeniería industrial, titulado por la Universidad Nacional de Colombia, y tengo a Next.js como mi herramienta principal para crear experiencias web modernas y dinámicas.",
+      "introduction02": "Mi formación en desarrollo web ha sido guiada por algunos de los nombres más influyentes de la industria, como Stephen Grider, Maximilian Schwarzmüller y Jonas Schmedtmann, a través de sus reconocidos cursos en Udemy. Además, he perfeccionado mis habilidades con el icónico libro JavaScript: The Definitive Guide de David Flanagan, y por supuesto con Josh Goldberg y de su esclarecedor libro Learning TypeScript lo que me ha permitido diseñar y desarrollar sitios web visualmente atractivos y altamente funcionales."
+    },
+    "HomePage": {
+      
       "sectionTitlePreTitle": "Mis Herramientas",
       "sectionTitleCatchPhrase": "Herramientas modernas para un mundo en constante cambio.",
       "sectionTitleSubtext": "Un stack altamente adaptable a las necesidades de velocidad, buena experiencia de desarrollo y mantenibilidad",
 
       "sectionTitlePreTitleEducation": "Mi Educacion",
       "sectionTitleCatchPhraseEducation": "Habilidades de Alta Calidad",
-      "sectionTitleSubtextEducation": "Siguiendo libros y cursos para crear un desarrollo web eficiente, potenciado por mis conocimientos en ingeniería industrial y gestión de proyectos, lo que me permite llevar cada proyecto de principio a fin con éxito."
+      "sectionTitleSubtextEducation": "Gracias a mi experiencia en ingeniería industrial, gestión de proyectos y liderazgo de equipos, no solo ofrezco soluciones técnicas, sino también un enfoque estratégico que aporta un valor añadido a cualquier proyecto en el que participo.",
+    
+      "finalSentence": "Actualmente, me encuentro en proceso de ampliar mis conocimientos en Node.js y PostgreSQL, con el objetivo de desarrollar aplicaciones web robustas, mantenibles, rápidas y alineadas con los mejores estándares y buenas prácticas del sector."
+
     },
     "HeroMain": {
       "upperText": "👋 Hola, Mi Nombre es:",
@@ -42,6 +49,19 @@
       "HeroMainModalSubText": "Disponible entre las 7am y las 10pm hora Colombiana (12 pm a 3 am UTC)",
       "HeroMainModalTitle": "Envía un Mensaje, Llama o Escribe!"
     },
+    "EducationTimeline": {
+      "year1": "2011",
+      "education1": "Ingenieria Industrial",
+      "institute1": "Universidad Nacional de Colombia",
+
+      "year2": "2022",
+      "education2": "Desarrollo Web del ministerio de tecnologias de Colombia",
+      "institute2": "Min Tic",
+
+      "year3": "2023",
+      "education3": "Curso de Udemy sobre REACT de Stephen Grider",
+      "institute3": "Udemy"
+    },
     "copyClipBoard": {
       "titleEmail": "Correo Electrónico",
       "titlePhone": "Núnero Telefonico"
@@ -49,18 +69,11 @@
     "neonTitle": {
       "title": "🦉 Siempre abierto"
     },
-    "heroEducationPage": {
-    "subtitle": "Educación",
-    "title": "APRENDI DE LOS MEJORES",
-    "subtext": "Desde Stephen Grider hasta Maximilian Schwarzmüller"
-  },
+    
     "AboutPage": {
       "title": "Acerca De"
     },
-    "NotFoundPage": {
-    "description": "No se ah encontrado nada, lo siento",
-    "title": "Pagina No encontrada"
-  },
+    
   "LocaleSwitcher": {
     "label": "Cambiar idioma",
     "locale": "{locale, select, es {es Español} en {us English} other {Unknown}}"

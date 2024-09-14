@@ -2,9 +2,9 @@ export default function NpmLogo() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="100"
-      height="100"
-      viewBox="0 0 256 100"
+      width="auto"
+      height="auto"
+      viewBox="0 -100 260 100"
       preserveAspectRatio="xMinYMin meet"
     >
       <path d="M0 0v85.498h71.166V99.83H128V85.498h128V0H0z" fill="#CB3837" />

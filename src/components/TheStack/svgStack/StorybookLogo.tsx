@@ -3,8 +3,8 @@ export default function StorybookLogo() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width="100px"
-      height="100px"
+      width="auto"
+      height="auto"
       viewBox="-31.5 0 319 319"
       version="1.1"
       preserveAspectRatio="xMidYMid"

@@ -2,8 +2,8 @@ export default function JavascriptLogo() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="100"
-      height="100"
+      width="auto"
+      height="auto"
       viewBox="0 0 1052 1052"
     >
       <path fill="#f0db4f" d="M0 0h1052v1052H0z" />

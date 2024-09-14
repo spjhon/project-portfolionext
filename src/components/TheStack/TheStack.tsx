@@ -13,16 +13,16 @@ interface TheStackProps {
 
 const TheStack: React.FC<TheStackProps> = ({ title, images }) => {
   return (
-    <div className="flex flex-col p-4">
-      <h2 className="text-2xl font-semibold mb-4">{title}</h2>
-      <div className="flex flex-wrap gap-4">
+    <fieldset className="flex flex-col p-4 border-2 m-2 rounded-xl">
+      <legend className=''>{title}</legend>
+      <div className="flex flex-wrap gap-4 ">
         {images.map((image) => (
-          <div key={image.id} className="relative w-36 h-24 overflow-hidden">
+          <div key={image.id} className="relative max-w-11 ">
             {image.icon}
           </div>
         ))}
       </div>
-    </div>
+    </fieldset>
   );
 };
 

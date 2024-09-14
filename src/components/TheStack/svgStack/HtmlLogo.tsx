@@ -3,8 +3,8 @@ export default function HtmlLogo() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
-      height="100"
-      width="100"
+      height="auto"
+      width="auto"
       viewBox="0 0 124 141.53199999999998"
     >
       <path

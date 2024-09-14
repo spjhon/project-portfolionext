@@ -20,7 +20,8 @@ import EducationTimeline from "@/components/EducationTimeline/EducationTimeline"
 import Footer from "@/components/Footer/Footer";
 
 //image that goes to the section title
-import SectionTitle01 from "../../../public/SectionsImages/SectionImage01Sized.png";
+import SectionStackSVG from "../../components/TheStack/svgStack/SectionSVG/SectionStackSVG"
+import SectioinEducationSVG from "@/components/TheStack/svgStack/SectionSVG/SectionEducationSVG";
 
 //Svg imports that goes to the stack component
 import {
@@ -30,6 +31,9 @@ import {
   philosofiesSVG,
   toolsSVG,
 } from "../../components/TheStack/data";
+
+//Data for the timelines
+import {educationData} from "../../components/EducationTimeline/data"
 
 
 // Define props types for animated components
@@ -91,13 +95,13 @@ switch (componentToShow) {
       <div className="rounded-xl overflow-scroll">
 
       
-        <div className="relative mt-10 w-full lg:pt-16 pr-2 pl-2 lg:pr-24 lg:pl-24">
+        <div className="relative mt-10 w-full lg:pt-16 pr-1 pl-2 lg:pr-24 lg:pl-24">
           <MainSectionAnimated setComponentToShow={setComponentToShow} />
 
           <SectionTitle
             preTitle={t("sectionTitlePreTitle")}
             title={t("sectionTitleCatchPhrase")}
-            icon={SectionTitle01.src}
+            icon={<SectionStackSVG></SectionStackSVG>}
           >
             {t("sectionTitleSubtext")}
           </SectionTitle>
@@ -111,12 +115,16 @@ switch (componentToShow) {
           <SectionTitle
             preTitle={t("sectionTitlePreTitleEducation")}
             title={t("sectionTitleCatchPhraseEducation")}
-            icon={SectionTitle01.src}
+            icon={<SectioinEducationSVG></SectioinEducationSVG>}
           >
             {t("sectionTitleSubtextEducation")}
           </SectionTitle>
 
-          <EducationAnimated setComponentToShow={setComponentToShow}/>
+          <EducationAnimated setComponentToShow={setComponentToShow} data={educationData}/>
+
+          <p className="text-lg p-1 lg:p-10">
+          {t("finalSentence")}
+        </p>
 
           <Footer />
         </div>
@@ -252,7 +260,7 @@ const TheStack05Animated: React.FC = () => {
   );
 };
 
-const EducationAnimated: React.FC<AnimatedComponentProps> = ({ setComponentToShow }) => {
+const EducationAnimated: React.FC<AnimatedComponentProps> = ({ setComponentToShow, data }) => {
   const { ref, inView } = useInView({
     threshold: 0.1,
     triggerOnce: false,
@@ -271,8 +279,8 @@ const EducationAnimated: React.FC<AnimatedComponentProps> = ({ setComponentToSho
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      <EducationTimeline side="right" title="Educación" />
-      <EducationTimeline side="left" title="Experiencia" />
+      <EducationTimeline side="right" title="Educación" data={data} />
+      <EducationTimeline side="left" title="Experiencia" data={data}/>
     </div>
   );
 };
