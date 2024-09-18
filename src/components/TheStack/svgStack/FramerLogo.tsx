@@ -2,9 +2,9 @@ export default function FramerLogo() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      height="100"
+      height="4.5rem"
       viewBox="3.7 3.7 43.6 43.6"
-      width="100"
+      width="4.5rem"
     >
       <path
         d="m47.3 3.7v21.8l-10.9 10.9-10.9 10.9-10.9-10.9 10.9-10.9v.1-.1z"

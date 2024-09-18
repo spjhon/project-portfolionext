@@ -2,9 +2,9 @@ export default function VisualstudioLogo() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      height="100"
+      height="4.5rem"
       viewBox="-11.9 -2 1003.9 995.6"
-      width="100"
+      width="4.5rem"
     >
       <path
         d="m12.1 353.9s-24-17.3 4.8-40.4l67.1-60s19.2-20.2 39.5-2.6l619.2 468.8v224.8s-.3 35.3-45.6 31.4z"

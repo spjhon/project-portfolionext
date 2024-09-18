@@ -13,12 +13,12 @@ interface EducationTimelineProps {
   data: EducationItem[];
 }
 
-const EducationTimeline: React.FC<EducationTimelineProps> = ({
+const ExperienceTimeline: React.FC<EducationTimelineProps> = ({
   side = "left",
   title,
   data,
 }) => {
-  const t = useTranslations("EducationTimeline");
+  const t = useTranslations("ExperienceTimeline");
 
   const isLeft = side === "left";
 
@@ -39,9 +39,9 @@ const EducationTimeline: React.FC<EducationTimelineProps> = ({
               ></div>
               <p className="text-gray-600 text-sm">{t(`year${item.id}`)}</p>
               <h3 className="text-xl font-semibold">
-                {t(`education${item.id}`)}
+                {t(`role${item.id}`)}
               </h3>
-              <p className="text-gray-500">{t(`institute${item.id}`)}</p>
+              <p className="text-gray-500">{t(`enterprise${item.id}`)}</p>
             </div>
           );
         })}
@@ -50,4 +50,4 @@ const EducationTimeline: React.FC<EducationTimelineProps> = ({
   );
 };
 
-export default EducationTimeline;
+export default ExperienceTimeline;

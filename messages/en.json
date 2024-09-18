@@ -5,10 +5,13 @@
     "NavigationLinks": {
       "home": "Home",
       "projects": "Projects"
-    
+    },
+    "MainSection": {
+      "catchphrase": "Crafting Digital Experiences with Code and Creativity",
+      "introduction01": "I am a front-end developer with a strong background and experience in industrial engineering, holding a degree from the National University of Colombia, and I specialize in using Next.js as my primary tool to create modern and dynamic web experiences.",
+      "introduction02": "My web development training has been guided by some of the most influential names in the industry, such as Stephen Grider, Maximilian Schwarzmüller, and Jonas Schmedtmann, through their renowned courses on Udemy. Additionally, I have honed my skills with the iconic book JavaScript: The Definitive Guide by David Flanagan, and of course, Learning TypeScript by Josh Goldberg, which has enabled me to design and develop visually appealing and highly functional websites."
     },
     "HomePage": {
-      "catchphrase": "Crafting Digital Experiences with Code and Creativity",
 
       "sectionTitlePreTitle": "My Stack",
       "sectionTitleCatchPhrase": "Modern tools for a world in constant change.",
@@ -16,7 +19,10 @@
 
       "sectionTitlePreTitleEducation": "My Education",
       "sectionTitleCatchPhraseEducation": "High quality skills",
-      "sectionTitleSubtextEducation": "Following books and courses to create efficient web development, powered by my knowledge in industrial engineering and project management, allowing me to take each project from start to finish successfully."
+      "sectionTitleSubtextEducation": "Thanks to my experience in industrial engineering, project management, and team leadership, I not only offer technical solutions but also bring a strategic approach that adds value to any project I am involved in.",
+    
+      "finalSentence": "I am currently expanding my knowledge in Node.js and PostgreSQL, aiming to develop robust, maintainable, and fast web applications aligned with industry best standards and practices."
+    
     },
     "HeroMain": {
       "upperText": "👋 Hi, My Name Is:",
@@ -42,6 +48,29 @@
       "HeroMainModalSubText": "Available between 7am and 10pm Colombian time (12 pm to 3 am UTC)",
       "HeroMainModalTitle": "Send a message, Call, or Text!"
     },
+    "EducationTimeline": {
+      "year1": "2011",
+      "education1": "Bachelor's Degree in Industrial Engineering",
+      "institute1": "National University of Colombia",
+
+      "year2": "2022",
+      "education2": " Web Development for the Ministry of Information Technologies and Communications of Colombia",
+      "institute2": " Ministry of Information Technologies and Communications of Colombia (MIN-TIC)",
+
+      "year3": "2023",
+      "education3": "Stephen Grider React Udemy Course",
+      "institute3": "Udemy"
+    },
+    "ExperienceTimeline": {
+      "year1": "2015 - 2023",
+      "role1": " Technical Director",
+      "enterprise1": "CDA Fullmotos SAS",
+
+      "year2": "2023 - Present",
+      "role2": "Web Developer",
+      "enterprise2": "Freelancer"
+    },
+
     "copyClipBoard": {
       "titleEmail": "E-Mail",
       "titlePhone": "Phone Number"
@@ -49,18 +78,11 @@
     "neonTitle": {
       "title": "🌚 Open All Nite"
     },
-    "heroEducationPage": {
-    "subtitle": "Education",
-    "title": "LEARNED FROM THE BEST",
-    "subtext": "From Stephen Grider to Maximilian Schwarzmüller"
-  },
+    
     "AboutPage": {
       "title": "About Page"
     },
-    "NotFoundPage": {
-    "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
-    "title": "Page not found"
-  },
+    
   "LocaleSwitcher": {
     "label": "Cambiar idioma",
     "locale": "{locale, select, es {es Español} en {us English} other {Unknown}}"

@@ -3,8 +3,8 @@ export default function MdxLogo() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width="100px"
-      height="100px"
+      width="4.5rem"
+      height="4.5rem"
       viewBox="0 -150 512 512"
       version="1.1"
       preserveAspectRatio="xMidYMid"

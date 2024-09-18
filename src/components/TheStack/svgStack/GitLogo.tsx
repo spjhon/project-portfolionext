@@ -2,8 +2,8 @@ export default function GitLogo() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="100"
-      height="100"
+      width="4.5rem"
+      height="4.5rem"
       viewBox="0 0 256 256"
       preserveAspectRatio="xMinYMin meet"
     >

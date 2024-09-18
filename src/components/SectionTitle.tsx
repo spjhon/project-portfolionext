@@ -7,7 +7,7 @@ interface SectionTitleProps {
   title?: string;
   align?: "left" | "center";
   children?: React.ReactNode;
-  icon?: string;
+  icon?: React.ReactNode;
 }
 
 export const SectionTitle = (props: Readonly<SectionTitleProps>) => {
@@ -18,13 +18,7 @@ export const SectionTitle = (props: Readonly<SectionTitleProps>) => {
       }`}
     >
       {props.icon && (
-        <Image
-          src={props.icon}
-          alt="drawanimal"
-          width={100}
-          height={100}
-          className="rounded-xl"
-        ></Image>
+        props.icon
       )}
 
       {props.preTitle && (

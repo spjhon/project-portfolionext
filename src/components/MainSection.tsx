@@ -5,11 +5,13 @@ import mainImage01 from "../../public/mainImage01.webp";
 import programerImage from "../../public/programer.webp";
 //"I don't aim to reinvent the wheel, nor do I rely on copy-pasting. My passion lies in mastering the code, standards, and best practices that drive quality and innovation."
 
+
+
 const MainSection: React.FC = () => {
-  const t = useTranslations("HomePage");
+  const t = useTranslations("MainSection");
 
   return (
-    <div className="p-6">
+    <div className="p-1 lg:p-6">
       {/* Frase motivante */}
       <div className="text-4xl font-bold">
         {t("catchphrase")}
@@ -55,20 +57,14 @@ const MainSection: React.FC = () => {
             <div className="absolute top-8 left-8 bg-[#2e36378a] dark:bg-transparent rounded-lg blur-lg z-10 w-[8rem] h-[10rem]"></div>
           </div>
         </div>
-        <p className="text-lg pl-10">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <p className="text-lg p-1 lg:p-10">
+        {t("introduction01")}
         </p>
-      </div>
-
-      {/* Divs de contacto y proyectos */}
-      <div className="flex justify-between mt-12">
-        <div className="w-1/2 h-32 flex items-center justify-center border">
-          <h2 className="text-xl font-semibold">Contacto</h2>
-        </div>
-        <div className="w-1/2 h-32 flex items-center justify-center border">
-          <h2 className="text-xl font-semibold">Proyectos</h2>
-        </div>
+        <p className="text-lg p-1 lg:p-10">
+        {t("introduction02")}
+        </p>
+        
+        
       </div>
     </div>
   );
