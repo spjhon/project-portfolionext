@@ -49,13 +49,15 @@ const MainSection: React.FC = () => {
         <div className="float-left mr-8 mb-6">
           <div className="relative mx-auto w-[8rem] h-[10rem]">
             {/* Card content */}
-            <div role="img" className="z-30 relative bg-[#96a399] dark:bg-transparent rounded-lg w-[8rem] h-[10rem]">
+            <div className="z-30 relative bg-[#96a399] dark:bg-transparent rounded-lg w-[8rem] h-[10rem]">
               <Image
+               role="img"
                 src={programerImage}
                 width={750}
                 height={1000}
                 alt="Picture of the author"
                 className=""
+                title="Programer Image"
               />
             </div>
             {/* Light blur shadow */}

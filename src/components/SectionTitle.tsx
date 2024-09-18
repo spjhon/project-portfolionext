@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "@/components/Container";
-import Image from "next/image";
+
 
 interface SectionTitleProps {
   preTitle?: string;
@@ -29,13 +29,13 @@ export const SectionTitle = (props: Readonly<SectionTitleProps>) => {
       )}
 
       {props.title && (
-        <h2 id="section-title" className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight lg:leading-tight lg:text-4xl ">
+        <h2 id="Title of the section" className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight lg:leading-tight lg:text-4xl ">
           {props.title}
         </h2>
       )}
 
       {props.children && (
-        <p id="section-description" className="max-w-2xl py-4 text-lg leading-normal text-gray-900 lg:text-xl xl:text-xl dark:text-gray-300">
+        <p id="Description of the section, it could be the stack or the education timeline" className="max-w-2xl py-4 text-lg leading-normal text-gray-900 lg:text-xl xl:text-xl dark:text-gray-300">
           {props.children}
         </p>
       )}
