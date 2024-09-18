@@ -24,7 +24,9 @@ const HeroEducation: React.FC = () => {
     <div className="h-full p-5 lg:p-24 flex flex-col justify-center space-y-2">
       <p className="text-sm text-barra">{t("upperText")}</p>
 
-      <h1 className="text-2xl lg:text-4xl font-bold text-barra">{t("mainText")}</h1>
+      <h1 className="text-2xl lg:text-4xl font-bold text-barra">
+        {t("mainText")}
+      </h1>
 
       <p className="text-sm text-barra">{t("subText")}</p>
       <div className="w-16 h-0.5 bg-highlight my-2"></div>
@@ -78,6 +80,7 @@ const HeroEducation: React.FC = () => {
 
       <div className="mx-auto max-w-sm rounded-lg overflow shadow-lg bg-gray-800 hover:shadow-2xl transition-shadow duration-300 animate-fade-in">
         <button
+          aria-label={"Close Button"}
           onClick={onOpenModal}
           type="button"
           className="px-4 py-2 bg-secondary text-white font-semibold rounded transform transition-transform duration-300 hover:scale-110"
@@ -89,6 +92,9 @@ const HeroEducation: React.FC = () => {
           open={open}
           onClose={onCloseModal}
           center
+          focusTrapped
+          aria-labelledby="Contact modal"
+          aria-describedby="Here you can find email and phone number of the developer "
           classNames={{
             modal: "rounded-xl",
           }}

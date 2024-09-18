@@ -46,7 +46,7 @@ Explanation of the component design:
 */
 
   return (
-    <nav className=" shadow-xl relative z-10 mt-3 landscape:mt-8 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-0 border border-gray-900 dark:border-gray-100 ">
+    <nav aria-label="Main Navigation" className=" shadow-xl relative z-10 mt-3 landscape:mt-8 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-0 border border-gray-900 dark:border-gray-100 ">
       {/* Logo  */}
       <Disclosure>
         {({ open }) => (
@@ -56,7 +56,7 @@ Explanation of the component design:
            
 
               <DisclosureButton
-                aria-label="Toggle Menu"
+                aria-label={open ? "Close Menu" : "Open Menu"}
                 className="px-4 py-2 rounded-md lg:hidden hover:text-secondary dark:hover:text-primary focus:text-accent dark:focus:bg-secondary focus:bg-secondary focus:outline-none "
               >
                 <svg
@@ -128,7 +128,7 @@ Explanation of the component design:
             <li className="mr-3" key={index}>
               <NavigationLink
                 href={item.href}
-                className="inline-block px-4 py-2 text-lg font-normal no-underline rounded-md hover:text-gray-500"
+                className="inline-block px-4 py-2 text-lg font-normal no-underline rounded-md hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-accent"
               >
                 {item.LinkName}
               </NavigationLink>

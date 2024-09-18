@@ -24,8 +24,9 @@ const TheStack: React.FC<TheStackProps> = ({ title, images }) => {
             href={image.link}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Logo of the Udemy Online Platform"
+            aria-label={`Logo of ${image.label}`}
             title={image.label}
+            role="img"
           >
             <div
               
@@ -34,7 +35,7 @@ const TheStack: React.FC<TheStackProps> = ({ title, images }) => {
               <div className="transition-transform transform group-hover:translate-x-2 group-hover:translate-y-[-4px] group-hover:shadow-2xl group-hover:scale-105">
                 {image.icon}
               </div>
-              <span className="mt-2 text-center transition-transform transform group-hover:translate-x-2 group-hover:translate-y-[-4px]  group-hover:scale-105">
+              <span aria-label={`Logo of ${image.label}`} className="mt-2 text-center transition-transform transform group-hover:translate-x-2 group-hover:translate-y-[-4px]  group-hover:scale-105">
                 {image.label}
               </span>
             </div>

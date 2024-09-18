@@ -29,6 +29,7 @@ const HeroStack: React.FC = () => {
       <div className="w-16 h-0.5 bg-highlight my-2"></div>
       <div className="mx-auto max-w-sm rounded-lg overflow shadow-lg bg-gray-800 hover:shadow-2xl transition-shadow duration-300 animate-fade-in">
         <button
+         aria-label={"Close Button"}
           onClick={onOpenModal}
           type="button"
           className="px-4 py-2 bg-secondary text-white font-semibold rounded transform transition-transform duration-300 hover:scale-110"
@@ -36,9 +37,12 @@ const HeroStack: React.FC = () => {
           {t("button")}
         </button>
         <Modal
+       
           open={open}
           onClose={onCloseModal}
           center
+          aria-labelledby="Contact modal"
+          aria-describedby="Here you can find email and phone number of the developer "
           classNames={{
             modal: "rounded-xl",
           }}

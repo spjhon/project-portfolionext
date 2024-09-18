@@ -23,14 +23,15 @@ const EducationTimeline: React.FC<EducationTimelineProps> = ({
   const isLeft = side === "left";
 
   return (
-    <div className="container mx-auto py-8">
+    <section className="container mx-auto py-8">
       <h2 className="text-3xl font-bold text-center mb-8">{title}</h2>
       <div
         className={`relative ${isLeft ? "border-l-4" : "border-r-4"} border-gray-200`}
       >
         {data.map((item) => {
           return (
-            <div
+            <article
+            aria-labelledby={`timeline-item-${item.id}`}
               key={item.id}
               className={`mb-8 ${isLeft ? "pl-8" : "pr-8"} relative ${isLeft ? "text-left" : "text-right"}`}
             >
@@ -42,11 +43,11 @@ const EducationTimeline: React.FC<EducationTimelineProps> = ({
                 {t(`education${item.id}`)}
               </h3>
               <p className="text-gray-500">{t(`institute${item.id}`)}</p>
-            </div>
+            </article>
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

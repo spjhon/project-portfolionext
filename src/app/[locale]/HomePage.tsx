@@ -66,6 +66,8 @@ interface HomePageProps {
 export default function HomePage({ locale }: HomePageProps) {
   const t = useTranslations("HomePage");
 
+
+
   //this state controlls when a component its in view and update the div of the left of the homepage
   const [componentToShow, setComponentToShow] = useState<string>("Main");
 
@@ -103,17 +105,23 @@ export default function HomePage({ locale }: HomePageProps) {
         backgroundImageDark: "black", // Agrega backgroundImageDark para consistencia
       };
       break;
+
+
+
   }
+
+
 
   return (
     <div className="w-full h-full grid grid-rows-[1fr_2rem_2fr] landscape:grid-cols-[1fr_4rem_1.5fr] landscape:grid-rows-none">
-      <div className="overflow-hidden ">
+      
+      <section className="overflow-hidden ">
         <Hero imageToRender={imageToRender}>{componentToRender}</Hero>
-      </div>
+      </section>
 
       <div></div>
 
-      <div className="rounded-xl overflow-scroll">
+      <main className="rounded-xl overflow-scroll">
         <div className="relative mt-10 w-full lg:pt-16 pr-1 pl-2 lg:pr-24 lg:pl-24">
           <MainSectionAnimated setComponentToShow={setComponentToShow} />
 
@@ -139,7 +147,7 @@ export default function HomePage({ locale }: HomePageProps) {
             {t("sectionTitleSubtextEducation")}
           </SectionTitle>
 
-          <EducationAnimated
+          <TimeLineAnimated
             setComponentToShow={setComponentToShow}
             educationData={educationData}
             experienceData={experienceData}
@@ -149,7 +157,7 @@ export default function HomePage({ locale }: HomePageProps) {
 
           <Footer />
         </div>
-      </div>
+      </main>
     </div>
   );
 }
@@ -160,7 +168,7 @@ export default function HomePage({ locale }: HomePageProps) {
 
 
 
-//this code from now on to the end its only for animations using react-intersection-observer
+//this code from now on till the end its only for animations using react-intersection-observer
 
 const MainSectionAnimated: React.FC<AnimatedComponentProps> = ({
   setComponentToShow,
@@ -286,7 +294,7 @@ const TheStack05Animated: React.FC = () => {
   );
 };
 
-const EducationAnimated: React.FC<AnimatedComponentProps> = ({
+const TimeLineAnimated: React.FC<AnimatedComponentProps> = ({
   setComponentToShow,
   educationData = [],
   experienceData = [],
