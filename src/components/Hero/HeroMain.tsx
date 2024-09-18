@@ -18,18 +18,19 @@ const HeroMain: React.FC = () => {
   const onCloseModal = () => setOpen(false);
 
   return (
-    <div className="h-full p-5 lg:p-24 flex flex-col justify-center space-y-2">
+    <section className="h-full p-5 lg:p-24 flex flex-col justify-center space-y-2">
       <p className="text-sm text-barra">{t("upperText")}</p>
-      <div className="relative ">
+      <header className="relative ">
         <NeonTitle></NeonTitle>
         <h1 className="text-2xl lg:text-4xl font-bold text-barra">
-          JUAN ARISTIZABAL
+          UN TAL JUAN ARISTIZABAL
         </h1>
-      </div>
+      </header>
       <p className="text-sm text-barra">{t("subText")}</p>
       <div className="w-16 h-0.5 bg-highlight my-2"></div>
       <div className="mx-auto max-w-sm rounded-lg overflow shadow-lg bg-gray-800 hover:shadow-2xl transition-shadow duration-300 animate-fade-in">
         <button
+          aria-label={"Close Button"}
           onClick={onOpenModal}
           type="button"
           className="px-4 py-2 bg-secondary text-white font-semibold rounded transform transition-transform duration-300 hover:scale-110"
@@ -40,12 +41,18 @@ const HeroMain: React.FC = () => {
           open={open}
           onClose={onCloseModal}
           center
+          focusTrapped
+          aria-labelledby="Contact modal"
+          aria-describedby="Here you can find email and phone number of the developer "
           classNames={{
             modal: "rounded-xl",
           }}
         >
           <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 text-center">
+            <h2
+              id="Contact Modal"
+              className="text-xl font-semibold text-gray-900 dark:text-white mb-4 text-center"
+            >
               {t("HeroMainModalTitle")}
             </h2>
 
@@ -61,7 +68,7 @@ const HeroMain: React.FC = () => {
           </div>
         </Modal>
       </div>
-    </div>
+    </section>
   );
 };
 

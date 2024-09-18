@@ -55,20 +55,34 @@
       "institute1": "Universidad Nacional de Colombia",
 
       "year2": "2022",
-      "education2": "Desarrollo Web del ministerio de tecnologias de Colombia",
-      "institute2": "Min Tic",
+      "education2": "Desarrollo de Software con Enfasis en Desarrollo Web",
+      "institute2": "Ministerio de Tecnologias de La Informacion y las Comunicaciones y la Universidad del Norte",
 
-      "year3": "2023",
-      "education3": "Curso de Udemy sobre REACT de Stephen Grider",
-      "institute3": "Udemy"
+      "year3": "2022",
+      "education3": "The Complete JavaScript Course 2022: From Zero to Expert!",
+      "institute3": "Jonas Schmedtmann - Udemy",
+
+      "year4": "2022",
+      "education4": "Practical Git",
+      "institute4": "Dmytro Khmelenko - Udemy",
+
+      "year5": "2023",
+      "education5": "Modern React with Redux [2023 update]",
+      "institute5": "Stephen Grider - Udemy",
+
+      "year6": "2024",
+      "education6": "Next.js 14 & React - The Complete Guide",
+      "institute6": "Maximilian Schwarzmüller - Udemy"
     },
     "ExperienceTimeline": {
       "year1": "2015 - 2023",
       "role1": "Director Tecnico",
+      "job1" : "Gestión de todos los aspectos técnicos del centro de diagnóstico automotriz. Gestión de personal. Responsable de las inspecciones y el mantenimiento técnico del equipo informático. Coordinador de Calidad y Gerente de Proyectos de la empresa.",
       "enterprise1": "CDA Fullmotos SAS",
 
       "year2": "2023 - Presente",
       "role2": "Desarrollador Web",
+      "job2" : "Creacion de Landing Pages personalizadas con Next Js",
       "enterprise2": "Freelancer"
     },
     "copyClipBoard": {
@@ -78,9 +92,15 @@
     "neonTitle": {
       "title": "🦉 Siempre abierto"
     },
-    
+
+    "FooterComponent": {
+      "contactTitle": "Contáctame Directamente:",
+      "phone": "Teléfono:",
+      "city": "Ciudad:"
+    },
+  
     "AboutPage": {
-      "title": "Acerca De"
+      "title": "About Page"
     },
     
   "LocaleSwitcher": {

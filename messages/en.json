@@ -54,20 +54,34 @@
       "institute1": "National University of Colombia",
 
       "year2": "2022",
-      "education2": " Web Development for the Ministry of Information Technologies and Communications of Colombia",
-      "institute2": " Ministry of Information Technologies and Communications of Colombia (MIN-TIC)",
+      "education2": "Software Development with Emphasis on Web Development",
+      "institute2": "Ministry of Information and Communications Technology of Colombia and Universidad del Norte of Colombia",
 
-      "year3": "2023",
-      "education3": "Stephen Grider React Udemy Course",
-      "institute3": "Udemy"
+      "year3": "2022",
+      "education3": "The Complete JavaScript Course 2022: From Zero to Expert!",
+      "institute3": "Jonas Schmedtmann - Udemy",
+
+      "year4": "2022",
+      "education4": "Practical Git",
+      "institute4": "Dmytro Khmelenko - Udemy",
+
+      "year5": "2023",
+      "education5": "Modern React with Redux [2023 update]",
+      "institute5": "Stephen Grider - Udemy",
+
+      "year6": "2024",
+      "education6": "Next.js 14 & React - The Complete Guide",
+      "institute6": "Maximilian Schwarzmüller - Udemy"
     },
     "ExperienceTimeline": {
       "year1": "2015 - 2023",
       "role1": " Technical Director",
+      "job1" : "Management of all technical aspects of the automotive diagnostic center. Personnel management. Responsible for inspections and technical maintenance of computer equipment. Quality Coordinator and Project Manager for the company.",
       "enterprise1": "CDA Fullmotos SAS",
 
       "year2": "2023 - Present",
       "role2": "Web Developer",
+      "job2" : "Creation of custom landing pages on demand with Next Js",
       "enterprise2": "Freelancer"
     },
 
@@ -77,6 +91,12 @@
     },
     "neonTitle": {
       "title": "🌚 Open All Nite"
+    },
+
+    "FooterComponent": {
+      "contactTitle": "Contact Me Directly:",
+      "phone": "Phone:",
+      "city": "City:"
     },
     
     "AboutPage": {
