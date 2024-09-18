@@ -3,8 +3,8 @@ export default function CSSLogo() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
-      height="auto"
-      width="auto"
+      height="4.5rem"
+      width="4.5rem"
       viewBox="0 0 124 141.53"
     >
       <path

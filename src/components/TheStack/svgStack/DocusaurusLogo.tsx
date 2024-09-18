@@ -2,8 +2,8 @@ export default function DocusaurusLogo() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="auto"
-      height="auto"
+      width="4.5rem"
+      height="4.5rem"
       viewBox="0 0 200 200"
     >
       <g fill="none" fillRule="evenodd">

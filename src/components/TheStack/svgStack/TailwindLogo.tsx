@@ -2,9 +2,9 @@ export default function TailwindLogo() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      height="auto"
+      height="4.5rem"
       preserveAspectRatio="xMidYMid"
-      width="auto"
+      width="4.5rem"
       viewBox="0 0 256 153.6"
     >
       <linearGradient id="a" x1="-2.778%" y1="32%" y2="67.556%">

@@ -12,9 +12,6 @@ export const educationData = [
 
   export const experienceData = [
     {
-      id: 3,
-    },
-    {
       id: 2,
     },
     {

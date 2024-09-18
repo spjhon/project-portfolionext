@@ -21,9 +21,9 @@ export default function AtomicLogo() {
     <>
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      height="auto"
+      height="4.5rem"
       viewBox="0 0 90 90"
-      width="auto"
+      width="4.5rem"
       onMouseEnter={() => setIsHovered(true)} // Activa el hover
       onMouseLeave={() => setIsHovered(false)} // Desactiva el hover
     >

@@ -61,6 +61,15 @@
       "education3": "Stephen Grider React Udemy Course",
       "institute3": "Udemy"
     },
+    "ExperienceTimeline": {
+      "year1": "2015 - 2023",
+      "role1": " Technical Director",
+      "enterprise1": "CDA Fullmotos SAS",
+
+      "year2": "2023 - Present",
+      "role2": "Web Developer",
+      "enterprise2": "Freelancer"
+    },
 
     "copyClipBoard": {
       "titleEmail": "E-Mail",

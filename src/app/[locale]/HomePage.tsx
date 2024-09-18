@@ -17,10 +17,11 @@ import HeroEducation from "@/components/Hero/HeroEducation";
 import { SectionTitle } from "@/components/SectionTitle";
 import TheStack from "@/components/TheStack/TheStack";
 import EducationTimeline from "@/components/EducationTimeline/EducationTimeline";
+import ExperienceTimeline from "@/components/EducationTimeline/ExperienceTimeline";
 import Footer from "@/components/Footer/Footer";
 
 //image that goes to the section title
-import SectionStackSVG from "../../components/TheStack/svgStack/SectionSVG/SectionStackSVG"
+import SectionStackSVG from "../../components/TheStack/svgStack/SectionSVG/SectionStackSVG";
 import SectioinEducationSVG from "@/components/TheStack/svgStack/SectionSVG/SectionEducationSVG";
 
 //Svg imports that goes to the stack component
@@ -33,19 +34,26 @@ import {
 } from "../../components/TheStack/data";
 
 //Data for the timelines
-import {educationData} from "../../components/EducationTimeline/data"
-
+import {
+  educationData,
+  experienceData,
+} from "../../components/EducationTimeline/data";
 
 // Define props types for animated components
+interface DataItem {
+  id: number;
+}
+
 interface AnimatedComponentProps {
   setComponentToShow?: (component: string) => void;
   children?: React.ReactNode;
+  educationData?: DataItem[];
+  experienceData?: DataItem[];
 }
 
 interface HomePageProps {
   locale: string; // Define el tipo para `locale`
 }
-
 
 export default function HomePage({ locale }: HomePageProps) {
   const t = useTranslations("HomePage");
@@ -56,45 +64,48 @@ export default function HomePage({ locale }: HomePageProps) {
   let componentToRender;
   let imageToRender;
 
-switch (componentToShow) {
-  case "Main":
-    componentToRender = <HeroAnimated />;
-    imageToRender = {backgroundImage: "/heroBackgrounds/hero01.webp", backgroundImageDark: "/heroBackgrounds/hero01Night.webp"}
-    break;
-  case "Stack":
-    componentToRender = <HeroStackAnimated />;
-    imageToRender = {backgroundImage: "/heroBackgrounds/hero02.webp", backgroundImageDark: "/heroBackgrounds/hero02Night.webp"}
-    break;
-  case "Education":
-    componentToRender = <HeroEducationAnimated />;
-    imageToRender = {backgroundImage: "/heroBackgrounds/hero03.webp", backgroundImageDark: "/heroBackgrounds/hero03Night.webp"}
+  switch (componentToShow) {
+    case "Main":
+      componentToRender = <HeroAnimated />;
+      imageToRender = {
+        backgroundImage: "/heroBackgrounds/hero01.webp",
+        backgroundImageDark: "/heroBackgrounds/hero01Night.webp",
+      };
+      break;
+    case "Stack":
+      componentToRender = <HeroStackAnimated />;
+      imageToRender = {
+        backgroundImage: "/heroBackgrounds/hero02.webp",
+        backgroundImageDark: "/heroBackgrounds/hero02Night.webp",
+      };
+      break;
+    case "Education":
+      componentToRender = <HeroEducationAnimated />;
+      imageToRender = {
+        backgroundImage: "/heroBackgrounds/hero03.webp",
+        backgroundImageDark: "/heroBackgrounds/hero03Night.webp",
+      };
 
-    break;
-  default:
-    // Opcional: maneja el caso por defecto
-    componentToRender = null; // o cualquier componente por defecto
-    imageToRender = {
-      backgroundImage: "black",
-      backgroundImageDark: "black" // Agrega backgroundImageDark para consistencia
-    };
-    break;
-}
+      break;
+    default:
+      // Opcional: maneja el caso por defecto
+      componentToRender = null; // o cualquier componente por defecto
+      imageToRender = {
+        backgroundImage: "black",
+        backgroundImageDark: "black", // Agrega backgroundImageDark para consistencia
+      };
+      break;
+  }
 
   return (
     <div className="w-full h-full grid grid-rows-[1fr_2rem_2fr] landscape:grid-cols-[1fr_4rem_1.5fr] landscape:grid-rows-none">
       <div className="overflow-hidden ">
-      <Hero imageToRender={imageToRender}>
-      
-      {componentToRender}
-        
-        </Hero>
+        <Hero imageToRender={imageToRender}>{componentToRender}</Hero>
       </div>
 
       <div></div>
 
       <div className="rounded-xl overflow-scroll">
-
-      
         <div className="relative mt-10 w-full lg:pt-16 pr-1 pl-2 lg:pr-24 lg:pl-24">
           <MainSectionAnimated setComponentToShow={setComponentToShow} />
 
@@ -107,10 +118,10 @@ switch (componentToShow) {
           </SectionTitle>
 
           <TheStack01Animated />
-          <TheStack02Animated setComponentToShow={setComponentToShow}/>
+          <TheStack02Animated setComponentToShow={setComponentToShow} />
           <TheStack03Animated />
           <TheStack04Animated />
-          <TheStack05Animated  />
+          <TheStack05Animated />
 
           <SectionTitle
             preTitle={t("sectionTitlePreTitleEducation")}
@@ -120,24 +131,26 @@ switch (componentToShow) {
             {t("sectionTitleSubtextEducation")}
           </SectionTitle>
 
-          <EducationAnimated setComponentToShow={setComponentToShow} data={educationData}/>
+          <EducationAnimated
+            setComponentToShow={setComponentToShow}
+            educationData={educationData}
+            experienceData={experienceData}
+          />
 
-          <p className="text-lg p-1 lg:p-10">
-          {t("finalSentence")}
-        </p>
+          <p className="text-lg p-1 lg:p-10">{t("finalSentence")}</p>
 
           <Footer />
         </div>
-        
       </div>
     </div>
   );
 }
 
-
 //this code from now on to the end its only for animations using react-intersection-observer
 
-const MainSectionAnimated: React.FC<AnimatedComponentProps> = ({ setComponentToShow }) => {
+const MainSectionAnimated: React.FC<AnimatedComponentProps> = ({
+  setComponentToShow,
+}) => {
   const { ref, inView } = useInView({
     threshold: 0.1,
     triggerOnce: false,
@@ -179,7 +192,9 @@ const TheStack01Animated: React.FC = () => {
   );
 };
 
-const TheStack02Animated: React.FC<AnimatedComponentProps> = ({ setComponentToShow }) => {
+const TheStack02Animated: React.FC<AnimatedComponentProps> = ({
+  setComponentToShow,
+}) => {
   const { ref, inView } = useInView({
     threshold: 0.1,
     triggerOnce: false,
@@ -190,7 +205,6 @@ const TheStack02Animated: React.FC<AnimatedComponentProps> = ({ setComponentToSh
       setComponentToShow("Stack");
     }
   }, [inView, setComponentToShow]);
-
 
   return (
     <div
@@ -246,8 +260,6 @@ const TheStack05Animated: React.FC = () => {
     triggerOnce: false,
   });
 
-  
-
   return (
     <div
       ref={ref}
@@ -260,7 +272,11 @@ const TheStack05Animated: React.FC = () => {
   );
 };
 
-const EducationAnimated: React.FC<AnimatedComponentProps> = ({ setComponentToShow, data }) => {
+const EducationAnimated: React.FC<AnimatedComponentProps> = ({
+  setComponentToShow,
+  educationData = [],
+  experienceData = [],
+}) => {
   const { ref, inView } = useInView({
     threshold: 0.1,
     triggerOnce: false,
@@ -279,8 +295,8 @@ const EducationAnimated: React.FC<AnimatedComponentProps> = ({ setComponentToSho
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      <EducationTimeline side="right" title="Educación" data={data} />
-      <EducationTimeline side="left" title="Experiencia" data={data}/>
+      <EducationTimeline side="right" title="Educación" data={educationData} />
+      <ExperienceTimeline side="left" title="Experiencia" data={experienceData} />
     </div>
   );
 };

@@ -2,9 +2,9 @@ export default function TypeScriptLogo() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      height="auto"
+      height="4.5rem"
       viewBox="0 0 640 640"
-      width="auto"
+      width="4.5rem"
     >
       <path d="m0 0h640v640h-640z" fill="#017acb" />
       <path
