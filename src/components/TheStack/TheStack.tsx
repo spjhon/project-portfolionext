@@ -26,7 +26,7 @@ const TheStack: React.FC<TheStackProps> = ({ title, images }) => {
             rel="noopener noreferrer"
             aria-label={`Logo of ${image.label}`}
             title={image.label}
-            role="img"
+            
           >
             <div
               
