@@ -42,6 +42,9 @@ const ExperienceTimeline: React.FC<EducationTimelineProps> = ({
                 {t(`role${item.id}`)}
               </h3>
               <p className="text-gray-500">{t(`enterprise${item.id}`)}</p>
+              <p className="text-gray-500"> {t(`job${item.id}`)}</p>
+              
+
             </div>
           );
         })}

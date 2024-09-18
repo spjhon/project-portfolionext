@@ -39,6 +39,10 @@ import {
   experienceData,
 } from "../../components/EducationTimeline/data";
 
+
+
+
+
 // Define props types for animated components
 interface DataItem {
   id: number;
@@ -54,6 +58,10 @@ interface AnimatedComponentProps {
 interface HomePageProps {
   locale: string; // Define el tipo para `locale`
 }
+
+
+
+
 
 export default function HomePage({ locale }: HomePageProps) {
   const t = useTranslations("HomePage");
@@ -145,6 +153,12 @@ export default function HomePage({ locale }: HomePageProps) {
     </div>
   );
 }
+
+
+
+
+
+
 
 //this code from now on to the end its only for animations using react-intersection-observer
 
