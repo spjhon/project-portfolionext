@@ -42,8 +42,7 @@ const HeroMain: React.FC = () => {
           onClose={onCloseModal}
           center
           focusTrapped
-          aria-labelledby="Contact modal"
-          aria-describedby="Here you can find email and phone number of the developer "
+          
           classNames={{
             modal: "rounded-xl",
           }}
