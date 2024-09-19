@@ -9,13 +9,11 @@ interface EducationItem {
 // Definimos los tipos de las props que recibe el componente
 interface EducationTimelineProps {
   side?: "left" | "right";
-  title?: string;
   data: EducationItem[];
 }
 
 const ExperienceTimeline: React.FC<EducationTimelineProps> = ({
   side = "left",
-  title,
   data,
 }) => {
   const t = useTranslations("ExperienceTimeline");
@@ -24,7 +22,7 @@ const ExperienceTimeline: React.FC<EducationTimelineProps> = ({
 
   return (
     <section className="container mx-auto py-8">
-      <h2 className="text-3xl font-bold text-center mb-8">{title}</h2>
+      <h2 className="text-3xl font-bold text-center mb-8">{t("mainTitle")}</h2>
       <div
         className={`relative ${isLeft ? "border-l-4" : "border-r-4"} border-gray-200`}
       >

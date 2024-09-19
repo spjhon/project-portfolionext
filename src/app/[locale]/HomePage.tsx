@@ -310,6 +310,8 @@ const TimeLineAnimated: React.FC<AnimatedComponentProps> = ({
     }
   }, [inView, setComponentToShow]);
 
+
+
   return (
     <div
       ref={ref}
@@ -317,8 +319,8 @@ const TimeLineAnimated: React.FC<AnimatedComponentProps> = ({
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      <EducationTimeline side="right" title="Educación" data={educationData} />
-      <ExperienceTimeline side="left" title="Experiencia" data={experienceData} />
+      <EducationTimeline side="right" data={educationData} />
+      <ExperienceTimeline side="left" data={experienceData} />
     </div>
   );
 };

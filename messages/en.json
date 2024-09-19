@@ -22,7 +22,7 @@
       "sectionTitleSubtextEducation": "Thanks to my experience in industrial engineering, project management, and team leadership, I not only offer technical solutions but also bring a strategic approach that adds value to any project I am involved in.",
     
       "finalSentence": "I am currently expanding my knowledge in Node.js and PostgreSQL, aiming to develop robust, maintainable, and fast web applications aligned with industry best standards and practices."
-    
+
     },
     "HeroMain": {
       "upperText": "👋 Hi, My Name Is:",
@@ -49,6 +49,8 @@
       "HeroMainModalTitle": "Send a message, Call, or Text!"
     },
     "EducationTimeline": {
+      "mainTitle": "Education",
+
       "year1": "2011",
       "education1": "Bachelor's Degree in Industrial Engineering",
       "institute1": "National University of Colombia",
@@ -74,6 +76,8 @@
       "institute6": "Maximilian Schwarzmüller - Udemy"
     },
     "ExperienceTimeline": {
+
+       "mainTitle": "Experience",
       "year1": "2015 - 2023",
       "role1": " Technical Director",
       "job1" : "Management of all technical aspects of the automotive diagnostic center. Personnel management. Responsible for inspections and technical maintenance of computer equipment. Quality Coordinator and Project Manager for the company.",
@@ -106,8 +110,14 @@
     
     },
 
-    "AboutPage": {
-      "title": "About Page"
+    "projectsPage": {
+      "sectionTitlePreTitle": "My projects",
+      "sectionTitleCatchPhrase": "Projects",
+      "sectionTitleSubtext": "List of Projects",
+
+      "finalSentence": "final sentence"
+
+    
     },
     
   "LocaleSwitcher": {

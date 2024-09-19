@@ -34,18 +34,6 @@ const HeroEducation: React.FC = () => {
       {/* Contenedor de imágenes */}
       {isLandscape && (
         <div className="flex space-x-4 mt-4">
-          <a
-            href="https://udemy.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Logo of the Udemy Online Platform"
-            title="Go to the Udemy website"
-          >
-            <div className="w-16 h-6 flex justify items-center hover:shadow transition-transform duration-300 transform hover:scale-105">
-              <UdemyLogo></UdemyLogo>
-            </div>
-          </a>
-
           <div className="w-16 h-6 flex justify items-center hover:shadow transition-transform duration-300 transform hover:scale-105">
             <a
               href="https://unal.edu.co"
@@ -63,6 +51,18 @@ const HeroEducation: React.FC = () => {
               />
             </a>
           </div>
+
+          <a
+            href="https://udemy.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Logo of the Udemy Online Platform"
+            title="Go to the Udemy website"
+          >
+            <div className="w-16 h-6 flex justify items-center hover:shadow transition-transform duration-300 transform hover:scale-105">
+              <UdemyLogo></UdemyLogo>
+            </div>
+          </a>
 
           <div className="w-16 h-6 flex justify items-center hover:shadow transition-transform duration-300 transform hover:scale-105">
             <a
@@ -93,7 +93,6 @@ const HeroEducation: React.FC = () => {
           onClose={onCloseModal}
           center
           focusTrapped
-          
           classNames={{
             modal: "rounded-xl",
           }}

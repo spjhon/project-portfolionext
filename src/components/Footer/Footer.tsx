@@ -104,7 +104,7 @@ const Footer = () => {
 
       {/* Texto final */}
       <div className="text-center mt-6">
-        <p>© {currentYear} Hecho con amor por Juan Aristizabal</p>
+        <p>© {currentYear} Juan Aristizabal</p>
       </div>
     </footer>
   );

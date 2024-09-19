@@ -39,13 +39,9 @@ Tested on [HTML Validator](https://validator.w3.org/)
 
 ## How to Use
 
-1. Clone this repository
+1. Clone this repository: `git clone https://github.com/spjhon/project-portfolionext.git`
 
-    `git clone https://github.com/spjhon/project-portfolionext.git`
-
-2. Install dependencies
-
-`npm install`
+2. Install dependencies: `npm install`
 
 To run in developer mode on localHost:3000: `npm run dev`
 
@@ -69,7 +65,7 @@ As for Next-Intl, shared routes are used according to its documentation.
 
 [Cloudflare Deployment](project-portfolionext.pages.dev)
 
-# Personal Portfolio
+# Portafolio Personal
 
 ![Imagen](/public/screencapture.png)
 
@@ -110,13 +106,9 @@ Testeada en [HTML validator](https://validator.w3.org/)
 
 ## Como usar
 
-1. Clonar este repositorio
+1. Clonar este repositorio: `git clone https://github.com/spjhon/project-portfolionext.git`
 
-    `git clone https://github.com/spjhon/project-portfolionext.git`
-
-2. Instalar dependencias
-
-`npm install`
+2. Instalar dependencias: `npm install`
 
 Para ejecutar modo desarrollador en localHost:3000: `npm run dev`
 

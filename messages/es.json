@@ -24,6 +24,8 @@
     
       "finalSentence": "Actualmente, me encuentro en proceso de ampliar mis conocimientos en Node.js y PostgreSQL, con el objetivo de desarrollar aplicaciones web robustas, mantenibles, rápidas y alineadas con los mejores estándares y buenas prácticas del sector."
 
+     
+      
     },
     "HeroMain": {
       "upperText": "👋 Hola, Mi Nombre es:",
@@ -50,6 +52,8 @@
       "HeroMainModalTitle": "Envía un Mensaje, Llama o Escribe!"
     },
     "EducationTimeline": {
+      "mainTitle": "Educación",
+
       "year1": "2011",
       "education1": "Ingenieria Industrial",
       "institute1": "Universidad Nacional de Colombia",
@@ -75,6 +79,8 @@
       "institute6": "Maximilian Schwarzmüller - Udemy"
     },
     "ExperienceTimeline": {
+      "mainTitle": "Experiencia",
+
       "year1": "2015 - 2023",
       "role1": "Director Tecnico",
       "job1" : "Gestión de todos los aspectos técnicos del centro de diagnóstico automotriz. Gestión de personal. Responsable de las inspecciones y el mantenimiento técnico del equipo informático. Coordinador de Calidad y Gerente de Proyectos de la empresa.",
@@ -107,10 +113,14 @@
     
     },
   
-    "AboutPage": {
-      "title": "About Page"
-    },
+    "projectsPage": {
+      "sectionTitlePreTitle": "Mis projectos",
+      "sectionTitleCatchPhrase": "Projectos",
+      "sectionTitleSubtext": "Lista de projectos",
     
+      "finalSentence": "frase final"
+
+    },
   "LocaleSwitcher": {
     "label": "Cambiar idioma",
     "locale": "{locale, select, es {es Español} en {us English} other {Unknown}}"
