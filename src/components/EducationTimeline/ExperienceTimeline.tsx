@@ -31,7 +31,7 @@ const ExperienceTimeline: React.FC<EducationTimelineProps> = ({
         {data.map((item) => {
           return (
             <article
-              aria-labelledby={`timeline-item-${item.id}`}
+              
               key={item.id}
               className={`mb-8 ${isLeft ? "pl-8" : "pr-8"} relative ${isLeft ? "text-left" : "text-right"}`}
             >
