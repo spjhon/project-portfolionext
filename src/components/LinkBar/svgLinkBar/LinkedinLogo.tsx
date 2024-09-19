@@ -24,7 +24,7 @@ export default function LinkedinLogo() {
       height="2rem"
       width="2rem"
       version="1.1"
-      id="Layer_1"
+      id="LinkedinLogo"
       viewBox="-143 145 512 512"
       xmlSpace="preserve"
       className=""
