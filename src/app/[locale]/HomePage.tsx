@@ -119,10 +119,10 @@ export default function HomePage({ locale }: HomePageProps) {
         <Hero imageToRender={imageToRender}>{componentToRender}</Hero>
       </section>
 
-      <div></div>
+      <div/>
 
       <main className="rounded-xl overflow-scroll">
-        <div className="relative mt-10 w-full lg:pt-16 pr-1 pl-2 lg:pr-24 lg:pl-24">
+        <div className="relative mt-16 w-full lg:pt-8 pr-1 pl-2 lg:pr-24 lg:pl-24">
           <MainSectionAnimated setComponentToShow={setComponentToShow} />
 
           <SectionTitle
