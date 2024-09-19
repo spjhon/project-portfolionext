@@ -9,7 +9,7 @@ const MainSection: React.FC = () => {
   const t = useTranslations("MainSection");
 
   return (
-    <section aria-label="Main introduction section" className="p-1 lg:p-6">
+    <section aria-label="Main_introduction_section" className="p-1 lg:p-6">
       {/* Frase motivante */}
 
       <h2 className="text-4xl font-bold">{t("catchphrase")}</h2>

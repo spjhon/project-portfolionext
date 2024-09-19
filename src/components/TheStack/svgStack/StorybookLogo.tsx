@@ -16,7 +16,7 @@ export default function StorybookLogo() {
         ></path>
       </defs>
       <g>
-        <mask id="mask-2" fill="white">
+        <mask fill="white">
           <use xlinkHref="#path-1"></use>
         </mask>
         <use fill="#FF4785" fillRule="nonzero" xlinkHref="#path-1"></use>

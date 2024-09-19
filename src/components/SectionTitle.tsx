@@ -12,7 +12,7 @@ interface SectionTitleProps {
 
 export const SectionTitle = (props: Readonly<SectionTitleProps>) => {
   return (
-    <header aria-labelledby="section-title" aria-describedby="section-description">
+    <header aria-labelledby="section-title-for-main" aria-describedby="section-description-for-main">
     <Container
       className={`flex w-full flex-col mt-4 ${
         props.align === "left" ? "" : "items-center justify-center text-center"
@@ -29,13 +29,13 @@ export const SectionTitle = (props: Readonly<SectionTitleProps>) => {
       )}
 
       {props.title && (
-        <h2 id="Title of the section" className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight lg:leading-tight lg:text-4xl ">
+        <h2 id="section-title-for-main" className="max-w-2xl mt-3 text-3xl font-bold leading-snug tracking-tight lg:leading-tight lg:text-4xl ">
           {props.title}
         </h2>
       )}
 
       {props.children && (
-        <p id="Description of the section, it could be the stack or the education timeline" className="max-w-2xl py-4 text-lg leading-normal text-gray-900 lg:text-xl xl:text-xl dark:text-gray-300">
+        <p id="section-description-for-main" className="max-w-2xl py-4 text-lg leading-normal text-gray-900 lg:text-xl xl:text-xl dark:text-gray-300">
           {props.children}
         </p>
       )}
