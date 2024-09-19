@@ -105,7 +105,7 @@ Explanation of the component design:
                   ))}
                   <CloseButton
                     as="a"
-                    href="https://wa.me/3147045347"
+                    href="https://wa.me/+573215224583"
                     target="_blank"
                     rel="noopener"
                     title="Escribenos a whatsapp"

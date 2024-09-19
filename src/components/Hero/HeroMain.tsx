@@ -23,7 +23,7 @@ const HeroMain: React.FC = () => {
       <header className="relative ">
         <NeonTitle></NeonTitle>
         <h1 className="text-2xl lg:text-4xl font-bold text-barra">
-          UN TAL JUAN ARISTIZABAL
+          JUAN ARISTIZABAL
         </h1>
       </header>
       <p className="text-sm text-barra">{t("subText")}</p>
