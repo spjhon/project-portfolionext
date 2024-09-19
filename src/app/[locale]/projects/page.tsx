@@ -17,31 +17,26 @@ import Hero from "@/components/Hero/Hero";
 //image that goes to the section title
 import SectionProjectSVG from "./SVG/SectionProjectsSVG";
 
-
 export default function Projects({ params: { locale } }: ProjectProps) {
+  //FOR STATIC GENERATION FORM NEXT INT
 
-//FOR STATIC GENERATION FORM NEXT INT
-  
   const t = useTranslations("projectsPage");
 
   let imageToRender = {
-    backgroundImage: "/heroBackgrounds/hero03.webp",
-    backgroundImageDark: "/heroBackgrounds/hero03.webp", // Agrega backgroundImageDark para consistencia
+    backgroundImage: "/heroBackgroundProjects/hero01.jpg",
+    backgroundImageDark: "/heroBackgroundProjects/hero01Night.jpg", // Agrega backgroundImageDark para consistencia
   };
 
   return (
     <div className="w-full h-full grid grid-rows-[1fr_2rem_2fr] landscape:grid-cols-[1fr_4rem_1.5fr] landscape:grid-rows-none">
-      
       <section className="overflow-hidden ">
         <Hero imageToRender={imageToRender}>TEXTO</Hero>
       </section>
 
-      <div/>
+      <div />
 
       <main className="rounded-xl overflow-scroll">
         <div className="relative mt-16 w-full lg:pt-8 pr-1 pl-2 lg:pr-24 lg:pl-24">
-          
-
           <SectionTitle
             preTitle={t("sectionTitlePreTitle")}
             title={t("sectionTitleCatchPhrase")}
@@ -50,9 +45,9 @@ export default function Projects({ params: { locale } }: ProjectProps) {
             {t("sectionTitleSubtext")}
           </SectionTitle>
 
-          
-
-          <p className="text-lg p-1 lg:p-10">{t("finalSentence")}</p>
+          <p className="text-lg p-1 lg:p-10 italic font-semibold text-gray-700 dark:text-gray-300 border-l-4 border-warning  pl-4">
+            {t("finalSentence")}
+          </p>
 
           <Footer />
         </div>
