@@ -16,7 +16,7 @@ const LinkBar = () => {
             href="https://github.com/spjhon"
             target="_blank"
             rel="noopener noreferrer"
-            title="Visita mi Github"
+            title="Github"
             className="relative z-30 hover:shadow"
             aria-label="Visit my github"
           >
@@ -35,10 +35,10 @@ const LinkBar = () => {
         </div>
         <div className="z-30 relative group transition-transform duration-300 transform hover:scale-105 flex items-center justify-center w-16 h-16">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/aristizabaljuan"
             target="_blank"
             rel="noopener noreferrer"
-            title="Visita mi linkedin"
+            title="LinkedIn"
             className="relative z-30 hover:shadow"
             aria-label="Visit my linkedin"
           >
@@ -58,10 +58,10 @@ const LinkBar = () => {
 
         <div className=" z-30 relative group transition-transform duration-300 transform hover:scale-105 flex items-center justify-center w-16 h-16">
           <a
-            href="https://wa.me/3215224583"
+            href="https://wa.me/+573215224583"
             target="_blank"
             rel="noopener noreferrer"
-            title="Escribenos a whatsapp"
+            title="WhatsApp"
             className="relative z-30 hover:shadow"
             aria-label="Visit my whatsapp"
           >

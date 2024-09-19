@@ -96,9 +96,16 @@
     "FooterComponent": {
       "contactTitle": "Contact Me Directly:",
       "phone": "Phone:",
-      "city": "City:"
+      "city": "City:",
+      "aboutPortfolio": "About this Portfolio"
     },
+    "AboutPortfolioModalContent": {
+      "aboutPortfolioTitleModal": "About this Portfolio",
+      "portfolioDescription": "This site was designed from scratch (no templates used), learning along the way various essential technologies for a website or web app, such as dark theme and internationalization. In the source code, you will find a guide on how the project is structured, a commit history (in Spanish), and comments throughout the code in both English and Spanish.",
+      "aboutTechnologies": "Technologies Used"
     
+    },
+
     "AboutPage": {
       "title": "About Page"
     },

@@ -96,7 +96,15 @@
     "FooterComponent": {
       "contactTitle": "Contáctame Directamente:",
       "phone": "Teléfono:",
-      "city": "Ciudad:"
+      "city": "Ciudad:",
+      "aboutPortfolio": "Acerca de este Portafolio"
+
+    },
+    "AboutPortfolioModalContent": {
+      "aboutPortfolioTitleModal": "Acerca de este portafolio",
+      "portfolioDescription": "Este sitio ha sido diseñado desde cero, aprendiendo en el proceso diferentes tecnologías esenciales para un sitio o una web app, como el tema oscuro (dark theme) y la internacionalización. En el código fuente podrán encontrar una guía sobre la estructura del proyecto, un historial de commits (en español), y comentarios a lo largo del código, tanto en inglés como en español.",
+      "aboutTechnologies": "Tecnologias Utilizadas"
+    
     },
   
     "AboutPage": {
