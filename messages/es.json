@@ -1,145 +1,134 @@
 {
   "MainLayout": {
-      "description": "Portafolio web dinámico desarrollado con Next.js y React, diseñado para mostrar proyectos, habilidades y experiencia profesional de un desarrollador web. Implementa una arquitectura moderna y optimizada para la navegación fluida y responsiva, con soporte para temas oscuros y claros, insternazionalizacion y despliegue estatico instantaneo"
-    },
-    "NavigationLinks": {
-      "home": "Inicio",
-      "projects": "Projectos"
-    
-    },
-    "MainSection": {
-      "catchphrase": "Creando experiencias digitales con codigo y creatividad",
-      "introduction01": "Soy un desarrollador front-end con una sólida formación y experiencia en ingeniería industrial, titulado por la Universidad Nacional de Colombia, y tengo a Next.js como mi herramienta principal para crear experiencias web modernas y dinámicas.",
-      "introduction02": "Mi formación en desarrollo web ha sido guiada por algunos de los nombres más influyentes de la industria, como Stephen Grider, Maximilian Schwarzmüller y Jonas Schmedtmann, a través de sus reconocidos cursos en Udemy. Además, he perfeccionado mis habilidades con el icónico libro JavaScript: The Definitive Guide de David Flanagan, y por supuesto con Josh Goldberg y de su esclarecedor libro Learning TypeScript lo que me ha permitido diseñar y desarrollar sitios web visualmente atractivos y altamente funcionales."
-    },
-    "HomePage": {
-      
-      "sectionTitlePreTitle": "Mis Herramientas",
-      "sectionTitleCatchPhrase": "Herramientas modernas para un mundo en constante cambio.",
-      "sectionTitleSubtext": "Un stack altamente adaptable a las necesidades de velocidad, buena experiencia de desarrollo y mantenibilidad",
+    "description": "Portafolio web dinámico desarrollado con Next.js y React, diseñado para mostrar proyectos, habilidades y experiencia profesional de un desarrollador web. Implementa una arquitectura moderna y optimizada para la navegación fluida y responsiva, con soporte para temas oscuros y claros, internacionalización y despliegue estático instantáneo."
+  },
+  "NavigationLinks": {
+    "home": "Inicio",
+    "projects": "Proyectos"
+  },
+  "MainSection": {
+    "catchphrase": "Creando experiencias digitales con código y creatividad",
+    "introduction01": "Soy un desarrollador front-end con una sólida formación y experiencia en Ingeniería Industrial. Titulado por la Universidad Nacional de Colombia, y tengo a Next.js como mi herramienta principal para crear experiencias web modernas y dinámicas.",
+    "introduction02": "Mi formación en desarrollo web ha sido guiada por algunos de los nombres más influyentes de la industria, como Stephen Grider, Maximilian Schwarzmüller y Jonas Schmedtmann, a través de sus reconocidos cursos en Udemy. Además, he perfeccionado mis habilidades con el icónico libro *JavaScript: The Definitive Guide* de David Flanagan y, por supuesto, con Josh Goldberg y su esclarecedor libro *Learning TypeScript*, lo que me ha permitido diseñar y desarrollar sitios web visualmente atractivos y altamente funcionales."
+  },
+  "HomePage": {
+    "sectionTitlePreTitle": "Mis Herramientas",
+    "sectionTitleCatchPhrase": "Herramientas modernas para un mundo en constante cambio.",
+    "sectionTitleSubtext": "Un stack altamente adaptable a las necesidades de velocidad, buena experiencia de desarrollo y mantenibilidad.",
 
-      "sectionTitlePreTitleEducation": "Mi Educacion",
-      "sectionTitleCatchPhraseEducation": "Habilidades de Alta Calidad",
-      "sectionTitleSubtextEducation": "Gracias a mi experiencia en ingeniería industrial, gestión de proyectos y liderazgo de equipos, no solo ofrezco soluciones técnicas, sino también un enfoque estratégico que aporta un valor añadido a cualquier proyecto en el que participo.",
-    
-      "finalSentence": "Actualmente, me encuentro en proceso de ampliar mis conocimientos en Node.js y PostgreSQL, con el objetivo de desarrollar aplicaciones web robustas, mantenibles, rápidas y alineadas con los mejores estándares y buenas prácticas del sector."
+    "sectionTitlePreTitleEducation": "Mi Educación",
+    "sectionTitleCatchPhraseEducation": "Habilidades de Alta Calidad",
+    "sectionTitleSubtextEducation": "Gracias a mi experiencia en ingeniería industrial, gestión de proyectos y liderazgo de equipos, no solo ofrezco soluciones técnicas, sino también un enfoque estratégico que aporta un valor añadido a cualquier proyecto en el que participo.",
 
-     
-      
-    },
-    "HeroMain": {
-      "upperText": "👋 Hola, Mi Nombre es:",
-      "subText": "Desarrollador Front-End",
-      "button": "Contáctame",
-      "HeroMainModalSubText": "Disponible entre las 7am y las 10pm hora Colombiana (12 pm a 3 am UTC)",
-      "HeroMainModalTitle": "Envía un Mensaje, Llama o Escribe!"
-    },
-    "HeroStack": {
-      "upperText": "📦 Mis Herramientas",
-      "mainText": "CALIDAD SOBRE CANTIDAD",
-      "subText": "Un stack moderno rapido y eficiente",
-      "button": "Contáctame",
-      "HeroMainModalSubText": "Disponible entre las 7am y las 10pm hora Colombiana (12 pm a 3 am UTC)",
-      "HeroMainModalTitle": "Envía un Mensaje, Llama o Escribe!"
-    },
-    "HeroEducation": {
-      "upperText": "🎓 Educación",
-      "mainText": "APRENDÍ DE LOS MEJORES",
-      "subText": "Desde Stephen Grider Hasta Maximilian Schwarzmüller",
-      "anchorAltUnal": "Ir a la Universidad Nacional de Colombia",
-      "button": "Contáctame",
-      "HeroMainModalSubText": "Disponible entre las 7am y las 10pm hora Colombiana (12 pm a 3 am UTC)",
-      "HeroMainModalTitle": "Envía un Mensaje, Llama o Escribe!"
-    },
+    "finalSentence": "Actualmente, me encuentro en proceso de ampliar mis conocimientos en Node.js y PostgreSQL, con el objetivo de desarrollar aplicaciones web robustas, mantenibles, rápidas y alineadas con los mejores estándares y buenas prácticas del sector."
+  },
+  "HeroMain": {
+    "upperText": "👋 Hola, Mi Nombre es:",
+    "subText": "Desarrollador Front-End",
+    "button": "Contáctame",
+    "HeroMainModalSubText": "Disponible entre las 7 am y las 10 pm hora Colombiana (12 pm a 3 am UTC)",
+    "HeroMainModalTitle": "¡Envía un mensaje, llama o escribe!"
+  },
+  "HeroStack": {
+    "upperText": "📦 Mis Herramientas",
+    "mainText": "CALIDAD SOBRE CANTIDAD",
+    "subText": "Un stack moderno, rápido y eficiente.",
+    "button": "Contáctame",
+    "HeroMainModalSubText": "Disponible entre las 7 am y las 10 pm hora Colombiana (12 pm a 3 am UTC)",
+    "HeroMainModalTitle": "¡Envía un mensaje, llama o escribe!"
+  },
+  "HeroEducation": {
+    "upperText": "🎓 Educación",
+    "mainText": "APRENDÍ DE LOS MEJORES",
+    "subText": "Desde Stephen Grider hasta Maximilian Schwarzmüller",
+    "anchorAltUnal": "Ir a la Universidad Nacional de Colombia",
+    "button": "Contáctame",
+    "HeroMainModalSubText": "Disponible entre las 7 am y las 10 pm hora Colombiana (12 pm a 3 am UTC)",
+    "HeroMainModalTitle": "¡Envía un mensaje, llama o escribe!"
+  },
+  "HeroProjects": {
+    "upperText": "🚀 Emprendimientos",
+    "mainText": "PÁGINAS REALES, CLIENTES REALES",
+    "subText": "¡Nada mejor para probar tus habilidades que clientes que pagan!"
+  },
+  "EducationTimeline": {
+    "mainTitle": "Educación",
 
-    "HeroProjects": {
-      "upperText": "🚀 Emprendimientos",
-      "mainText": "PAGINAS REALES, CLIENTES REALES",
-      "subText": "Nada mejor para probar tus habilidades que clientes que pagan!"
-    },
-    "EducationTimeline": {
-      "mainTitle": "Educación",
+    "year1": "2011",
+    "education1": "Ingeniería Industrial",
+    "institute1": "Universidad Nacional de Colombia",
 
-      "year1": "2011",
-      "education1": "Ingenieria Industrial",
-      "institute1": "Universidad Nacional de Colombia",
+    "year2": "2022",
+    "education2": "Desarrollo de Software con Énfasis en Desarrollo Web",
+    "institute2": "Ministerio de Tecnologías de la Información y las Comunicaciones y la Universidad del Norte",
 
-      "year2": "2022",
-      "education2": "Desarrollo de Software con Enfasis en Desarrollo Web",
-      "institute2": "Ministerio de Tecnologias de La Informacion y las Comunicaciones y la Universidad del Norte",
+    "year3": "2022",
+    "education3": "The Complete JavaScript Course 2022: From Zero to Expert!",
+    "institute3": "Jonas Schmedtmann - Udemy",
 
-      "year3": "2022",
-      "education3": "The Complete JavaScript Course 2022: From Zero to Expert!",
-      "institute3": "Jonas Schmedtmann - Udemy",
+    "year4": "2022",
+    "education4": "Practical Git",
+    "institute4": "Dmytro Khmelenko - Udemy",
 
-      "year4": "2022",
-      "education4": "Practical Git",
-      "institute4": "Dmytro Khmelenko - Udemy",
+    "year5": "2023",
+    "education5": "Modern React with Redux [2023 Update]",
+    "institute5": "Stephen Grider - Udemy",
 
-      "year5": "2023",
-      "education5": "Modern React with Redux [2023 update]",
-      "institute5": "Stephen Grider - Udemy",
+    "year6": "2024",
+    "education6": "Next.js 14 & React - The Complete Guide",
+    "institute6": "Maximilian Schwarzmüller - Udemy"
+},
+ "ExperienceTimeline": {
+    "mainTitle": "Experiencia",
 
-      "year6": "2024",
-      "education6": "Next.js 14 & React - The Complete Guide",
-      "institute6": "Maximilian Schwarzmüller - Udemy"
-    },
-    "ExperienceTimeline": {
-      "mainTitle": "Experiencia",
+    "year1": "2015 - 2023",
+    "role1": "Director Técnico",
+    "job1": "Gestión de todos los aspectos técnicos del centro de diagnóstico automotriz. Gestión de personal. Responsable de las inspecciones y el mantenimiento técnico del equipo informático. Coordinador de Calidad y Gerente de Proyectos de la empresa.",
+    "enterprise1": "CDA Fullmotos SAS",
 
-      "year1": "2015 - 2023",
-      "role1": "Director Tecnico",
-      "job1" : "Gestión de todos los aspectos técnicos del centro de diagnóstico automotriz. Gestión de personal. Responsable de las inspecciones y el mantenimiento técnico del equipo informático. Coordinador de Calidad y Gerente de Proyectos de la empresa.",
-      "enterprise1": "CDA Fullmotos SAS",
+    "year2": "2023 - Presente",
+    "role2": "Desarrollador Web",
+    "job2": "Creación de landing pages personalizadas con Next.js",
+    "enterprise2": "Freelancer"
+},
+"copyClipBoard": {
+    "titleEmail": "Correo Electrónico",
+    "titlePhone": "Número Telefónico"
+},
+"neonTitle": {
+    "title": "🦉 Siempre abierto"
+},
 
-      "year2": "2023 - Presente",
-      "role2": "Desarrollador Web",
-      "job2" : "Creacion de Landing Pages personalizadas con Next Js",
-      "enterprise2": "Freelancer"
-    },
-    "copyClipBoard": {
-      "titleEmail": "Correo Electrónico",
-      "titlePhone": "Núnero Telefonico"
-    },
-    "neonTitle": {
-      "title": "🦉 Siempre abierto"
-    },
+"FooterComponent": {
+    "contactTitle": "Contáctame Directamente:",
+    "phone": "Teléfono:",
+    "city": "Ciudad:",
+    "aboutPortfolio": "Acerca de este Portafolio"
+},
+ "AboutPortfolioModalContent": {
+    "aboutPortfolioTitleModal": "Acerca de este portafolio",
+    "portfolioDescription": "Este sitio ha sido diseñado desde cero, aprendiendo en el proceso diferentes tecnologías esenciales para un sitio o una web app, como el tema oscuro (dark theme) y la internacionalización. En el código fuente podrán encontrar una guía sobre la estructura del proyecto, un historial de commits (en español), y comentarios a lo largo del código, tanto en inglés como en español.",
+    "aboutTechnologies": "Tecnologías Utilizadas"
+},
 
-    "FooterComponent": {
-      "contactTitle": "Contáctame Directamente:",
-      "phone": "Teléfono:",
-      "city": "Ciudad:",
-      "aboutPortfolio": "Acerca de este Portafolio"
+"projectsPage": {
+    "sectionTitlePreTitle": "Mis proyectos",
+    "sectionTitleCatchPhrase": "Proyectos",
+    "sectionTitleSubtext": "Creados para clientes reales, mostrando un despliegue de habilidades en desarrollo web.",
 
-    },
-    "AboutPortfolioModalContent": {
-      "aboutPortfolioTitleModal": "Acerca de este portafolio",
-      "portfolioDescription": "Este sitio ha sido diseñado desde cero, aprendiendo en el proceso diferentes tecnologías esenciales para un sitio o una web app, como el tema oscuro (dark theme) y la internacionalización. En el código fuente podrán encontrar una guía sobre la estructura del proyecto, un historial de commits (en español), y comentarios a lo largo del código, tanto en inglés como en español.",
-      "aboutTechnologies": "Tecnologias Utilizadas"
-    
-    },
-  
-    "projectsPage": {
-      "sectionTitlePreTitle": "Mis projectos",
-      "sectionTitleCatchPhrase": "Projectos",
-      "sectionTitleSubtext": "Creados para clientes reales, mostrando un despliegue de habilidades en desarrollo web.",
-    
-      "finalSentence": "Mi objetivo no es reinventar la rueda ni copiar y pegar código sin criterio. En su lugar, priorizo seguir estándares y mejores prácticas, ya que son aliados fundamentales para crear aplicaciones web efectivas."
+    "finalSentence": "Mi objetivo no es reinventar la rueda ni copiar y pegar código sin criterio. En su lugar, priorizo seguir estándares y mejores prácticas, ya que son aliados fundamentales para crear aplicaciones web efectivas."
+},
 
-    },
-
-    "MALEPETinfo": {
-
-      "projectListTitle": "MALE Pet Care Informacion del Sitio Web",
-      "projectInfoTitle": "Acerca del Sitio Web",
-      "projectTechnologiesTitle": "Tecnologías Utilizadas",
-      "projectInfo": "Landing Page del sito web informativo local acerca de la contratacion del servicio de cuidado de mascotas, contiene links a las diferentes redes sociales, totalmente responsivo y cambio de themes",
+"MALEPETinfo": {
+    "projectListTitle": "MALE Pet Care Información del Sitio Web",
+    "projectInfoTitle": "Acerca del Sitio Web",
+    "projectTechnologiesTitle": "Tecnologías Utilizadas",
+    "projectInfo": "Landing page del sitio web informativo local acerca de la contratación del servicio de cuidado de mascotas, contiene enlaces a las diferentes redes sociales, totalmente responsivo y cambio de tema.",
     "projectWebsiteLink": "Visita",
     "projectGithubLink": "Código Fuente"
-
-    },
-  "LocaleSwitcher": {
+},
+"LocaleSwitcher": {
     "label": "Cambiar idioma",
     "locale": "{locale, select, es {es Español} en {us English} other {Unknown}}"
-  }
+}
 }

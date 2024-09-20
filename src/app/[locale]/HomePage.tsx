@@ -115,7 +115,7 @@ export default function HomePage({ locale }: HomePageProps) {
       <div/>
 
       <main className="rounded-xl overflow-scroll">
-        <div className="relative mt-16 w-full lg:pt-8 pr-1 pl-2 lg:pr-24 lg:pl-24">
+        <div className="relative mt-16 landscape:mt-24 w-full lg:pt-8 pr-1 pl-2 lg:pr-24 lg:pl-24">
           <MainSectionAnimated setComponentToShow={setComponentToShow} />
 
           <SectionTitle

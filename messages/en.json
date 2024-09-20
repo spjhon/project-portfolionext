@@ -1,147 +1,135 @@
 {
   "MainLayout": {
-      "description": "Dynamic web portfolio developed with Next.js and React, designed to showcase projects, skills, and professional experience of a web developer. Implements a modern and optimized architecture for smooth and responsive navigation, with support for dark and light themes, internationalization, and instant static deployment."
-    },
-    "NavigationLinks": {
-      "home": "Home",
-      "projects": "Projects"
-    },
-    "MainSection": {
-      "catchphrase": "Crafting Digital Experiences with Code and Creativity",
-      "introduction01": "I am a front-end developer with a strong background and experience in industrial engineering, holding a degree from the National University of Colombia, and I specialize in using Next.js as my primary tool to create modern and dynamic web experiences.",
-      "introduction02": "My web development training has been guided by some of the most influential names in the industry, such as Stephen Grider, Maximilian Schwarzmüller, and Jonas Schmedtmann, through their renowned courses on Udemy. Additionally, I have honed my skills with the iconic book JavaScript: The Definitive Guide by David Flanagan, and of course, Learning TypeScript by Josh Goldberg, which has enabled me to design and develop visually appealing and highly functional websites."
-    },
-    "HomePage": {
+    "description": "A dynamic web portfolio developed with Next.js and React, designed to showcase the projects, skills, and professional experience of a web developer. It implements a modern and optimized architecture for smooth and responsive navigation, with support for dark and light themes, internationalization, and instant static deployment."
+  },
+  "NavigationLinks": {
+    "home": "Home",
+    "projects": "Projects"
+  },
+  "MainSection": {
+    "catchphrase": "Crafting Digital Experiences with Code and Creativity",
+    "introduction01": "I am a front-end developer with a strong background and experience in Industrial Engineering, holding a degree from the National University of Colombia. I specialize in using Next.js as my primary tool to create modern and dynamic web experiences.",
+    "introduction02": "My web development training has been guided by some of the most influential figures in the industry, such as Stephen Grider, Maximilian Schwarzmüller, and Jonas Schmedtmann, through their renowned courses on Udemy. Additionally, I have honed my skills with the iconic book *JavaScript: The Definitive Guide* by David Flanagan and *Learning TypeScript* by Josh Goldberg, which have enabled me to design and develop visually appealing and highly functional websites."
+  },
+  "HomePage": {
+    "sectionTitlePreTitle": "My Stack",
+    "sectionTitleCatchPhrase": "Modern tools for a world in constant change.",
+    "sectionTitleSubtext": "A stack highly adaptable to the needs of speed, a great development experience, and maintainability.",
 
-      "sectionTitlePreTitle": "My Stack",
-      "sectionTitleCatchPhrase": "Modern tools for a world in constant change.",
-      "sectionTitleSubtext": "A stack highly adaptable to the needs of speed, great development experience, and maintainability.",
+    "sectionTitlePreTitleEducation": "My Education",
+    "sectionTitleCatchPhraseEducation": "High-quality skills",
+    "sectionTitleSubtextEducation": "Thanks to my experience in industrial engineering, project management, and team leadership, I not only offer technical solutions but also bring a strategic approach that adds value to any project I am involved in.",
 
-      "sectionTitlePreTitleEducation": "My Education",
-      "sectionTitleCatchPhraseEducation": "High quality skills",
-      "sectionTitleSubtextEducation": "Thanks to my experience in industrial engineering, project management, and team leadership, I not only offer technical solutions but also bring a strategic approach that adds value to any project I am involved in.",
-    
-      "finalSentence": "I am currently expanding my knowledge in Node.js and PostgreSQL, aiming to develop robust, maintainable, and fast web applications aligned with industry best standards and practices."
-
-    },
-    "HeroMain": {
-      "upperText": "👋 Hi, My Name Is:",
-      "subText": "Front-End Developer",
-      "button": "Contact Me",
-      "HeroMainModalSubText": "Available between 7am and 10pm Colombian time (12 pm to 3 am UTC)",
-      "HeroMainModalTitle": "Send a message, Call, or Text!"
-    },
-    "HeroStack": {
-      "upperText": "📦 My Stack",
-      "mainText": "QUALITY OVER QUANTITY",
-      "subText": "A modern, fast, and efficient stack.",
-      "anchorAltUnal": "Go to the National University of Colombia website",
-      "button": "Contact Me",
-      "HeroMainModalSubText": "Available between 7am and 10pm Colombian time (12 pm to 3 am UTC)",
-      "HeroMainModalTitle": "Send a message, Call, or Text!"
-    },
-    "HeroEducation": {
-      "upperText": "🎓 Education",
-      "mainText": "LEARNED FROM THE BEST",
-      "subText": "From Stephen Grider to Maximilian Schwarzmüller",
-      "button": "Contact Me",
-      "HeroMainModalSubText": "Available between 7am and 10pm Colombian time (12 pm to 3 am UTC)",
-      "HeroMainModalTitle": "Send a message, Call, or Text!"
-    },
-
-   "HeroProjects": {
+    "finalSentence": "I am currently expanding my knowledge in Node.js and PostgreSQL, aiming to develop robust, maintainable, and fast web applications aligned with industry best standards and practices."
+  },
+  "HeroMain": {
+    "upperText": "👋 Hi, My Name Is:",
+    "subText": "Front-End Developer",
+    "button": "Contact Me",
+    "HeroMainModalSubText": "Available between 7 am and 10 pm Colombian time (12 pm to 3 am UTC)",
+    "HeroMainModalTitle": "Send a message, call, or text!"
+  },
+  "HeroStack": {
+    "upperText": "📦 My Stack",
+    "mainText": "QUALITY OVER QUANTITY",
+    "subText": "A modern, fast, and efficient stack.",
+    "anchorAltUnal": "Go to the National University of Colombia website",
+    "button": "Contact Me",
+    "HeroMainModalSubText": "Available between 7 am and 10 pm Colombian time (12 pm to 3 am UTC)",
+    "HeroMainModalTitle": "Send a message, call, or text!"
+  },
+  "HeroEducation": {
+    "upperText": "🎓 Education",
+    "mainText": "LEARNED FROM THE BEST",
+    "subText": "From Stephen Grider to Maximilian Schwarzmüller",
+    "button": "Contact Me",
+    "HeroMainModalSubText": "Available between 7 am and 10 pm Colombian time (12 pm to 3 am UTC)",
+    "HeroMainModalTitle": "Send a message, call, or text!"
+  },
+  "HeroProjects": {
     "upperText": "🚀 Projects",
     "mainText": "REAL PAGES, REAL CLIENTS",
     "subText": "Nothing better to test your skills than paying customers!"
+  },
+  "EducationTimeline": {
+    "mainTitle": "Education",
+
+    "year1": "2011",
+    "education1": "Bachelor's Degree in Industrial Engineering",
+    "institute1": "National University of Colombia",
+
+    "year2": "2022",
+    "education2": "Software Development with Emphasis on Web Development",
+    "institute2": "Ministry of Information and Communications Technology of Colombia and Universidad del Norte of Colombia",
+
+    "year3": "2022",
+    "education3": "The Complete JavaScript Course 2022: From Zero to Expert!",
+    "institute3": "Jonas Schmedtmann - Udemy",
+
+    "year4": "2022",
+    "education4": "Practical Git",
+    "institute4": "Dmytro Khmelenko - Udemy",
+
+    "year5": "2023",
+    "education5": "Modern React with Redux [2023 Update]",
+    "institute5": "Stephen Grider - Udemy",
+
+    "year6": "2024",
+    "education6": "Next.js 14 & React - The Complete Guide",
+    "institute6": "Maximilian Schwarzmüller - Udemy"
+},
+  "ExperienceTimeline": {
+    "mainTitle": "Experience",
+    "year1": "2015 - 2023",
+    "role1": "Technical Director",
+    "job1": "Management of all technical aspects of the automotive diagnostic center. Personnel management. Responsible for inspections and technical maintenance of computer equipment. Quality Coordinator and Project Manager for the company.",
+    "enterprise1": "CDA Fullmotos SAS",
+
+    "year2": "2023 - Present",
+    "role2": "Web Developer",
+    "job2": "Creation of custom landing pages on demand with Next.js",
+    "enterprise2": "Freelancer"
 },
 
-    "EducationTimeline": {
-      "mainTitle": "Education",
+"copyClipBoard": {
+    "titleEmail": "E-Mail",
+    "titlePhone": "Phone Number"
+},
+"neonTitle": {
+    "title": "🌚 Open All Nite"
+},
 
-      "year1": "2011",
-      "education1": "Bachelor's Degree in Industrial Engineering",
-      "institute1": "National University of Colombia",
+"FooterComponent": {
+    "contactTitle": "Contact Me Directly:",
+    "phone": "Phone:",
+    "city": "City:",
+    "aboutPortfolio": "About this Portfolio"
+},
+ "AboutPortfolioModalContent": {
+    "aboutPortfolioTitleModal": "About this Portfolio",
+    "portfolioDescription": "This site was designed from scratch (no templates used), learning along the way various essential technologies for a website or web app, such as dark theme and internationalization. In the source code, you will find a guide on how the project is structured, a commit history (in Spanish), and comments throughout the code in both English and Spanish.",
+    "aboutTechnologies": "Technologies Used"
+},
 
-      "year2": "2022",
-      "education2": "Software Development with Emphasis on Web Development",
-      "institute2": "Ministry of Information and Communications Technology of Colombia and Universidad del Norte of Colombia",
+"projectsPage": {
+    "sectionTitlePreTitle": "My projects",
+    "sectionTitleCatchPhrase": "Projects",
+    "sectionTitleSubtext": "Created for real clients, showcasing a range of web development skills.",
 
-      "year3": "2022",
-      "education3": "The Complete JavaScript Course 2022: From Zero to Expert!",
-      "institute3": "Jonas Schmedtmann - Udemy",
+    "finalSentence": "I aim to avoid reinventing the wheel or blindly copying and pasting code. Instead, I prioritize adhering to standards and best practices, as they are essential allies in building effective web applications."
+},
 
-      "year4": "2022",
-      "education4": "Practical Git",
-      "institute4": "Dmytro Khmelenko - Udemy",
-
-      "year5": "2023",
-      "education5": "Modern React with Redux [2023 update]",
-      "institute5": "Stephen Grider - Udemy",
-
-      "year6": "2024",
-      "education6": "Next.js 14 & React - The Complete Guide",
-      "institute6": "Maximilian Schwarzmüller - Udemy"
-    },
-    "ExperienceTimeline": {
-
-       "mainTitle": "Experience",
-      "year1": "2015 - 2023",
-      "role1": " Technical Director",
-      "job1" : "Management of all technical aspects of the automotive diagnostic center. Personnel management. Responsible for inspections and technical maintenance of computer equipment. Quality Coordinator and Project Manager for the company.",
-      "enterprise1": "CDA Fullmotos SAS",
-
-      "year2": "2023 - Present",
-      "role2": "Web Developer",
-      "job2" : "Creation of custom landing pages on demand with Next Js",
-      "enterprise2": "Freelancer"
-    },
-
-    "copyClipBoard": {
-      "titleEmail": "E-Mail",
-      "titlePhone": "Phone Number"
-    },
-    "neonTitle": {
-      "title": "🌚 Open All Nite"
-    },
-
-    "FooterComponent": {
-      "contactTitle": "Contact Me Directly:",
-      "phone": "Phone:",
-      "city": "City:",
-      "aboutPortfolio": "About this Portfolio"
-    },
-    "AboutPortfolioModalContent": {
-      "aboutPortfolioTitleModal": "About this Portfolio",
-      "portfolioDescription": "This site was designed from scratch (no templates used), learning along the way various essential technologies for a website or web app, such as dark theme and internationalization. In the source code, you will find a guide on how the project is structured, a commit history (in Spanish), and comments throughout the code in both English and Spanish.",
-      "aboutTechnologies": "Technologies Used"
-    
-    },
-
-    "projectsPage": {
-      "sectionTitlePreTitle": "My projects",
-      "sectionTitleCatchPhrase": "Projects",
-      "sectionTitleSubtext": "Created for real clients, showcasing a range of web development skills.",
-
-      "finalSentence": "I aim to avoid reinventing the wheel or blindly copying and pasting code. Instead, I prioritize adhering to standards and best practices, as they are essential allies in building effective web applications."
-
-    
-    },
-
-    "MALEPETinfo": {
-
+"MALEPETinfo": {
     "projectListTitle": "MALE Pet Care Website Info",
     "projectInfoTitle": "About the Website",
     "projectTechnologiesTitle": "Technologies Used",
-    "projectInfo": "Landing page of the local informational website about hiring pet care services, contains links to various social media platforms, fully responsive, and supports theme switching.",
+    "projectInfo": "Landing page of the local informational website about hiring pet care services, containing links to various social media platforms, fully responsive, and supporting theme switching.",
     "projectWebsiteLink": "Visit",
     "projectGithubLink": "Source Code"
+},
 
-    
-
-  },
-    
-  "LocaleSwitcher": {
+"LocaleSwitcher": {
     "label": "Cambiar idioma",
     "locale": "{locale, select, es {es Español} en {us English} other {Unknown}}"
-  }
+}
 }
