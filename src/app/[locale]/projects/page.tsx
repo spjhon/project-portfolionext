@@ -13,6 +13,7 @@ import Footer from "@/components/Footer/Footer";
 import { SectionTitle } from "@/components/SectionTitle";
 import Hero from "@/components/Hero/Hero";
 import ProjectsList from "@/components/ProjectsList/ProjectsList";
+import HeroProjects from "@/components/Hero/HeroProjects";
 
 //Data of projects imports
 import {landingPages} from "./dataProjects"
@@ -34,7 +35,7 @@ export default function Projects({ params: { locale } }: ProjectProps) {
   return (
     <div className="w-full h-full grid grid-rows-[1fr_2rem_2fr] landscape:grid-cols-[1fr_4rem_1.5fr] landscape:grid-rows-none">
       <section className="overflow-hidden ">
-        <Hero imageToRender={imageToRender}>TEXTO</Hero>
+        <Hero imageToRender={imageToRender}><HeroProjects></HeroProjects></Hero>
       </section>
 
       <div />

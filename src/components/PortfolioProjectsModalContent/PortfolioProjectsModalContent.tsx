@@ -59,22 +59,43 @@ const PortfolioProjectsModalContent: React.FC<
               src={modalProjectInfo.modalImage}
               width={500}
               height={500}
-              alt="MALE Pet Care ScreenShot"
+              alt="ScreenShot"
             />
           </div>
 
           <div className="flex flex-wrap justify-between w-full space-y-4 md:space-y-0 ">
             <div className="flex flex-col w-full md:w-1/2 space-y-2">
               <div className="text-lg font-bold">{t("projectInfoTitle")}</div>
-              <div className="text-sm text-gray-600">{t("projectInfo")}</div>
+              <a
+                aria-label={"External Link"}
+                href="https://spjhon.github.io/project-MALE/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title={`${t("projectWebsiteLink")} ${modalProjectInfo.label}`}
+                className="px-4 py-2 w-1/2 bg-accent text-white font-semibold rounded transform transition-transform duration-300 hover:scale-110"
+              >
+                {t("projectWebsiteLink")}
+                
+              </a>
+              <div className="text-sm text-gray-600 p-3">{t("projectInfo")}</div>
             </div>
 
-            <div className="flex flex-col w-full md:w-1/2 space-y-2">
+            <div className="flex flex-col w-full md:w-1/2 space-y-2 ">
               <div className="text-lg font-bold">
                 {t("projectTechnologiesTitle")}
               </div>
-              <div className="text-sm text-gray-600 space-y-2">
-                
+              <a
+                aria-label={"External Link"}
+                href="https://github.com/spjhon/project-MALE"
+                target="_blank"
+                rel="noopener noreferrer"
+                title={`${t("projectGithubLink")} ${modalProjectInfo.label}`}
+                className="px-4 py-2 w-1/2 bg-accent text-white font-semibold rounded transform transition-transform duration-300 hover:scale-110"
+              >
+                {t("projectGithubLink")}
+              </a>
+
+              <div className="text-sm text-gray-600 space-y-2 p-3">
                 <ul className="list-disc list-inside space-y-1">
                   {modalProjectInfo.technologies.map((tech, index) => (
                     <li
