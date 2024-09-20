@@ -22,7 +22,7 @@
       "sectionTitleSubtextEducation": "Thanks to my experience in industrial engineering, project management, and team leadership, I not only offer technical solutions but also bring a strategic approach that adds value to any project I am involved in.",
     
       "finalSentence": "I am currently expanding my knowledge in Node.js and PostgreSQL, aiming to develop robust, maintainable, and fast web applications aligned with industry best standards and practices."
-    
+
     },
     "HeroMain": {
       "upperText": "👋 Hi, My Name Is:",
@@ -32,7 +32,7 @@
       "HeroMainModalTitle": "Send a message, Call, or Text!"
     },
     "HeroStack": {
-      "upperText": "My Stack",
+      "upperText": "📦 My Stack",
       "mainText": "QUALITY OVER QUANTITY",
       "subText": "A modern, fast, and efficient stack.",
       "anchorAltUnal": "Go to the National University of Colombia website",
@@ -41,14 +41,23 @@
       "HeroMainModalTitle": "Send a message, Call, or Text!"
     },
     "HeroEducation": {
-      "upperText": "Education",
+      "upperText": "🎓 Education",
       "mainText": "LEARNED FROM THE BEST",
       "subText": "From Stephen Grider to Maximilian Schwarzmüller",
       "button": "Contact Me",
       "HeroMainModalSubText": "Available between 7am and 10pm Colombian time (12 pm to 3 am UTC)",
       "HeroMainModalTitle": "Send a message, Call, or Text!"
     },
+
+   "HeroProjects": {
+    "upperText": "🚀 Projects",
+    "mainText": "REAL PAGES, REAL CLIENTS",
+    "subText": "Nothing better to test your skills than paying customers!"
+},
+
     "EducationTimeline": {
+      "mainTitle": "Education",
+
       "year1": "2011",
       "education1": "Bachelor's Degree in Industrial Engineering",
       "institute1": "National University of Colombia",
@@ -74,6 +83,8 @@
       "institute6": "Maximilian Schwarzmüller - Udemy"
     },
     "ExperienceTimeline": {
+
+       "mainTitle": "Experience",
       "year1": "2015 - 2023",
       "role1": " Technical Director",
       "job1" : "Management of all technical aspects of the automotive diagnostic center. Personnel management. Responsible for inspections and technical maintenance of computer equipment. Quality Coordinator and Project Manager for the company.",
@@ -106,9 +117,28 @@
     
     },
 
-    "AboutPage": {
-      "title": "About Page"
+    "projectsPage": {
+      "sectionTitlePreTitle": "My projects",
+      "sectionTitleCatchPhrase": "Projects",
+      "sectionTitleSubtext": "Created for real clients, showcasing a range of web development skills.",
+
+      "finalSentence": "I aim to avoid reinventing the wheel or blindly copying and pasting code. Instead, I prioritize adhering to standards and best practices, as they are essential allies in building effective web applications."
+
+    
     },
+
+    "MALEPETinfo": {
+
+    "projectListTitle": "MALE Pet Care Website Info",
+    "projectInfoTitle": "About the Website",
+    "projectTechnologiesTitle": "Technologies Used",
+    "projectInfo": "Landing page of the local informational website about hiring pet care services, contains links to various social media platforms, fully responsive, and supports theme switching.",
+    "projectWebsiteLink": "Visit",
+    "projectGithubLink": "Source Code"
+
+    
+
+  },
     
   "LocaleSwitcher": {
     "label": "Cambiar idioma",

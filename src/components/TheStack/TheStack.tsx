@@ -20,18 +20,13 @@ const TheStack: React.FC<TheStackProps> = ({ title, images }) => {
       <div className="flex flex-wrap gap-4">
         {images.map((image) => (
           <a
-          key={image.id}
+            key={image.id}
             href={image.link}
             target="_blank"
             rel="noopener noreferrer"
-            
             title={image.label}
-            
           >
-            <div
-              
-              className="group relative flex flex-col items-center"
-            >
+            <div className="group relative flex flex-col items-center">
               <div className="transition-transform transform group-hover:translate-x-2 group-hover:translate-y-[-4px] group-hover:shadow-2xl group-hover:scale-105">
                 {image.icon}
               </div>

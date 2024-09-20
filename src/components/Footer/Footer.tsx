@@ -32,16 +32,11 @@ const Footer = () => {
           type="button"
           className="hover:underline hover:shadow-xl font-bold flex flex-col items-center justify-center flex-1 mx-auto p-8"
         >
-         
-          
-         <span>
-         {t("aboutPortfolio")}
-         </span>
-          
+          <span>{t("aboutPortfolio")}</span>
+
           <PortfolioLogo />
-        
-          </button>
-          <Modal
+        </button>
+        <Modal
           open={open}
           onClose={onCloseModal}
           center
@@ -50,12 +45,14 @@ const Footer = () => {
             modal: "rounded-xl",
           }}
         >
-<AboutPortfolioModalContent></AboutPortfolioModalContent>
-
+          <AboutPortfolioModalContent></AboutPortfolioModalContent>
         </Modal>
 
         {/* Sección de contactos */}
-        <section className="hover:shadow-xl flex flex-col items-center justify-center flex-1 mx-auto p-8" aria-labelledby="contact-heading">
+        <section
+          className="hover:shadow-xl flex flex-col items-center justify-center flex-1 mx-auto p-8"
+          aria-labelledby="contact-heading"
+        >
           <h3 id="contact-heading" className="font-semibold mb-2">
             {t("contactTitle")}
           </h3>
@@ -104,7 +101,7 @@ const Footer = () => {
 
       {/* Texto final */}
       <div className="text-center mt-6">
-        <p>© {currentYear} Hecho con amor por Juan Aristizabal</p>
+        <p>© {currentYear} Juan Aristizabal</p>
       </div>
     </footer>
   );

@@ -24,6 +24,8 @@
     
       "finalSentence": "Actualmente, me encuentro en proceso de ampliar mis conocimientos en Node.js y PostgreSQL, con el objetivo de desarrollar aplicaciones web robustas, mantenibles, rápidas y alineadas con los mejores estándares y buenas prácticas del sector."
 
+     
+      
     },
     "HeroMain": {
       "upperText": "👋 Hola, Mi Nombre es:",
@@ -33,7 +35,7 @@
       "HeroMainModalTitle": "Envía un Mensaje, Llama o Escribe!"
     },
     "HeroStack": {
-      "upperText": "Mis Herramientas",
+      "upperText": "📦 Mis Herramientas",
       "mainText": "CALIDAD SOBRE CANTIDAD",
       "subText": "Un stack moderno rapido y eficiente",
       "button": "Contáctame",
@@ -41,7 +43,7 @@
       "HeroMainModalTitle": "Envía un Mensaje, Llama o Escribe!"
     },
     "HeroEducation": {
-      "upperText": "Educación",
+      "upperText": "🎓 Educación",
       "mainText": "APRENDÍ DE LOS MEJORES",
       "subText": "Desde Stephen Grider Hasta Maximilian Schwarzmüller",
       "anchorAltUnal": "Ir a la Universidad Nacional de Colombia",
@@ -49,7 +51,15 @@
       "HeroMainModalSubText": "Disponible entre las 7am y las 10pm hora Colombiana (12 pm a 3 am UTC)",
       "HeroMainModalTitle": "Envía un Mensaje, Llama o Escribe!"
     },
+
+    "HeroProjects": {
+      "upperText": "🚀 Emprendimientos",
+      "mainText": "PAGINAS REALES, CLIENTES REALES",
+      "subText": "Nada mejor para probar tus habilidades que clientes que pagan!"
+    },
     "EducationTimeline": {
+      "mainTitle": "Educación",
+
       "year1": "2011",
       "education1": "Ingenieria Industrial",
       "institute1": "Universidad Nacional de Colombia",
@@ -75,6 +85,8 @@
       "institute6": "Maximilian Schwarzmüller - Udemy"
     },
     "ExperienceTimeline": {
+      "mainTitle": "Experiencia",
+
       "year1": "2015 - 2023",
       "role1": "Director Tecnico",
       "job1" : "Gestión de todos los aspectos técnicos del centro de diagnóstico automotriz. Gestión de personal. Responsable de las inspecciones y el mantenimiento técnico del equipo informático. Coordinador de Calidad y Gerente de Proyectos de la empresa.",
@@ -107,10 +119,25 @@
     
     },
   
-    "AboutPage": {
-      "title": "About Page"
-    },
+    "projectsPage": {
+      "sectionTitlePreTitle": "Mis projectos",
+      "sectionTitleCatchPhrase": "Projectos",
+      "sectionTitleSubtext": "Creados para clientes reales, mostrando un despliegue de habilidades en desarrollo web.",
     
+      "finalSentence": "Mi objetivo no es reinventar la rueda ni copiar y pegar código sin criterio. En su lugar, priorizo seguir estándares y mejores prácticas, ya que son aliados fundamentales para crear aplicaciones web efectivas."
+
+    },
+
+    "MALEPETinfo": {
+
+      "projectListTitle": "MALE Pet Care Informacion del Sitio Web",
+      "projectInfoTitle": "Acerca del Sitio Web",
+      "projectTechnologiesTitle": "Tecnologías Utilizadas",
+      "projectInfo": "Landing Page del sito web informativo local acerca de la contratacion del servicio de cuidado de mascotas, contiene links a las diferentes redes sociales, totalmente responsivo y cambio de themes",
+    "projectWebsiteLink": "Visita",
+    "projectGithubLink": "Código Fuente"
+
+    },
   "LocaleSwitcher": {
     "label": "Cambiar idioma",
     "locale": "{locale, select, es {es Español} en {us English} other {Unknown}}"
