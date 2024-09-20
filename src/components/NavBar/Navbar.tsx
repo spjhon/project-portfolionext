@@ -11,8 +11,6 @@ import {
   CloseButton,
 } from "@headlessui/react";
 
-
-
 export const Navbar = () => {
   const t = useTranslations("NavigationLinks");
   const navigation = [
@@ -33,7 +31,7 @@ pequeñas, cuando esta en pantallas grandes solo se muestra el logo, osea que el
 - El open es un state que viene con el componente disclosure para tener el state y de acuerto a ese state hacer cambios en el codigo
   */
 
-/*
+  /*
 
 Explanation of the component design:
 
@@ -46,18 +44,18 @@ Explanation of the component design:
 */
 
   return (
-    <nav aria-label="Main Navigation" className=" shadow-xl relative z-10 mt-3 landscape:mt-8 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-0 border border-gray-900 dark:border-gray-100 ">
+    <nav
+      aria-label="Main Navigation"
+      className=" shadow-xl relative z-10 mt-3 landscape:mt-8 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-0 border border-gray-900 dark:border-gray-100 "
+    >
       {/* Logo  */}
       <Disclosure>
         {({ open }) => (
           <>
-            <div className="flex flex-wrap justify-center">
-
-           
-
+            <div className="flex flex-wrap justify-center ">
               <DisclosureButton
                 aria-label={open ? "Close Menu" : "Open Menu"}
-                className="px-4 py-2 rounded-md lg:hidden hover:text-secondary dark:hover:text-primary focus:text-accent dark:focus:bg-secondary focus:bg-secondary focus:outline-none "
+                className="mx-3 px-4 py-2 rounded-md lg:hidden hover:text-secondary dark:hover:text-primary focus:text-accent dark:focus:bg-secondary focus:bg-secondary focus:outline-none "
               >
                 <svg
                   className="w-6 h-6 fill-current"
@@ -80,12 +78,12 @@ Explanation of the component design:
                 </svg>
               </DisclosureButton>
 
-                <div className="flex items-center lg:hidden">
-              <ThemeChanger />
+              <div className="mx-3 flex items-center lg:hidden">
+                <ThemeChanger />
               </div>
 
-              <div className="lg:hidden">
-              <LanguageSwitcher />
+              <div className="mx-3 lg:hidden">
+                <LanguageSwitcher />
               </div>
 
               <DisclosurePanel
@@ -113,7 +111,6 @@ Explanation of the component design:
                   >
                     Escribenos a WhatsApp
                   </CloseButton>
-                  
                 </>
               </DisclosurePanel>
             </div>
@@ -123,7 +120,7 @@ Explanation of the component design:
 
       {/* menu  */}
       <div className="hidden text-center lg:flex lg:items-center lg:justify-evenly">
-        <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
+        <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex ">
           {navigation.map((item, index) => (
             <li className="mr-3" key={index}>
               <NavigationLink
