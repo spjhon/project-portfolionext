@@ -28,8 +28,8 @@ export default function Projects({ params: { locale } }: ProjectProps) {
   const t = useTranslations("projectsPage");
 
   let imageToRender = {
-    backgroundImage: "/heroBackgroundProjects/hero01.jpg",
-    backgroundImageDark: "/heroBackgroundProjects/hero01Night.jpg", // Agrega backgroundImageDark para consistencia
+    backgroundImage: "/heroBackgroundProjects/hero01.webp",
+    backgroundImageDark: "/heroBackgroundProjects/hero01Night.webp", // Agrega backgroundImageDark para consistencia
   };
 
   return (
