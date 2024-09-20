@@ -49,7 +49,7 @@ export default function Projects({ params: { locale } }: ProjectProps) {
             {t("sectionTitleSubtext")}
           </SectionTitle>
 
-          <ProjectsList data={landingPages} title="Landing Pages" />
+          <ProjectsList modalProjectArray={landingPages} title="Landing Pages" />
           
           <p className="text-lg p-1 lg:p-10 italic font-semibold text-gray-700 dark:text-gray-300 border-l-4 border-warning  pl-4">
             {t("finalSentence")}
