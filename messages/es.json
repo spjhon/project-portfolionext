@@ -116,9 +116,19 @@
     "projectsPage": {
       "sectionTitlePreTitle": "Mis projectos",
       "sectionTitleCatchPhrase": "Projectos",
-      "sectionTitleSubtext": "Lista de projectos",
+      "sectionTitleSubtext": "Creados para clientes reales, mostrando un despliegue de habilidades en desarrollo web.",
     
       "finalSentence": "Mi objetivo no es reinventar la rueda ni copiar y pegar código sin criterio. En su lugar, priorizo seguir estándares y mejores prácticas, ya que son aliados fundamentales para crear aplicaciones web efectivas."
+
+    },
+
+    "MALEPETinfo": {
+
+      "projectListTitle": "MALE Pet Care Informacion del Sitio Web",
+      "projectInfoTitle": "Acerca del Sitio Web",
+      "projectTechnologiesTitle": "Tecnologías Utilizadas",
+      "projectInfo": "Landing Page del sito web informativo local acerca de la contratacion del servicio de cuidado de mascotas, contiene links a las diferentes redes sociales, totalmente responsivo y cambio de themes"
+
 
     },
   "LocaleSwitcher": {

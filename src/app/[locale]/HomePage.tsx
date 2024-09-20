@@ -41,18 +41,11 @@ import {
 
 
 
-
-
-// Define props types for animated components
-interface DataItem {
-  id: number;
-}
-
 interface AnimatedComponentProps {
   setComponentToShow?: (component: string) => void;
   children?: React.ReactNode;
-  educationData?: DataItem[];
-  experienceData?: DataItem[];
+  
+  
 }
 
 interface HomePageProps {
@@ -147,11 +140,7 @@ export default function HomePage({ locale }: HomePageProps) {
             {t("sectionTitleSubtextEducation")}
           </SectionTitle>
 
-          <TimeLineAnimated
-            setComponentToShow={setComponentToShow}
-            educationData={educationData}
-            experienceData={experienceData}
-          />
+          <TimeLineAnimated setComponentToShow={setComponentToShow}/>
 
           <p className="text-lg p-1 lg:p-10">{t("finalSentence")}</p>
 
@@ -296,8 +285,6 @@ const TheStack05Animated: React.FC = () => {
 
 const TimeLineAnimated: React.FC<AnimatedComponentProps> = ({
   setComponentToShow,
-  educationData = [],
-  experienceData = [],
 }) => {
   const { ref, inView } = useInView({
     threshold: 0.1,

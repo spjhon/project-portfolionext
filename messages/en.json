@@ -113,12 +113,22 @@
     "projectsPage": {
       "sectionTitlePreTitle": "My projects",
       "sectionTitleCatchPhrase": "Projects",
-      "sectionTitleSubtext": "List of Projects",
+      "sectionTitleSubtext": "Created for real clients, showcasing a range of web development skills.",
 
       "finalSentence": "I aim to avoid reinventing the wheel or blindly copying and pasting code. Instead, I prioritize adhering to standards and best practices, as they are essential allies in building effective web applications."
 
     
     },
+
+    "MALEPETinfo": {
+
+    "projectListTitle": "MALE Pet Care Website Info",
+    "projectInfoTitle": "About the Website",
+    "projectTechnologiesTitle": "Technologies Used",
+    "projectInfo": "Landing page of the local informational website about hiring pet care services, contains links to various social media platforms, fully responsive, and supports theme switching."
+
+
+  },
     
   "LocaleSwitcher": {
     "label": "Cambiar idioma",

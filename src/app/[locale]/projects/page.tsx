@@ -8,18 +8,22 @@ interface ProjectProps {
   params: PageParams;
 }
 
-//PARA STATIC RENDERING
-import { unstable_setRequestLocale } from "next-intl/server";
+//Components imports
 import Footer from "@/components/Footer/Footer";
 import { SectionTitle } from "@/components/SectionTitle";
 import Hero from "@/components/Hero/Hero";
+import ProjectsList from "@/components/ProjectsList/ProjectsList";
+
+//Data of projects imports
+import {landingPages} from "./dataProjects"
 
 //image that goes to the section title
 import SectionProjectSVG from "./SVG/SectionProjectsSVG";
 
-export default function Projects({ params: { locale } }: ProjectProps) {
-  //FOR STATIC GENERATION FORM NEXT INT
 
+
+export default function Projects({ params: { locale } }: ProjectProps) {
+  
   const t = useTranslations("projectsPage");
 
   let imageToRender = {
@@ -45,6 +49,8 @@ export default function Projects({ params: { locale } }: ProjectProps) {
             {t("sectionTitleSubtext")}
           </SectionTitle>
 
+          <ProjectsList data={landingPages} title="Landing Pages" />
+          
           <p className="text-lg p-1 lg:p-10 italic font-semibold text-gray-700 dark:text-gray-300 border-l-4 border-warning  pl-4">
             {t("finalSentence")}
           </p>
