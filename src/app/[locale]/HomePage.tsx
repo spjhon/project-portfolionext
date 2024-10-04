@@ -39,27 +39,17 @@ import {
   experienceData,
 } from "../../components/EducationTimeline/data";
 
-
-
 interface AnimatedComponentProps {
   setComponentToShow?: (component: string) => void;
   children?: React.ReactNode;
-  
-  
 }
 
 interface HomePageProps {
   locale: string; // Define el tipo para `locale`
 }
 
-
-
-
-
 export default function HomePage({ locale }: HomePageProps) {
   const t = useTranslations("HomePage");
-
-
 
   //this state controlls when a component its in view and update the div of the left of the homepage
   const [componentToShow, setComponentToShow] = useState<string>("Main");
@@ -98,23 +88,17 @@ export default function HomePage({ locale }: HomePageProps) {
         backgroundImageDark: "black", // Agrega backgroundImageDark para consistencia
       };
       break;
-
-
-
   }
-
-
 
   return (
     <div className="w-full h-full grid grid-rows-[1fr_2rem_2fr] landscape:grid-cols-[1fr_4rem_1.5fr] landscape:grid-rows-none">
-      
       <section className="overflow-hidden ">
         <Hero imageToRender={imageToRender}>{componentToRender}</Hero>
       </section>
 
-      <div/>
+      <div />
 
-      <main className="rounded-xl overflow-scroll">
+      <main className="rounded-xl overflow-auto">
         <div className="relative mt-16 landscape:mt-24 w-full lg:pt-8 pr-1 pl-2 lg:pr-24 lg:pl-24">
           <MainSectionAnimated setComponentToShow={setComponentToShow} />
 
@@ -140,7 +124,7 @@ export default function HomePage({ locale }: HomePageProps) {
             {t("sectionTitleSubtextEducation")}
           </SectionTitle>
 
-          <TimeLineAnimated setComponentToShow={setComponentToShow}/>
+          <TimeLineAnimated setComponentToShow={setComponentToShow} />
 
           <p className="text-lg p-1 lg:p-10">{t("finalSentence")}</p>
 
@@ -156,8 +140,7 @@ export default function HomePage({ locale }: HomePageProps) {
 
 
 
-
-//this code from now on till the end its only for animations using react-intersection-observer
+//this code from now on till the end its only for manual animations using react-intersection-observer
 
 const MainSectionAnimated: React.FC<AnimatedComponentProps> = ({
   setComponentToShow,
@@ -296,8 +279,6 @@ const TimeLineAnimated: React.FC<AnimatedComponentProps> = ({
       setComponentToShow("Education");
     }
   }, [inView, setComponentToShow]);
-
-
 
   return (
     <div
