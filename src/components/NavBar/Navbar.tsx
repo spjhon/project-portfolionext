@@ -101,16 +101,6 @@ Explanation of the component design:
                       {item.LinkName}
                     </CloseButton>
                   ))}
-                  <CloseButton
-                    as="a"
-                    href="https://wa.me/+573215224583"
-                    target="_blank"
-                    rel="noopener"
-                    title="Escribenos a whatsapp"
-                    className="transition-transform duration-300 transform hover:scale-105 w-full px-6 py-2 mt-3 my-4 text-center text-white bg-accent rounded-md lg:ml-5"
-                  >
-                    Escribenos a WhatsApp
-                  </CloseButton>
                 </>
               </DisclosurePanel>
             </div>

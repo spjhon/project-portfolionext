@@ -80,7 +80,7 @@ const PortfolioProjectsModalContent: React.FC<
         }}
       >
         <div className="flex flex-col items-center space-y-4 p-6 dark:bg-gray-900">
-          <div className="overflow-scroll w-full h-64 flex justify-center items-start bg-gray-200 dark:bg-gray-800">
+          <div className="overflow-auto w-full h-64 flex justify-center items-start bg-gray-200 dark:bg-gray-800">
             <Image
               src={modalProjectInfo.modalImage}
               width={500}
